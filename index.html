@@ -15,3 +15,4 @@ const translations={nl:['Taal','Jouw avontuur begint hier','Ontdek je omgeving m
 const select=document.getElementById('lang');const detected=(navigator.language||'nl').slice(0,2);select.value=translations[detected]?detected:'en';function update(){const t=translations[select.value];['languageLabel','heading','description','register','login'].forEach((id,i)=>document.getElementById(id).textContent=t[i]);document.getElementById('notice').textContent='';document.documentElement.lang=select.value}select.addEventListener('change',update);update();['register','login'].forEach(id=>document.getElementById(id).addEventListener('click',()=>document.getElementById('notice').textContent=translations[select.value][5]));setTimeout(()=>{const splash=document.getElementById('splash');splash.classList.add('hide');setTimeout(()=>splash.remove(),450)},3000);
 </script>
 </body></html>
+
