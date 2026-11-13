@@ -144,7 +144,8 @@ async function planRoute(){
  if(btn){btn.disabled=true;btn.textContent='⏳ Verrassingsroute zoeken…'}
  clearRoute();
  try{
-  const km=Number(document.getElementById('distance').value);
+  const km=parseFloat(document.getElementById('distance').value);
+  if(!Number.isFinite(km)||km<=0)throw Error('Kies een geldige afstand.');
   const round=selected('route').includes('Rond');
   const run=selected('activity').includes('Hardlopen');
   // De huidige API ondersteunt 2 punten. Retourroutes volgen daarom hetzelfde traject terug.
