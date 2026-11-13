@@ -27,7 +27,7 @@
 <header class="top"><div><div class="muted">ONTDEK MEER. ELKE DAG.</div><div class="brand">TRAC<span>X</span>O <span style="font-size:20px">⌖</span></div></div><div class="avatar" id="avatar">S</div></header>
 <div class="demo-banner">● DEMO 7.3 · Kaartweergave gerepareerd · Accounts/battles zijn demo</div><section id="welcome" class="screen active"><div class="intro"><div class="logo">⌖ TRAC<span>X</span>O</div><h2>De wereld is jouw avontuur.</h2><p class="muted">Ontdek nieuwe plekken. Wandel of ren. Alleen of samen.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Kies eerst je gebruikersnaam en maak daarna je wachtwoord aan.</p><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username"><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button></div><p class="foot">Lokale demo: je blijft op dit apparaat ingelogd. Geen echte online accountbeveiliging of synchronisatie.</p></section><section id="home" class="screen"><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>Klaar voor je<br>volgende avontuur?</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">125</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">3</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">2,4</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div><div class="section"><h2>GPS testen</h2></div><div class="card"><p class="muted small">Meet je echte wandelafstand en probeer automatische bestemmingsherkenning uit.</p><button class="btn secondary" onclick="show('gps')">📍 Open GPS-test →</button><div style="height:9px"></div><button class="btn outline" onclick="openRoutePlanner()">🗺️ Open routeplanner →</button></div></section>
 <section id="setup" class="screen"><button class="back" onclick="show('home')">← Terug</button><h2>Nieuw avontuur</h2><p class="muted">Stel je route samen. Kies daarna een voorbeeldavontuur of de echte kaartplanner.</p><label>Activiteit</label><div class="grid" id="activity"><button class="option active" onclick="pick('activity',this)">🚶 Wandelen</button><button class="option" onclick="pick('activity',this)">🏃 Hardlopen</button></div><label>Afstand</label><select id="distance"><option>2 km</option><option>5 km</option><option>10 km</option><option>15 km</option><option>20 km</option><option>30 km</option></select><label>Moeilijkheid</label><div class="grid" id="difficulty" style="grid-template-columns:repeat(3,1fr)"><button class="option active" onclick="pick('difficulty',this)">Beginner</button><button class="option" onclick="pick('difficulty',this)">Gemiddeld</button><button class="option" onclick="pick('difficulty',this)">Moeilijk</button></div><label>Bestemmingsdichtheid</label><div class="grid" id="density" style="grid-template-columns:repeat(3,1fr)"><button class="option" onclick="pick('density',this)">Rustig</button><button class="option active" onclick="pick('density',this)">Normaal</button><button class="option" onclick="pick('density',this)">Intensief</button></div><p class="muted small" id="densityInfo">TRACXO bepaalt automatisch het aantal stops op basis van afstand en activiteit.</p><select id="stops" style="display:none"><option selected>3</option></select><label>Routetype</label><div class="grid" id="route"><button class="option active" onclick="pick('route',this)">🔁 Rondwandeling</button><button class="option" onclick="pick('route',this)">➡️ Enkele reis</button></div><label>Speelmodus</label><div class="grid" id="play"><button class="option active" onclick="pick('play',this)">👤 Solo</button><button class="option" onclick="pick('play',this)">👥 Samen met vrienden</button></div><div id="teamNote" class="notice" style="display:none">Samen spelen: voorstel +20% XP, maar 25% minder optionele hints. De eerste richtinghint blijft altijd beschikbaar. Je maakt straks een groepslobby.</div><div style="height:17px"></div><button class="btn" onclick="prepareAdventure()">Voorbeeldavontuur →</button><div style="height:9px"></div><button class="btn secondary" onclick="openRoutePlanner()">🗺️ Plan echte route op kaart →</button></section>
-<section id="routeplanner" class="screen"><button class="back" onclick="show('setup')">← Terug naar avontuur</button><h2>🗺️ Echte routeplanner</h2><p class="muted">We gebruiken je locatie, openbare kaartgegevens en looproutes. Je kiest een richtafstand (±10%); de werkelijke afstand wordt vooraf getoond. Geen gegarandeerd veilige route.</p><div class="card"><div class="row"><b>GPS & kaart</b><span class="tag" id="routeGpsStatus">Nog niet gestart</span></div><p class="muted small" id="routeLocation">Sta locatietoegang toe om plekken bij jou in de buurt te vinden.</p><button class="btn secondary" id="routeLocate" onclick="locateForRoute()">📍 Gebruik mijn locatie</button><div style="height:9px"></div><button class="btn outline" onclick="planRoute()">🧭 Zoek bestemmingen en bereken route</button></div><div id="routeMap" style="height:330px;border-radius:17px;border:1px solid #dbe7df;background:#e6f1e9;margin-bottom:13px"></div><div class="card"><h3>Routegegevens</h3><p class="muted small">De gekozen afstand is een richtafstand. TRACXO streeft naar ±10% en toont afwijkingen eerlijk.</p><div id="routeStatus" class="muted small" aria-live="polite">Open deze pagina met internet en HTTPS voor GPS en kaartdiensten.</div><div id="routeResult" style="margin-top:12px"></div><div id="manualRouteHelp" class="muted small" style="margin-top:10px">Als automatisch bestemmingen zoeken niet werkt, kun je zelf een plek op de kaart aanklikken en een route ernaartoe proberen.</div><button class="btn outline" id="manualRouteToggle" onclick="toggleManualRoute()" style="margin-top:8px">📍 Kies zelf een bestemming op de kaart</button><div id="routeStops" class="list" style="margin-top:12px"></div></div><div class="notice">⚠️ Kaarttegels worden geladen via Esri of OpenTopoMap (alternatief). Bestemmingen en routes komen van aparte openbare diensten en kunnen tijdelijk niet beschikbaar zijn. Leaflet-kaartstijlen zijn ook lokaal ingebouwd. Publieke diensten kunnen verzoeken beperken. GPS en externe diensten kunnen onnauwkeurig of onbereikbaar zijn. Controleer kruispunten, toegankelijkheid en verkeerssituatie zelf. Routegegevens worden voor deze test naar externe kaartdiensten verzonden. Geen automatische XP voor deze route.</div></section><section id="lobby" class="screen"><button class="back" onclick="show('setup')">← Terug naar instellingen</button><h2>👥 Groepsavontuur</h2><p class="muted">Samen wandelen of hardlopen met dezelfde bestemmingen en hints.</p><div class="card"><h3>Jouw groepscode</h3><div class="row"><strong id="lobbyCode" style="font-size:28px;letter-spacing:4px">TRX482</strong><button class="btn secondary" style="width:105px" onclick="copyCode()">Kopieer</button></div><p class="muted small">Deel de code met je vrienden. In deze demo werkt de code alleen als voorbeeld op dit apparaat.</p></div><div class="card"><div class="row"><h3>Deelnemers</h3><span class="tag" id="participantCount">1 / 6</span></div><div class="list" id="participants"><div class="item"><span>👑 Jij (groepsleider)</span><span class="tag">Klaar ✓</span></div></div><label>Vriend toevoegen (demo)</label><div class="row"><input id="participantName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addParticipant()">Voeg toe</button></div><p class="muted small">Hiermee simuleer je dat een vriend meedoet; er wordt nog geen echte verbinding gemaakt.</p></div><div class="card"><h3>Of aansluiten bij een groep</h3><div class="row"><input id="joinCode" placeholder="Bijv. TRX482" maxlength="8"><button class="btn secondary" style="width:105px" onclick="joinGroup()">Join</button></div><p class="muted small">In de demo kun je de eigen groepscode uitproberen.</p></div><div class="notice">🎁 Groepsbonus: +20% XP en 25% minder optionele hints. De eerste richtinghint blijft beschikbaar. Echte synchronisatie volgt in een latere versie.</div><div style="height:15px"></div><button class="btn" onclick="preview()">Groepsavontuur bekijken →</button></section>
+<section id="routeplanner" class="screen"><button class="back" onclick="show('setup')">← Terug naar avontuur</button><h2>🗺️ Verrassingsroute · 7.6</h2><p class="muted">TRACXO zoekt automatisch een geheime bestemming en berekent een wandelroute. Je krijgt alleen een richtinghint, niet het eindpunt. Richtafstand ±10%; geen gegarandeerd veilige route.</p><div class="card"><div class="row"><b>GPS & kaart</b><span class="tag" id="routeGpsStatus">Nog niet gestart</span></div><p class="muted small" id="routeLocation">Sta locatietoegang toe om een geheime route bij jou in de buurt te maken.</p><button class="btn secondary" id="routeLocate" onclick="locateForRoute()">📍 Gebruik mijn locatie</button><div style="height:9px"></div><button class="btn outline" onclick="planRoute()">🧭 Zoek bestemmingen en bereken route</button></div><div id="routeMap" style="height:330px;border-radius:17px;border:1px solid #dbe7df;background:#e6f1e9;margin-bottom:13px"></div><div class="card"><h3>Routegegevens</h3><p class="muted small">De gekozen afstand is een richtafstand. TRACXO streeft naar ±10% en toont afwijkingen eerlijk.</p><div id="routeStatus" class="muted small" aria-live="polite">Open deze pagina met internet en HTTPS voor GPS en kaartdiensten.</div><div id="routeResult" style="margin-top:12px"></div><div id="routeStops" class="list" style="margin-top:12px"></div></div><div class="notice">⚠️ Kaart via Esri/OpenTopoMap; wandelroutes via de TRACXO Cloudflare Worker en OpenRouteService. De bestemming wordt automatisch gekozen uit mogelijke GPS-checkpoints, niet gegarandeerd bij een herkenbaar gebouw of monument. De route is voor de verrassing niet vooraf zichtbaar. Controleer zelf paden en verkeerssituaties. GPS kan onnauwkeurig zijn. Geen automatische XP in deze test.</div></section><section id="lobby" class="screen"><button class="back" onclick="show('setup')">← Terug naar instellingen</button><h2>👥 Groepsavontuur</h2><p class="muted">Samen wandelen of hardlopen met dezelfde bestemmingen en hints.</p><div class="card"><h3>Jouw groepscode</h3><div class="row"><strong id="lobbyCode" style="font-size:28px;letter-spacing:4px">TRX482</strong><button class="btn secondary" style="width:105px" onclick="copyCode()">Kopieer</button></div><p class="muted small">Deel de code met je vrienden. In deze demo werkt de code alleen als voorbeeld op dit apparaat.</p></div><div class="card"><div class="row"><h3>Deelnemers</h3><span class="tag" id="participantCount">1 / 6</span></div><div class="list" id="participants"><div class="item"><span>👑 Jij (groepsleider)</span><span class="tag">Klaar ✓</span></div></div><label>Vriend toevoegen (demo)</label><div class="row"><input id="participantName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addParticipant()">Voeg toe</button></div><p class="muted small">Hiermee simuleer je dat een vriend meedoet; er wordt nog geen echte verbinding gemaakt.</p></div><div class="card"><h3>Of aansluiten bij een groep</h3><div class="row"><input id="joinCode" placeholder="Bijv. TRX482" maxlength="8"><button class="btn secondary" style="width:105px" onclick="joinGroup()">Join</button></div><p class="muted small">In de demo kun je de eigen groepscode uitproberen.</p></div><div class="notice">🎁 Groepsbonus: +20% XP en 25% minder optionele hints. De eerste richtinghint blijft beschikbaar. Echte synchronisatie volgt in een latere versie.</div><div style="height:15px"></div><button class="btn" onclick="preview()">Groepsavontuur bekijken →</button></section>
 <section id="preview" class="screen"><button class="back" onclick="show('setup')">← Instellingen aanpassen</button><h2>Je avontuur staat klaar!</h2><div class="card"><h3>🧭 Routevoorbeeld</h3><div id="summary" style="line-height:2"></div><div class="notice">Demo: er wordt nog geen echte route berekend. In de uiteindelijke app kiest AI nieuwe, veilige bestemmingen binnen je gekozen afstand.</div></div><div class="card"><h3>Je eerste hint</h3><p>🧭 Ga richting het <b>noordoosten</b>.</p><div class="muted small">Voorbeeldhint — geen echte GPS-richting.</div></div><button class="btn" onclick="startSimulation()">Avontuur starten (simulatie) →</button></section>
 <section id="adventure" class="screen"><button class="back" onclick="show('preview')">← Routevoorbeeld</button><div class="row"><h2 id="adventureTitle">TRACXO Walk</h2><span class="tag">SIMULATIE</span></div><div class="map-sim"><span class="pin">📍</span></div><div class="card" style="margin-top:13px"><div class="row"><div><div class="muted">VOORTGANG</div><div class="sim-big"><span id="stopProgress">0</span> / <span id="stopTotal">3</span></div><div class="muted">Bestemmingen ontdekt</div></div><div style="text-align:right"><div class="muted">Afstand (demo)</div><b id="distanceProgress">0,0 km</b></div></div><div class="progress" style="margin-top:15px"><div id="adventureBar" style="width:0%"></div></div></div><div class="audio-card"><div class="row"><b>🎧 <span id="hintTitle">Je volgende hint</span></b><span class="pill" id="hintMode">RUN</span></div><p id="hintText">Volg het pad richting het water.</p><button class="btn secondary" onclick="speakHint()">🔊 Spreek hint uit</button><div style="height:9px"></div><div class="notice" id="hintDetail" style="margin:12px 0">De eerste richtinghint is verplicht. Kies daarna per optionele hint: bekijken of overslaan voor extra XP.</div><div class="row" style="margin:10px 0"><button class="btn outline" id="hintReveal" onclick="nextHint()">💡 Bekijk extra hint</button><button class="btn secondary" id="hintSkip" onclick="skipHint()">⚡ Sla hint over · +25 XP</button></div><div class="muted small" id="hintCounter"></div><div class="muted small" id="hintXp" style="margin-top:7px">Bonus-XP: 0</div></div><div class="notice" id="discoveryNote">In een echte versie herkent GPS automatisch wanneer je langs de bestemming komt. Hier simuleer je dat met de knop.</div><div style="height:14px"></div><button class="btn" id="foundButton" onclick="findDestination()">📍 Simuleer bestemming gevonden</button><div style="height:9px"></div><button class="btn outline" onclick="show('home')">Avontuur verlaten</button></section><section id="results" class="screen"><div class="intro"><div style="font-size:60px">🏆</div><h2>Avontuur voltooid!</h2><p class="muted">Goed gedaan! Dit zijn je demoresultaten.</p></div><div class="grid"><div class="card"><div class="muted">Bestemmingen</div><div class="stat" id="resultStops">3</div></div><div class="card"><div class="muted">XP verdiend</div><div class="stat" id="resultXp">+150</div></div></div><div class="card"><h3>🌍 Blijf ontdekken</h3><p class="muted">De echte app onthoudt gevonden plekken en kiest de volgende keer zo veel mogelijk nieuwe bestemmingen.</p></div><button class="btn" onclick="show('home')">Terug naar hoofdmenu →</button><div style="height:9px"></div><button class="btn secondary" onclick="show('setup')">Nog een avontuur</button></section><section id="gps" class="screen"><button class="back" onclick="show('home')">← Terug</button><h2>📍 TRACXO GPS-test</h2><p class="muted">Test je echte locatie en afgelegde afstand. Dit is nog geen AI-route.</p><div class="card"><div class="row"><b>Locatiestatus</b><span id="gpsStatus" class="tag">Uit</span></div><div class="grid" style="margin-top:16px"><div><div class="muted">Afstand</div><div class="stat" id="gpsDistance">0 m</div></div><div><div class="muted">GPS-nauwkeurigheid</div><div class="stat" id="gpsAccuracy">—</div></div><div><div class="muted">Snelheid</div><div class="stat" id="gpsSpeed">—</div></div><div><div class="muted">Punten gemeten</div><div class="stat" id="gpsPoints">0</div></div></div><p class="muted small" id="gpsCoords">Nog geen locatie ontvangen.</p><button class="btn" id="gpsToggle" onclick="toggleGPS()">📍 GPS starten</button><button class="btn outline" style="margin-top:8px" onclick="resetGPS()">Afstand resetten</button></div><div class="card"><h3>🎯 GPS-bestemming testen</h3><p class="muted small">Zet je huidige plek als testbestemming. Loop daarna weg en keer terug: binnen ongeveer 30 meter herkent de app je aankomst. Dit is geen echte speurtochtbestemming.</p><button class="btn secondary" onclick="setGPSGoal()">Huidige plek als testbestemming</button><p class="muted small" id="gpsGoalText">Nog geen testbestemming ingesteld.</p></div><div class="notice" id="gpsInfo">GPS werkt via HTTPS (zoals GitHub Pages) of localhost. Geef je browser locatietoestemming. Houd de pagina open; op de achtergrond kan je telefoon de meting pauzeren. Test niet terwijl je aan het verkeer deelneemt.</div><div class="foot">Je GPS-punten worden in deze test alleen in het geheugen van deze pagina bijgehouden en niet naar een TRACXO-server gestuurd. Locatie kan onnauwkeurig zijn.</div></section><section id="friends" class="screen"><h2>Vrienden</h2><p class="muted">Zoek spelers via hun unieke gebruikersnaam.</p><label>Gebruikersnaam zoeken</label><div class="row"><input id="friendName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addFriend()">Toevoegen</button></div><div class="section"><h2>Jouw vrienden</h2></div><div class="list" id="friendsList"><div class="item"><span>🟢 @nova</span><span class="tag">Vriend</span></div><div class="item"><span>🟢 @milo</span><span class="tag">Vriend</span></div></div><div class="notice">Dit is een lokale demo: vriendschapsverzoeken worden niet echt verstuurd.</div><div style="height:14px"></div><button class="btn secondary" onclick="show('setup')">Samen op avontuur →</button></section>
 <section id="battles" class="screen"><h2>TRACXO Battles ⚔️</h2><p class="muted">Daag vrienden uit. Elke battle duurt 14 dagen.</p><div class="card"><h3>Nieuwe battle</h3><label>Wie doet er mee?</label><div class="grid" id="opponents"><button class="option active" onclick="pick('opponents',this)">1 tegen 1</button><button class="option" onclick="pick('opponents',this)">Vriendengroep</button></div><label>Waar strijd je om?</label><div class="grid" id="battleType"><button class="option active" onclick="pick('battleType',this)">📍 Bestemmingen</button><button class="option" onclick="pick('battleType',this)">👟 Kilometers</button></div><label>Uitnodigen</label><input id="invite" placeholder="@vriend of groepsnaam"><p class="muted small">⏳ Duur: 14 dagen · winnaar ontvangt badge en bonus-XP</p><button class="btn" onclick="createBattle()">Battle aanmaken</button></div><div class="section"><h2>Actieve battles</h2></div><div class="list" id="battleList"><div class="item"><div><b>Jij vs @nova</b><div class="muted small">Bestemmingen · nog 9 dagen</div></div><span class="tag">3 – 2</span></div></div><div class="notice">Battle-uitnodigingen en scores zijn voorbeeldgegevens.</div></section>
@@ -75,12 +75,10 @@ window.addEventListener('pagehide',()=>{if(gpsWatch!==null)navigator.geolocation
 let routeMap,routeMarker,routeLine,routePins=[],routePos=null,routeBusy=false;
 const routeEl=id=>document.getElementById(id);
 
-const tracxoYouAreHereIcon = L.icon({
- iconUrl:'data:image/webp;base64,UklGRtoJAABXRUJQVlA4IM4JAADQNgCdASrxAA4BPp1OokwlpKMiJlb4YLATiWVu4XVRDNUdad3/03Kh8wxb4A/jP7TznfFR6WXmL83z0y+gB/XOpR9ADy2faC/c2xk9XvsTlkGV+/i1I1VmY75rueF643+IzqytmklT0DxmklT0DxmklT0DxmklT0DxmkKpZojnhn8s7nwGQ2N7k/+tF9O3S7X/p/xpU8WJiktcDCHzm90/1/6G1fdylBRwvAY5NjCVImeI7g2OA9RspJTfaOKJb5gGIJDtfd6DeQMYCx7/P6cdIS4i9pK/1PO5Thi4LxpU1+CCtkwp60aUMkMed26qHHFoxgjc7bDXHQnwG9YxiKkqeQnW+jXUX5zfh7+aDf0zU7s1JX92PENdQpxMB+Z15HD7MZV0FlvAqD2ciNbYnWva+E3t0ln0u/weXibq335gRYeY8axfYbk1g4FQ/v9dss86Vy8OONTuURtYPndnk3rr2YHjNJKXEbJ7ktdfpFZtC0+IuJCiytmfZIfJdPwg/VDZxNGHreBUP+MVpxtxMeVYoTwYpM/U9A8ZpJNfE/uPH/lQ4BgU9A8ZpJVI/ZpJU9A8ZpJU9A8ZpJU9A8ZpI2AA/v960AAAEVKyMzVGCRXntaTGv2zVB0N5sdZZ9tQcoxezfEKfXJBarrnuAuxga6MreKuLhLx5gK3TlDe8QONBdx1I8BWQqnKUrZfpECVFlcO7gb0vKGbsaywbHjvvE9Wuxv7K+7VtVPs6uTy9eMvNYeUwfUIlUFF7prfJ//iw97FYIjU4q9T/hGSuZN913OilGftGlXiSAsI/rou4Ulfk69TgWrrUmcPCELtRYfxk0I647doJA2XWfVzj92P6GlRcuefQK5Lv+WrsVCsX9o/aws/krgfj4+Tk3yBibYsHOUBXp387y6FdcUIVhGd4+nSt/re04ITj9bzIg8jMVRIMZ5D+mTbepj7AVXO43XkT3jELv88S90Tl7llfnJMmyyWQK9cryCLgznky9+7bm6iWmykkNxFDujrUt8B09JMUCcx435lPyzAJUHs/AIob3miZoXHCJ+cA23iSQBdloB7OXFJ/9zRFfHwJPPkreccDzv5+fPE+bF0u1NiJtJo8w7lU6aE64oe4D8NLa91iuH+CDkDvEhpl/6nRGJmH+//BGT7cjGdBENQaDapV8bI6iIDDtXbcg2OzHqSdNSkvgvQYxwRubyxeBNn2WXsXlhYXwupREphsfnpgTsS7ichziN9lGAXDC8RJOVGI22vYjA31n5Ud6K/NfofNzOoQdFCHlJ1iw//12Ve1V4nMOWQroMldAg3TrOEws5B+TqfnBEb7UJGl3mf7KMUREle0a4cUsVekG6T5MYNxTKADt6/pbNNF4E0nBaxOH0xWgVqUHeAKNT59nuteMRa2MYv273KZQA/t6ZX6462zgzAF+GC7gaCG/HdkjdXLFQZp5xVtCZ3LlNH9NezOzCfFdjBoiU5saJf04EkRf+iZLO6pH9bxgmW2xZyHRcfNE+qXgo+EvQ+5Dj7qwi5gDIIcGN4aWNBBJl7aCgrVR0dpnU05BFFXDB7ygs+1jzIFuPT9zIuZ7pqh5iJ9Aqp1D6BHnA3sFxIo/RZygmz/Ld7myTRIHW+7PFnudzCX+Xhb6OxejFj1+efYEDyhcopoVN2zj8KE4ZVU0QgAjbCw93/C792mDdWv4ZVz4lVfvCHMccz7Y/U+8TTz5k2wdYUuXL7BT2uMB6VKm/3EjETtmKVpOBfJ1RzHLaxedWWln/FXdbvf0S/9PnJ0FAelrR7U4AnVVGf1wyBdOGDE9wv8PRk1SKphePf2v2NPFsykUrrGXDxjkMhkiZtQxVnggZEbKX7n2EbGVD3OcVjT5ecTpuOinCd5rAOZpYiO7Sog9E/YFlMxa2GGDoEqfV3Qn5MDHkplzRnQEtSYZWd6RlkKkBmL8a49N0fgvAAYUiM/5c5Yrh+Fe8prvLqh4ntguTgFrk4K4321qp6RQ1kqkdrwFxveL9Vp7UrotCUPVE6qq2jx9frrC3rlUZdOlwfAd7WiRU5CyanlaaTYjqvjg0CuEUdFXtiYr9aU0Y6CnKCWNRHFBrGhMOvGtqWVxREywQ5owS7/GWg5116CnKEvOP2OP8CFs/i/fTbXhQXFi9Rq31bTWy6zTOI+joGfvJxcuO5xeFyW3s0w6O34n/pHW4Xtm6nWJIeYmJf9sSu/jxLIWGr/JSlQ+OQeAHM1ZI6Vsew1XS/xLhXZDOBAMh5e6+Uxvu0mY1HKoXxMxzn8ptW/Rbshi8hov1pvEY/xesknNCWB3tpssCn6fS99ppR1ky+EjXCn9L67BaIVbln45BhRYep7BDxF4OyGelwPtVvDnlnpJaWDEN+4iOZYn8dLwDxLuGtBAzJNCmHmZAVjl82CLBppIcedrWwYs2JkWHwFZ6RPltGE4qYnaaSSDi/T5ZARfT2B1ynTm9O1v32bW307AMYP9ldy3gmecQA5LHjs9HHRo39qwtjJtcYxktD3PInJG+GQGqrfqFD/44Ky5W/3tv9+eYJQvE/qQju/tMdt4VYumFL3qBQhk581csjZiFVZBdbF+KbjF7iNrdYLDhXvFFoIcJgvKEysYCaz/ap0Cd2zWLJeCKFgAeejOOgx7JBb8J8AIxns8tg5UAbm7B9kNH/S++zUsNnFkRqfEcV5rftGss7CQ6JpTpxNDglzUVRFvf439xn/einQsy6EW/W4mrAQ3xID+Gx02VWnmAnB1Aff2pE/2y+5X3SGvXQPQoPgn+rldRPhVABfLOuzMtdIug2HfL/ebDXJGCmFo4HTku/Dw0h7MlP3ZOK9ln9A2bfUkCBVJxIk8aCiYpXeCfftlx6kNWhimK2zAaowsMDQqiFryOqOHZBcetqHMMU6UkML4QN0UmnktDWbTC89vQQQ2BrYJXO1IMz6H9Lfzr/RR7dTHNG11b/f7AMIMwVIhatA95RoPkSKb+cmGYpqitSNf435RqMEm5u4AWdAVjryH9iTT1w7cZkNdX2RQn7MiU/t2uTlwXzA7AH9QRccY5xzErXApRlgtnBn1bh7HH5MZ4xNWMkK79gXf3t8S7gNUvWkMJNXR3gIJGCEOez3dV/ExCdjfiZZXleZov8LWtUkqB7jX3X0y05P9iZgvF1ZnUq9giYVRX3a9qQ+YdQgryXyu1Q06S7T+E68WzuwNel5pMVWyjrnxtkSDFDF6I1OautiraVrMGrpiVd6LOEkKB8vcrNsQoM39cCR/wA/DgywkaiFZvRleYAAPkxygROHoEEn5Ws2nAW15MEF1bqfS0wfVL1bRgWZ2qRMNxwayQKO/w7Nf+adceCS2BgCL5O1y6AVDPfvMAAAAAAAAA==',
- iconSize:[55,72],
- iconAnchor:[27,70],
- popupAnchor:[0,-66],
- className:'tracxo-you-are-here'
+const tracxoYouAreHereIcon = L.divIcon({
+ className:'tracxo-avatar-marker',
+ html:`<div style="position:relative;width:48px;height:54px;filter:drop-shadow(0 3px 5px #0004)"><div style="position:absolute;left:3px;top:1px;width:42px;height:42px;border-radius:50%;background:#fff;border:3px solid #1aaf64;display:grid;place-items:center;font-size:25px">🏃</div><div style="position:absolute;left:19px;top:41px;width:10px;height:10px;background:#1aaf64;transform:rotate(45deg)"></div></div>`,
+ iconSize:[48,54],iconAnchor:[24,52],popupAnchor:[0,-45]
 });
 
 function autoStopCount(){let km=parseInt(document.getElementById('distance').value,10);let bases=km<=2?[1,2]:km<=5?[2,4]:km<=10?[4,6]:km<=15?[5,8]:km<=20?[6,10]:[8,12];let density=selected('density');let ratio=density.includes('Rustig')?0:density.includes('Intensief')?1:.5;let count=Math.round(bases[0]+(bases[1]-bases[0])*ratio);if(selected('activity').includes('Hardlopen'))count=Math.max(1,Math.round(count*.55));return count}
@@ -101,130 +99,83 @@ function openRoutePlanner(){syncStops();show('routeplanner');setTimeout(()=>{if(
   }
   install();
 })()}
-if(!routeMap._tracxoClickBound){routeMap.on('click',e=>{if(manualRouteMode)planManualRoute(e.latlng)});routeMap._tracxoClickBound=true}
+
 routeMap.invalidateSize({pan:false});setTimeout(()=>routeMap&&routeMap.invalidateSize({pan:false}),350);setTimeout(()=>routeMap&&routeMap.invalidateSize({pan:false}),1100)},80)}
-function locateForRoute(){if(!window.isSecureContext){routeEl('routeStatus').textContent='GPS vereist HTTPS of localhost. Voor een lokaal bestand kan locatietoegang geblokkeerd zijn.';return}if(!navigator.geolocation){routeEl('routeStatus').textContent='Je browser ondersteunt geen GPS.';return}routeEl('routeGpsStatus').textContent='Zoeken…';navigator.geolocation.getCurrentPosition(p=>{routePos={lat:p.coords.latitude,lon:p.coords.longitude,accuracy:p.coords.accuracy};routeEl('routeGpsStatus').textContent='Locatie gevonden';routeEl('routeLocation').textContent='GPS-nauwkeurigheid ongeveer '+Math.round(p.coords.accuracy)+' meter';if(routeMap){if(routeMarker)routeMap.removeLayer(routeMarker);routeMarker=L.marker([routePos.lat,routePos.lon],{icon:tracxoYouAreHereIcon,zIndexOffset:1000}).addTo(routeMap).bindPopup('📍 Jij bent hier — GPS-startpunt');routeMap.invalidateSize({pan:false});routeMap.setView([routePos.lat,routePos.lon],14);setTimeout(()=>routeMap.invalidateSize({pan:false}),300)}routeEl('routeStatus').textContent='Locatie gevonden. Kies nu “Zoek bestemmingen en bereken route”.'},e=>{routeEl('routeGpsStatus').textContent='Niet beschikbaar';routeEl('routeStatus').textContent=e.code===1?'Locatietoegang geweigerd. Geef toestemming in je browser.':'Kon je locatie niet bepalen. Probeer buiten of op je telefoon.'},{enableHighAccuracy:true,timeout:20000,maximumAge:0})}
+function locateForRoute(){if(!window.isSecureContext){routeEl('routeStatus').textContent='GPS vereist HTTPS of localhost. Voor een lokaal bestand kan locatietoegang geblokkeerd zijn.';return}if(!navigator.geolocation){routeEl('routeStatus').textContent='Je browser ondersteunt geen GPS.';return}routeEl('routeGpsStatus').textContent='Zoeken…';navigator.geolocation.getCurrentPosition(p=>{routePos={lat:p.coords.latitude,lon:p.coords.longitude,accuracy:p.coords.accuracy};routeEl('routeGpsStatus').textContent='Locatie gevonden';routeEl('routeLocation').textContent='GPS-nauwkeurigheid ongeveer '+Math.round(p.coords.accuracy)+' meter';if(routeMap){if(routeMarker)routeMap.removeLayer(routeMarker);routeMarker=L.marker([routePos.lat,routePos.lon],{icon:tracxoYouAreHereIcon,zIndexOffset:1000}).addTo(routeMap).bindPopup('📍 Jij bent hier — GPS-startpunt');routeMap.invalidateSize({pan:false});routeMap.setView([routePos.lat,routePos.lon],14);setTimeout(()=>routeMap.invalidateSize({pan:false}),300)}routeEl('routeStatus').textContent='Locatie gevonden. Klik op de knop om een geheime route te zoeken.';},e=>{routeEl('routeGpsStatus').textContent='Niet beschikbaar';routeEl('routeStatus').textContent=e.code===1?'Locatietoegang geweigerd. Geef toestemming in je browser.':'Kon je locatie niet bepalen. Probeer buiten of op je telefoon.'},{enableHighAccuracy:true,timeout:20000,maximumAge:0})}
 function hav(a,b){const r=Math.PI/180,dlat=(b.lat-a.lat)*r,dlon=(b.lon-a.lon)*r,z=Math.sin(dlat/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dlon/2)**2;return 12742*Math.atan2(Math.sqrt(z),Math.sqrt(1-z))}
 async function fetchJson(url,opts={},ms=16000){const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),ms);try{const res=await fetch(url,{...opts,signal:ctrl.signal});if(!res.ok)throw Error('Kaartdienst antwoordde met '+res.status);return await res.json()}finally{clearTimeout(t)}}
 function clearRoute(){if(routeLine){routeMap.removeLayer(routeLine);routeLine=null}routePins.forEach(x=>routeMap.removeLayer(x));routePins=[];routeEl('routeStops').innerHTML='';routeEl('routeResult').innerHTML=''}
-// Versie 7.4: status per stap, timeouts en reserve-endpoints.
+// Versie 7.6: geheime GPS-checkpoints; route via eigen Worker, zonder Overpass.
+const TRACXO_ROUTER='https://tracxo-api.sohaba38.workers.dev/route';
 function routeProgress(message){routeEl('routeStatus').textContent=message}
-async function getNearbyPlaces(query){
- const endpoints=['https://overpass.private.coffee/api/interpreter','https://overpass.nchc.org.tw/api/interpreter','https://overpass-api.de/api/interpreter'];
- const failures=[];
- for(let i=0;i<endpoints.length;i++){
-  routeProgress('Stap 1/2: bestemmingen zoeken (kaartdienst '+(i+1)+'/'+endpoints.length+')…');
-  try{
-   const result=await fetchJson(endpoints[i],{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:'data='+encodeURIComponent(query)},10000);
-   if(!Array.isArray(result.elements))throw Error('ongeldig antwoord');
-   return result.elements;
-  }catch(err){failures.push((new URL(endpoints[i]).hostname)+': '+(err.name==='AbortError'?'time-out':err.message));}
- }
- throw Error('Automatisch zoeken is niet beschikbaar. Gebruik eventueel ‘Kies zelf een bestemming op de kaart’. '+failures.join(' | '));
-}
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
 async function getWalkingRoute(points){
- const coords=points.map(p=>p.lon+','+p.lat).join(';');
- const urls=['https://routing.openstreetmap.de/routed-foot/route/v1/driving/'+coords+'?overview=full&geometries=geojson&steps=false',
- 'https://router.project-osrm.org/route/v1/foot/'+coords+'?overview=full&geometries=geojson&steps=false'];
- let reasons=[];
- for(let i=0;i<urls.length;i++){
-  routeProgress('Stap 2/2: route over paden berekenen (poging '+(i+1)+'/'+urls.length+')…');
-  try{
-   let data=await fetchJson(urls[i],{},12000);
-   if(data.code==='Ok'&&data.routes?.[0]?.geometry?.coordinates?.length)return {route:data.routes[0],provider:i};
-   throw Error('geen route beschikbaar');
-  }catch(err){reasons.push(err.name==='AbortError'?'time-out':err.message)}
- }
- throw Error('Geen route via de openbare routeproviders ('+reasons.join('; ')+').');
-}
-
-let manualRouteMode=false,manualRoutePin=null,manualRouteTarget=null;
-function toggleManualRoute(){
- if(!routeMap){routeProgress('Open eerst de kaart.');return}
- manualRouteMode=!manualRouteMode;
- routeEl('manualRouteToggle').textContent=manualRouteMode?'Annuleer kaartselectie':'📍 Kies zelf een bestemming op de kaart';
- routeProgress(manualRouteMode?'Tik op een plek op de kaart om een route ernaartoe te proberen.':'Handmatige kaartselectie gestopt.');
-}
-async function planManualRoute(latlng){
- if(!routePos){routeProgress('Haal eerst je GPS-locatie op.');return}
- if(routeBusy)return;
- manualRouteMode=false;
- routeEl('manualRouteToggle').textContent='📍 Kies zelf een bestemming op de kaart';
- clearRoute();
- if(manualRoutePin){routeMap.removeLayer(manualRoutePin);manualRoutePin=null}
- manualRouteTarget={lat:latlng.lat,lon:latlng.lng,name:'Zelf gekozen bestemming'};
- manualRoutePin=L.marker([latlng.lat,latlng.lng]).addTo(routeMap).bindPopup('Zelf gekozen bestemming');
- routeBusy=true;
+ if(points.length!==2)throw Error('Deze versie ondersteunt routeberekening tussen twee punten.');
+ const [a,b]=points;
+ const url=new URL(TRACXO_ROUTER);
+ url.searchParams.set('startLat',a.lat);url.searchParams.set('startLon',a.lon);
+ url.searchParams.set('endLat',b.lat);url.searchParams.set('endLon',b.lon);
+ const ctrl=new AbortController();const timer=setTimeout(()=>ctrl.abort(),18000);
  try{
-  routeProgress('Route naar jouw gekozen bestemming berekenen…');
-  const round=selected('route').includes('Rond');
-  const result=await getWalkingRoute([routePos,manualRouteTarget,...(round?[routePos]:[])]);
-  routeLine=L.geoJSON(result.route.geometry,{style:{color:'#2cab65',weight:5,opacity:.9}}).addTo(routeMap);
-  routeMap.fitBounds(routeLine.getBounds().pad(.15));
-  const km=parseFloat(document.getElementById('distance').value);
-  const actual=result.route.distance/1000;
-  const fmt=n=>n.toFixed(1).replace('.',',');
-  routeEl('routeResult').innerHTML='<b>Route naar zelf gekozen bestemming</b><p>'+fmt(actual)+' km berekend · '+(round?'Retour':'Enkele reis')+'</p>';
-  routeProgress(actual>=km*.9&&actual<=km*1.1?'✓ De berekende afstand valt binnen je marge van ±10%.':'⚠️ De route is '+fmt(actual)+' km, buiten je gewenste '+fmt(km*.9)+'–'+fmt(km*1.1)+' km. Dit is een alternatief.');
- }catch(e){routeProgress('❌ De routeberekening is niet bereikbaar: '+e.message+'. De gekozen plek blijft zichtbaar op de kaart.')}
- finally{routeBusy=false}
+  const response=await fetch(url,{signal:ctrl.signal});
+  const data=await response.json();
+  if(!response.ok)throw Error(data.details||data.error||'HTTP '+response.status);
+  const feature=data.features?.[0];
+  if(!feature?.geometry?.coordinates?.length||!Number.isFinite(feature.properties?.summary?.distance))throw Error('Geen geldige route teruggekregen.');
+  return {geometry:feature.geometry,distance:feature.properties.summary.distance};
+ }finally{clearTimeout(timer)}
 }
-
+function pointAt(lat,lon,bearing,km){
+ const rad=Math.PI/180,R=6371,ang=km/R,phi=lat*rad,lam=lon*rad,theta=bearing*rad;
+ const lat2=Math.asin(Math.sin(phi)*Math.cos(ang)+Math.cos(phi)*Math.sin(ang)*Math.cos(theta));
+ const lon2=lam+Math.atan2(Math.sin(theta)*Math.sin(ang)*Math.cos(phi),Math.cos(ang)-Math.sin(phi)*Math.sin(lat2));
+ return {lat:lat2/rad,lon:lon2/rad};
+}
+function compassDirection(a,b){
+ const deg=(Math.atan2((b.lon-a.lon)*Math.cos(a.lat*Math.PI/180),b.lat-a.lat)*180/Math.PI+360)%360;
+ return ['noord','noordoost','oost','zuidoost','zuid','zuidwest','west','noordwest'][Math.round(deg/45)%8];
+}
 async function planRoute(){
  if(routeBusy)return;
- if(!routePos){routeProgress('Haal eerst je locatie op.');return}
- if(!routeMap){routeProgress('Kaart nog niet geladen.');return}
+ if(!routePos){routeProgress('Haal eerst je GPS-locatie op.');return}
+ if(!routeMap){routeProgress('De kaart is nog niet geladen.');return}
  routeBusy=true;
  const btn=document.querySelector('button[onclick="planRoute()"]');
- if(btn){btn.disabled=true;btn.textContent='⏳ Route wordt gezocht…'}
+ if(btn){btn.disabled=true;btn.textContent='⏳ Verrassingsroute zoeken…'}
  clearRoute();
  try{
-  const km=parseInt(document.getElementById('distance').value,10),target=autoStopCount();
-  const round=selected('route').includes('Rond'),run=selected('activity').includes('Hardlopen');
-  const radius=Math.min(8000,Math.max(900,km*450));
-  const lat=routePos.lat,lon=routePos.lon;
-  const q='[out:json][timeout:12];(nwr(around:'+radius+','+lat+','+lon+')[tourism=attraction];nwr(around:'+radius+','+lat+','+lon+')[historic=memorial];nwr(around:'+radius+','+lat+','+lon+')[leisure=park];nwr(around:'+radius+','+lat+','+lon+')[amenity=place_of_worship];nwr(around:'+radius+','+lat+','+lon+')[waterway=lock_gate];nwr(around:'+radius+','+lat+','+lon+')[man_made=pier];);out center 100;';
-  let elements=await getNearbyPlaces(q);
-  let spots=elements.map(x=>({lat:x.lat??x.center?.lat,lon:x.lon??x.center?.lon,name:x.tags?.name||'Ontdekplek',osmId:x.type+'/'+x.id})).filter(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lon)&&hav(routePos,x)>.15&&hav(routePos,x)<Math.max(.6,km*.52));
-  const seen=new Set();spots=spots.filter(x=>{const k=x.lat.toFixed(3)+'|'+x.lon.toFixed(3);if(seen.has(k))return false;seen.add(k);return true});
-  if(!spots.length)throw Error('Geen geschikte bestemmingen in dit gebied gevonden. Kies een langere afstand of een andere startlocatie.');
-  let history=[];try{history=JSON.parse(localStorage.getItem('tracxo_real_route_places')||'[]')}catch{}
-  spots.sort((a,b)=>(history.includes(a.osmId)?1:0)-(history.includes(b.osmId)?1:0));
-  // Probeer enkele verschillende bestemmingssets; kies de route die de richtafstand het best benadert.
-  let best=null;const attempts=Math.min(3,spots.length);
-  for(let attempt=0;attempt<attempts;attempt++){
-   let chosen=[],current=routePos,available=spots.slice();
-   const count=Math.min(target,available.length,8);
-   for(let i=0;i<count;i++){
-    const desired=km/(count+(round?1:0))*(.7+i*.08);
-    available.sort((a,b)=>Math.abs(hav(current,a)-desired)-Math.abs(hav(current,b)-desired));
-    const candidateIndex=Math.min(i===0?attempt:0,available.length-1);
-    const next=available.splice(candidateIndex,1)[0];
-    if(!next||chosen.some(c=>hav(c,next)<.13))continue;
-    chosen.push(next);current=next;
-   }
-   if(!chosen.length)continue;
+  const km=Number(document.getElementById('distance').value);
+  const round=selected('route').includes('Rond');
+  const run=selected('activity').includes('Hardlopen');
+  // De huidige API ondersteunt 2 punten. Retourroutes volgen daarom hetzelfde traject terug.
+  const targetLeg=round?km/2:km;
+  const bearings=[0,45,90,135,180,225,270,315].sort(()=>Math.random()-.5);
+  let best=null,errors=[];
+  for(let i=0;i<bearings.length;i++){
+   const radius=targetLeg*(i%3===0?.65:i%3===1?.8:.95);
+   const target=pointAt(routePos.lat,routePos.lon,bearings[i],radius);
+   routeProgress('Geheime route zoeken: poging '+(i+1)+'/'+bearings.length+'…');
    try{
-    routeProgress('Stap 2/2: routevariant '+(attempt+1)+'/'+attempts+' berekenen…');
-    const result=await getWalkingRoute([routePos,...chosen,...(round?[routePos]:[])]);
-    const actual=result.route.distance/1000;
-    if(!best||Math.abs(actual-km)<Math.abs(best.actual-km))best={chosen,actual,geometry:result.route.geometry,provider:result.provider};
+    const leg=await getWalkingRoute([routePos,target]);
+    const actual=leg.distance/1000*(round?2:1);
+    if(!best||Math.abs(actual-km)<Math.abs(best.actual-km))best={actual,target,geometry:leg.geometry};
     if(Math.abs(actual-km)<=km*.1)break;
-   }catch(err){if(!best&&attempt===attempts-1)throw err}
+   }catch(e){errors.push(e.message)}
   }
-  if(!best)throw Error('Geen bruikbare route gevonden.');
-  routeLine=L.geoJSON(best.geometry,{style:{color:'#2cab65',weight:5,opacity:.9}}).addTo(routeMap);
-  best.chosen.forEach((x,i)=>{
-   routePins.push(L.marker([x.lat,x.lon]).addTo(routeMap).bindPopup((i+1)+'. '+escapeHTML(x.name)));
-   const item=document.createElement('div');item.className='item';item.textContent=(i+1)+'. '+x.name;routeEl('routeStops').appendChild(item);
-  });
-  routeMap.invalidateSize({pan:false});routeMap.fitBounds(routeLine.getBounds().pad(.12));
+  if(!best)throw Error('De routeprovider gaf geen bruikbare route terug. '+[...new Set(errors)].slice(0,2).join('; '));
   const fmt=n=>n.toFixed(1).replace('.',',');
-  routeEl('routeResult').innerHTML='<div class="row"><b>Berekende route</b><span class="tag">'+fmt(best.actual)+' km</span></div><p class="muted small">'+best.chosen.length+' bestemmingen · '+(round?'Rondwandeling':'Enkele reis')+' · '+(run?'Hardlopen':'Wandelen')+'</p>';
-  const low=km*.9,high=km*1.1;
-  routeProgress(best.actual<low||best.actual>high?'⚠️ Beste gevonden route: '+fmt(best.actual)+' km. Dat valt buiten je gewenste '+fmt(low)+'–'+fmt(high)+' km. We tonen dit als alternatief, niet als passende route.':'✓ Route van '+fmt(best.actual)+' km gevonden binnen je gewenste marge. Controleer paden en verkeerssituatie vóór vertrek.');
-  try{localStorage.setItem('tracxo_real_route_places',JSON.stringify([...new Set([...history,...best.chosen.map(x=>x.osmId)])].slice(-300)))}catch{}
- }catch(err){routeProgress('❌ '+(err.name==='AbortError'?'De dienst reageerde niet op tijd.':err.message)+' Probeer later opnieuw of test via GitHub Pages (HTTPS).');}
+  const matches=Math.abs(best.actual-km)<=km*.1;
+  // Bewaar de route, maar toon de lijn en het eindpunt niet: anders is de verrassing weg.
+  window.tracxoSecretRoute={...best,round,createdAt:Date.now()};
+  routeMap.setView([routePos.lat,routePos.lon],14);
+  const direction=compassDirection(routePos,best.target);
+  const type=round?'heen en terug via hetzelfde pad':'enkele reis';
+  routeEl('routeResult').innerHTML='<div class="row"><b>🧭 Jouw geheime avontuur</b><span class="tag">'+fmt(best.actual)+' km</span></div>'+
+   '<p class="muted small">'+(run?'Hardlopen':'Wandelen')+' · '+type+'</p>'+
+   '<div class="item"><span>🔎 Eerste hint: ga richting <b>'+direction+'</b>.</span></div>'+
+   '<p class="muted small">De eindbestemming en de route blijven verborgen. Deze test heeft nog geen live navigatie of GPS-aankomstcontrole.</p>';
+  routeProgress(matches?'✓ Een route binnen ±10% gevonden. De bestemming blijft geheim.':'⚠️ Beste route is '+fmt(best.actual)+' km; buiten je gewenste '+fmt(km*.9)+'–'+fmt(km*1.1)+' km. Niet starten als je strikt binnen de marge wilt blijven.');
+ }catch(err){routeProgress('❌ '+(err.name==='AbortError'?'De routeprovider reageerde niet op tijd.':err.message))}
  finally{routeBusy=false;if(btn){btn.disabled=false;btn.textContent='🧭 Zoek bestemmingen en bereken route'}}
 }
 </script></body></html>
