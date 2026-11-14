@@ -1,4 +1,4 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.1.1 — Studio Online</title><style>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.1.3 — Online & Typen</title><style>
 :root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#173026;background:#eaf0eb}*{box-sizing:border-box}body{margin:0}.app{max-width:470px;min-height:100vh;margin:auto;background:#f7faf7;padding:22px 19px 90px;box-shadow:0 0 40px #203b2610}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.brand{font-size:29px;font-weight:950;letter-spacing:-2px;font-style:italic}.brand span{color:#39b86c}.muted{color:#748579;font-size:13px}.avatar{background:#e4f5e9;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;font-weight:800;color:#2c9856}.hero{background:#173e2b;color:white;border-radius:23px;padding:24px;margin-bottom:14px;position:relative;overflow:hidden}.hero:after{content:"⌖";font-size:140px;position:absolute;right:-12px;top:-40px;color:#ffffff12}.hero h1{font-size:26px;line-height:1.13;margin:13px 0}.hero p{font-size:13px;color:#d0e5d7;max-width:260px}.pill{display:inline-block;border-radius:99px;background:#ffffff25;color:white;padding:6px 11px;font-size:11px;font-weight:700}.btn{border:0;background:#43c678;color:#10321f;border-radius:13px;padding:14px 16px;font-weight:800;cursor:pointer;width:100%;font-size:14px}.btn:active{transform:scale(.99)}.btn.secondary{background:#e3f2e8;color:#17603a}.btn.outline{background:white;border:1px solid #d9e7dd;color:#235a39}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{background:white;border:1px solid #e8eee9;border-radius:19px;padding:17px;margin-bottom:12px}.stat{font-size:25px;font-weight:850;margin:7px 0 2px}.section{display:flex;align-items:center;justify-content:space-between;margin:21px 0 11px}.section h2{font-size:18px;margin:0}.tabs{display:flex;gap:6px;background:#e8f0e9;padding:5px;border-radius:14px;margin:12px 0}.tabs button{flex:1;border:0;border-radius:10px;background:transparent;padding:11px 5px;font-size:12px;font-weight:750;color:#61796a;cursor:pointer}.tabs button.active{background:white;color:#188448;box-shadow:0 1px 5px #173b2010}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);max-width:470px;width:100%;background:white;border-top:1px solid #e7eee9;display:flex;justify-content:space-around;padding:10px 2px 13px;z-index:10}.nav button{border:0;background:none;color:#87978c;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:5px;flex-direction:column}.nav button.active{color:#219a54;font-weight:800}.nav b{font-size:21px}.screen{display:none}.screen.active{display:block}label{font-size:13px;font-weight:750;display:block;margin:16px 0 8px}input,select{width:100%;padding:13px;border:1px solid #dbe8df;border-radius:12px;background:white;font:inherit;color:#173026}.option{border:1px solid #dce9df;background:white;padding:13px;border-radius:12px;cursor:pointer;font-weight:700;font-size:13px;text-align:center}.option.active{background:#e1f6e8;border-color:#37b76b;color:#177840}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.list{display:flex;flex-direction:column;gap:10px}.item{padding:14px;background:white;border:1px solid #e6eee8;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.small{font-size:12px}.tag{font-size:11px;background:#e6f6ec;color:#25814b;padding:5px 9px;border-radius:50px;font-weight:800}.notice{background:#e8f6ec;color:#276744;border-radius:12px;padding:13px;font-size:12px;line-height:1.5;margin-top:12px}.progress{height:8px;background:#e5efe7;border-radius:9px;overflow:hidden}.progress>div{background:#48c67a;height:100%;width:26%}h3{margin:4px 0 8px}.back{border:0;background:none;color:#278c4d;font-weight:800;padding:0 0 15px;cursor:pointer}.toggle{display:flex;gap:8px;flex-wrap:wrap}.toggle button{flex:1;min-width:90px}.foot{font-size:11px;color:#829286;text-align:center;margin-top:20px}</style><style>
 .splash{position:fixed;inset:0;z-index:40;background:#f7faf7;display:grid;place-items:center;transition:opacity .5s}.splash.hide{opacity:0;pointer-events:none}.splash-inner{text-align:center}.splash-logo{font-size:50px;font-weight:950;font-style:italic;letter-spacing:-3px;animation:reveal 2.4s both}.splash-logo em{color:#39b86c;font-style:inherit}.runner{font-size:42px;display:block;animation:dash 2.4s ease-in-out both}@keyframes dash{0%{transform:translateX(-135px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(140px);opacity:0}}@keyframes reveal{0%,30%{opacity:0;transform:translateY(8px)}70%,100%{opacity:1;transform:translateY(0)}}
 .demo-banner{font-size:11px;text-align:center;color:#5c8069;background:#e5f4e9;border-radius:9px;padding:8px;margin:-8px 0 16px}.map-sim{background:linear-gradient(130deg,#e7f2e9 0 23%,#d7e9dc 23% 26%,#edf5ed 26% 52%,#d7e9dc 52% 55%,#e5f2e8 55%);height:170px;border-radius:18px;position:relative;overflow:hidden;border:1px solid #dceadd}.map-sim:before{content:'· · · · · · · · · · · ·';position:absolute;top:60px;left:14px;transform:rotate(-15deg);font-size:25px;color:#4bbf79;letter-spacing:7px}.pin{position:absolute;top:44%;left:65%;font-size:32px}.sim-big{font-size:36px;font-weight:850}.audio-card{background:#173e2b;color:white;border-radius:20px;padding:20px;margin:14px 0}.audio-card p{color:#d7eee0;line-height:1.6}.smallbtn{width:auto;padding:10px 13px}.intro{padding:20px 0 12px;text-align:center}.intro .logo{font-size:46px;font-weight:950;font-style:italic;letter-spacing:-3px}.intro .logo span{color:#39b86c}.intro h2{font-size:27px}.hidden{display:none!important}
@@ -192,12 +192,27 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
 .tx-group-option{background:#fff;border:1px solid #e3ebe3;padding:12px;border-radius:12px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700}
 .tx-group-option input{width:auto}
 @media(max-width:390px){#friends .list .item{gap:8px}#friends .list .item button{padding:8px;font-size:11px}}
-</style></head><body><div class="splash" id="splash"><div class="splash-inner"><div class="tracxo-mark" aria-hidden="true"><i></i><span></span></div><div class="splash-logo">TRAC<span>X</span>O</div><div class="splash-tag">MOVE. DISCOVER. REPEAT.</div></div></div><div id="liveAdventure" aria-label="Live avontuur kaart">
+</style>
+<style id="tracxo913PresenceStyle">
+.tx-typing-indicator{font-size:12px!important;color:#488b3c!important;font-weight:750;margin:9px 0 0;display:flex;align-items:center;gap:7px}
+.tx-typing-indicator::before{content:"";height:7px;width:7px;border-radius:50%;background:#87bf39;box-shadow:0 0 0 4px #eaf4de;display:inline-block}
+.tx-presence-tag{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:650;color:#839184;margin-top:4px}
+.tx-presence-tag::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:#a6b1aa}
+.tx-presence-tag[data-presence="online"]{color:#327c4b}.tx-presence-tag[data-presence="online"]::before{background:#47b870;box-shadow:0 0 0 3px #e4f5e6}
+.tx-presence-tag[data-presence="offline"]{color:#89948b}.tx-presence-tag[data-presence="offline"]::before{background:#abb5ac}
+.tx-presence-tag[data-presence="unknown"]{color:#ab7637}.tx-presence-tag[data-presence="unknown"]::before{background:#e2b879}
+#tracxoConversationMembers.tx-person-status{display:flex;gap:6px;align-items:center}
+#tracxoConversationMembers.tx-person-status::before{content:"";width:8px;height:8px;border-radius:50%;background:#a6b1aa}
+#tracxoConversationMembers.tx-person-status[data-presence="online"]{color:#367748}
+#tracxoConversationMembers.tx-person-status[data-presence="online"]::before{background:#47b870;box-shadow:0 0 0 3px #e4f5e6}
+#tracxoConversationMembers.tx-person-status[data-presence="unknown"]{color:#a17b47}
+</style>
+</head><body><div class="splash" id="splash"><div class="splash-inner"><div class="tracxo-mark" aria-hidden="true"><i></i><span></span></div><div class="splash-logo">TRAC<span>X</span>O</div><div class="splash-tag">MOVE. DISCOVER. REPEAT.</div></div></div><div id="liveAdventure" aria-label="Live avontuur kaart">
 <div class="liveHeader"><div><div class="liveBrand">TRAC<b>X</b>O <span style="font-size:12px">LIVE</span></div><div class="liveStatus" id="liveStatus">GPS wordt gezocht…</div></div><div style="display:flex;gap:6px;align-items:center"><button type="button" onclick="closeLiveMap()" style="border:0;background:#e6f1e9;border-radius:10px;padding:10px;font-weight:700">← Terug</button><button type="button" onclick="finishTrackedAdventure()" style="border:0;background:#ffe4e4;color:#8a2222;border-radius:10px;padding:10px;font-weight:700">■ Beëindigen</button></div></div>
 <div class="liveMapWrap"><div id="liveMap"></div><div class="liveCompassBadge" aria-label="Kompas"><div class="fixedRose" aria-hidden="true"><span class="roseN">N</span><span class="roseO">O</span><span class="roseZ">Z</span><span class="roseW">W</span><span class="rosePointer">▲</span><span class="roseDot"></span></div></div><div class="liveHintBubble" role="status" aria-live="polite"><div class="liveHintTitle">💬 TRACXO HINT</div><div class="liveHintText" id="liveHintText">Je eerste hint verschijnt zodra je avontuur begint.</div><button id="liveSpeakHint" type="button" onclick="speakLiveHint()" style="margin-top:9px;background:#dcf9c5;color:#174b17;border:0;border-radius:10px;padding:9px 12px;font-weight:800">🔊 Spreek hint uit</button><div id="liveVoiceStatus" style="font-size:11px;margin-top:5px;color:#45624a" aria-live="polite"></div></div><div class="liveArrowBox" style="left:12px;top:12px;transform:none;min-width:0;pointer-events:auto"><div style="font-weight:800" id="liveDirection">Telefoonrichting zoeken…</div><div class="liveArrowNote">Pijl op je foto = telefoonrichting, geen afslagadvies</div><button id="headingEnable" onclick="enableCompass()" style="margin-top:7px;border:0;border-radius:8px;background:#daf3e4;padding:7px 10px;font-weight:700">🧭 Kompas activeren</button></div></div>
 <div class="liveHud"><div class="liveMetrics"><div class="liveMetric"><strong id="liveTime">00:00:00</strong><span>TIJD</span></div><div class="liveMetric"><strong id="liveDistance">0,00</strong><span>AFSTAND (KM)</span></div><div class="liveMetric"><strong id="liveSpeed">0,0</strong><span>SNELHEID (KM/U)</span></div></div><div class="liveControls"><button id="livePause" onclick="toggleTrackedPause()">⏸ Pauzeren</button><button onclick="finishTrackedAdventure()">🏁 Afronden</button></div><div class="liveFoot" id="liveFoot">Volg alleen toegankelijke en veilige paden. GPS kan afwijken.</div></div></div><div id="tracxoStartOverlay" role="status" aria-live="polite" aria-label="Start avontuur"><div class="tracxoStartPanel"><div class="tracxoStartBrand">⌖ TRAC<span>X</span>O</div><div class="tracxoStartGlyph" id="tracxoStartGlyph">🧭</div><h2 id="tracxoStartTitle">Jouw avontuur wordt voorbereid</h2><p id="tracxoStartMessage">We zoeken je locatie en een geheime route.</p><div class="tracxoStartProgress" id="tracxoStartProgress"><div></div></div><div id="tracxoStartNumber" aria-hidden="true"></div><p class="tracxoStartSafety">Kijk onderweg op de weg, niet op je scherm.</p></div></div><div class="app">
 <header class="top"><div><div class="muted">ONTDEK MEER. ELKE DAG.</div><div class="brand">TRAC<span>X</span>O <span style="font-size:20px">⌖</span></div></div><div class="avatar" id="avatar" onclick="show('profile')" title="Profielfoto aanpassen" style="overflow:hidden;cursor:pointer">S</div></header>
-<div class="demo-banner">● TRACXO 9.1.2 TEST · Beveiligde online chats · Routes lokaal</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.1.2 test: accounts, vrienden en berichten via Supabase. GPS-routes blijven lokaal.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
+<div class="demo-banner">● TRACXO 9.1.3 TEST · Online-status & typindicatie · Routes lokaal</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.1.3 test: online vrienden, chats en typindicatie via Supabase. GPS-routes blijven lokaal.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
 <section id="setup" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('home')">← Terug</button><div class="setupHeading"><div class="setupSymbol">✦</div><div><h2>Jouw avontuur</h2><p>Stel je speurtocht samen</p></div></div><p class="muted small setupIntro">Kies wat bij je past. TRACXO regelt de verrassingen.</p><div class="setupGroup" data-setup="Activiteit"><div class="setupGroupHead"><span>Activiteit</span><small>Hoe ga je op pad?</small></div><div class="grid" id="activity"><button class="option active" onclick="pick('activity',this)">🚶 Wandelen</button><button class="option" onclick="pick('activity',this)">🏃 Hardlopen</button><button class="option" onclick="pick('activity',this)">🚴 Fietsen</button></div></div><div class="setupGroup" data-setup="Afstand"><div class="setupGroupHead"><span>Afstand</span><small>Hoe ver wil je gaan?</small></div><select id="distance"><option>2 km</option><option>5 km</option><option>10 km</option><option>15 km</option><option>20 km</option><option>30 km</option><option>40 km</option><option>50 km</option></select></div><div class="setupGroup" data-setup="Moeilijkheid"><div class="setupGroupHead"><span>Moeilijkheid</span><small>Hoe vaak wil je een hint?</small></div><div class="grid" id="difficulty" style="grid-template-columns:repeat(3,1fr)"><button class="option active" onclick="pick('difficulty',this)">Vaak</button><button class="option" onclick="pick('difficulty',this)">Redelijk</button><button class="option" onclick="pick('difficulty',this)">Amper</button></div></div><div class="setupGroup" data-setup="Bestemmingen"><div class="setupGroupHead"><span>Bestemmingen</span><small>Hoeveel plekken wil je ontdekken?</small></div><div class="grid" id="density" style="grid-template-columns:repeat(3,1fr)"><button class="option" onclick="pick('density',this)">Rustig aan</button><button class="option active" onclick="pick('density',this)">Iets meer</button><button class="option" onclick="pick('density',this)">Speurder</button></div><p class="muted small" id="densityInfo">TRACXO bepaalt automatisch het aantal stops op basis van afstand en activiteit.</p></div><select id="stops" style="display:none"><option selected>3</option></select><div class="setupGroup" data-setup="Routetype"><div class="setupGroupHead"><span>Routetype</span><small>Hoe wil je eindigen?</small></div><div class="grid" id="route"><button class="option active" onclick="pick('route',this)">🔁 Rondwandeling</button><button class="option" onclick="pick('route',this)">➡️ Enkele reis</button></div></div><div class="setupGroup" data-setup="Speelmodus"><div class="setupGroupHead"><span>Speelmodus</span><small>Met wie ga je op avontuur?</small></div><div class="grid" id="play"><button class="option active" onclick="pick('play',this)">👤 Solo</button><button class="option" onclick="pick('play',this)">👥 Samen met vrienden</button></div></div><div id="teamNote" class="notice" style="display:none">Samen spelen: voorstel +20% XP, maar 25% minder optionele hints. De eerste richtinghint blijft altijd beschikbaar. Je maakt straks een groepslobby.</div><div style="height:17px"></div><button class="btn" id="autoAdventureStart" onclick="autoStartAdventure()">▶ Start avontuur</button><p id="autoAdventureStatus" class="muted small" aria-live="polite" style="margin-top:10px">TRACXO zoekt na Start automatisch een geheime route en opent daarna de live kaart.</p></section>
 <section id="routeplanner" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('setup')">← Terug naar avontuur</button><h2>Jouw verrassingsroute</h2><p class="muted">TRACXO zoekt automatisch een echte, beschreven plek in de buurt en berekent een wandel- of fietsroute. Je krijgt alleen een richtinghint, niet het eindpunt. Richtafstand ±10%; geen gegarandeerd veilige route.</p><div class="card"><div class="row"><b>GPS & kaart</b><span class="tag" id="routeGpsStatus">Nog niet gestart</span></div><p class="muted small" id="routeLocation">GPS wordt automatisch aangevraagd zodra je de routeplanner opent.</p><button class="btn secondary" id="routeLocate" onclick="locateForRoute()">📍 GPS opnieuw proberen</button><div style="height:9px"></div><p class="muted small">De route wordt automatisch gezocht wanneer je op Start avontuur drukt.</p></div><div id="routeMap" style="height:330px;border-radius:17px;border:1px solid #dbe7df;background:#e6f1e9;margin-bottom:13px"></div><div class="card"><h3>Routegegevens</h3><p class="muted small">De gekozen afstand is een richtafstand. TRACXO streeft naar ±10% en toont afwijkingen eerlijk.</p><div id="routeStatus" class="muted small" aria-live="polite">Open deze pagina met internet en HTTPS voor GPS en kaartdiensten.</div><div id="routeResult" style="margin-top:12px"></div><div id="routeStops" class="list" style="margin-top:12px"></div></div><div class="card" id="routeActivityActions" style="display:none"><h3>🚴 Actieve activiteit</h3><p class="muted small">Je activiteit loopt door wanneer je de kaart verbergt, zolang iOS GPS-updates toestaat.</p><button class="btn" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><div style="height:9px"></div><button class="btn outline" style="color:#a12727" onclick="finishTrackedAdventure()">■ <span id="routeEndLabel">Activiteit beëindigen</span></button></div><div id="activityTracker" class="card" style="display:none"><div class="row"><h3>🏃 Jouw activiteit</h3><span id="trackState" class="tag">Klaar om te starten</span></div><div class="grid" style="margin:14px 0"><div><div class="muted">Tijd</div><div id="trackTime" class="stat" style="font-variant-numeric:tabular-nums">00:00:00</div></div><div><div class="muted">Afgelegd</div><div id="trackDistance" class="stat">0,00 km</div></div><div><div class="muted">Gemiddeld tempo</div><div id="trackPace" class="stat" style="font-size:20px">—</div></div><div><div class="muted">GPS-nauwkeurigheid</div><div id="trackAccuracy" class="stat" style="font-size:20px">—</div></div></div><p class="muted small" id="trackMessage">Druk op Start als je klaar bent om te vertrekken.</p><button class="btn" id="trackStart" onclick="startTrackedAdventure()">▶ Start avontuur</button><div class="grid" style="margin-top:9px"><button class="btn secondary" id="trackPause" onclick="toggleTrackedPause()" disabled>⏸ Pauzeren</button><button class="btn outline" id="trackFinish" onclick="finishTrackedAdventure()" disabled>🏁 Afronden</button></div><p class="muted small" style="margin-top:12px">GPS meet de werkelijk afgelegde afstand, niet de geplande afstand. Houd deze pagina open en je scherm actief; metingen op de achtergrond zijn niet gegarandeerd.</p></div><div class="notice">⚠️ Kaart via Esri/OpenTopoMap; wandelroutes via de TRACXO Cloudflare Worker en OpenRouteService. Bestemmingen komen uit geografisch beschreven Wikipedia-plekken; niet elke haven, brug of dorpsplek staat in die databron. Als er geen geschikte plek wordt gevonden, meldt TRACXO dat eerlijk. De route is voor de verrassing niet vooraf zichtbaar. Controleer zelf paden en verkeerssituaties. GPS kan onnauwkeurig zijn. Geen automatische XP in deze test.</div></section><section id="lobby" class="screen"><button class="back" onclick="show('setup')">← Terug naar instellingen</button><h2>👥 Groepsavontuur</h2><p class="muted">Samen wandelen of hardlopen met dezelfde bestemmingen en hints.</p><div class="card"><h3>Jouw groepscode</h3><div class="row"><strong id="lobbyCode" style="font-size:28px;letter-spacing:4px">TRX482</strong><button class="btn secondary" style="width:105px" onclick="copyCode()">Kopieer</button></div><p class="muted small">Deel de code met je vrienden. In deze demo werkt de code alleen als voorbeeld op dit apparaat.</p></div><div class="card"><div class="row"><h3>Deelnemers</h3><span class="tag" id="participantCount">1 / 6</span></div><div class="list" id="participants"><div class="item"><span>👑 Jij (groepsleider)</span><span class="tag">Klaar ✓</span></div></div><label>Vriend toevoegen (demo)</label><div class="row"><input id="participantName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addParticipant()">Voeg toe</button></div><p class="muted small">Hiermee simuleer je dat een vriend meedoet; er wordt nog geen echte verbinding gemaakt.</p></div><div class="card"><h3>Of aansluiten bij een groep</h3><div class="row"><input id="joinCode" placeholder="Bijv. TRX482" maxlength="8"><button class="btn secondary" style="width:105px" onclick="joinGroup()">Join</button></div><p class="muted small">In de demo kun je de eigen groepscode uitproberen.</p></div><div class="notice">🎁 Groepsbonus: +20% XP en 25% minder optionele hints. De eerste richtinghint blijft beschikbaar. Echte synchronisatie volgt in een latere versie.</div><div style="height:15px"></div><button class="btn" onclick="preview()">Groepsavontuur bekijken →</button></section>
 
@@ -230,7 +245,7 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
   <div id="tracxoChatList" class="list" aria-live="polite"></div>
   <button id="tracxoNewGroupBtn" class="btn" type="button" onclick="openGroupCreator()" style="margin-top:15px">Nieuwe groep maken</button>
   <p id="tracxoChatStatus" class="tx-info" role="status" aria-live="polite">Inloggen om berichten te zien.</p>
-  <p class="tx-info">Berichten staan online en zijn alleen zichtbaar voor leden van het gesprek. Ze worden tijdens het openen automatisch vernieuwd; pushmeldingen zijn nog niet beschikbaar.</p>
+  <p class="tx-info">Berichten staan online en zijn alleen zichtbaar voor leden van het gesprek. Online-status en typindicatie verversen tijdens het chatten; pushmeldingen zijn nog niet beschikbaar.</p>
 </section>
 <section id="groupCreator" class="screen"><button class="back" onclick="show('chats')">← Terug naar berichten</button>
   <div class="tx-pagehead"><div><span class="tx-eyebrow">SAMEN ONTDEKKEN</span><h2>Nieuwe groepschat</h2><p>Voeg vrienden toe en maak een online gesprek.</p></div></div>
@@ -238,7 +253,7 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
   <p id="tracxoGroupError" class="tx-info" role="alert"></p><button class="btn" type="button" onclick="createLocalGroup()">Groep aanmaken</button></div>
 </section>
 <section id="chatRoom" class="screen"><button class="back" onclick="show('chats')">← Alle berichten</button>
-  <div class="tx-chat-header"><h2 id="tracxoConversationTitle">Gesprek</h2><p id="tracxoConversationMembers">Online chat</p></div>
+  <div class="tx-chat-header"><h2 id="tracxoConversationTitle">Gesprek</h2><p id="tracxoConversationMembers">Online chat</p><p id="tracxoTypingIndicator" class="tx-typing-indicator" role="status" aria-live="polite" style="display:none"></p></div>
   <div id="tracxoMessages" class="tracxoMessages tx-messages" role="log" aria-live="polite" aria-label="Chatberichten"></div>
   <div class="tracxoCompose tx-composer"><textarea id="tracxoMessageInput" maxlength="2000" rows="2" placeholder="Schrijf een bericht…" aria-label="Nieuw bericht"></textarea><button type="button" onclick="sendLocalChatMessage()">Verstuur</button></div>
   <p id="tracxoConversationStatus" class="tx-info" role="status" aria-live="polite">Berichten worden veilig via Supabase verstuurd.</p>
@@ -1135,6 +1150,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
    if(window.tracxoTrack?.mode==='running'){alert('Rond eerst je actieve activiteit af voordat je uitlogt.');return}
    if(!confirm('Uitloggen bij TRACXO op dit apparaat?'))return;
    if(!sb){note('Geen verbinding met de inlogdienst. Herlaad de pagina.',true);return}
+   try{await window.tracxoPresence?.setOffline?.()}catch(e){}
    const {error}=await sb.auth.signOut();
    if(error){alert('Uitloggen mislukt: '+error.message);return}
    leaveApp();
@@ -1279,6 +1295,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
      if(r.status==='accepted'){
        accepted++;
        item(friends,nameOf(partner(r,user.id)),'Verbonden Runner',[{label:'Bericht',fn:()=>window.tracxoOpenDMWith?.(partner(r,user.id))},{label:'Verwijderen',outline:true,fn:()=>remove(r.id,nameOf(partner(r,user.id)))}]);
+       friends.lastElementChild.dataset.tracxoFriendId=partner(r,user.id);
      }else if(r.status==='pending'&&r.receiver_id===user.id){
        incoming++;
        item(received,'📨 '+nameOf(r.sender_id),'Wil vrienden worden',[
@@ -1295,6 +1312,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
    empty(received,'Geen nieuwe vriendschapsverzoeken.');
    empty(sent,'Geen verzonden verzoeken.');
    status('✅ Gesynchroniseerd: '+accepted+' vrienden, '+incoming+' ontvangen en '+outgoing+' verzonden verzoek(en).');
+   window.tracxoPresence?.refreshNow?.();
  }
  async function lookup(){
    const u=me(),sb=api(),box=el('tracxoFriendSearchResult');
@@ -1406,7 +1424,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
      if(seq!==state.refreshSeq||me()?.id!==who.id)return;
      if(!res.error)state.handles=new Map((res.data||[]).map(r=>[r.runner_id,r.username]));
    }
-   renderList();msg('tracxoChatStatus','Gesynchroniseerd met TRACXO.');
+   renderList();msg('tracxoChatStatus','Gesynchroniseerd met TRACXO.');window.tracxoPresence?.refreshNow?.();
  }
  function renderList(){
    const box=e('tracxoChatList');if(!box)return;box.replaceChildren();refreshLabel();
@@ -1416,6 +1434,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
      const row=node('button','item');row.type='button';row.style.width='100%';row.style.textAlign='left';row.style.cursor='pointer';
      const avatar=node('span','tx-person',c.kind==='group'?'G':conversationName(c).replace('@','').charAt(0).toUpperCase());
      const body=node('span','');body.style.flex='1';body.append(node('b','',conversationName(c)),node('div','tx-sub',c.kind==='group'?membersOf(c.id).length+' leden':'Privégesprek'));
+     if(c.kind==='direct'){const peer=membersOf(c.id).find(m=>m.runner_id!==me()?.id);if(peer){row.dataset.tracxoPeerId=peer.runner_id;body.append(node('div','tx-presence-tag','Status laden…'));}}
      row.append(avatar,body,node('span','', '›'));row.addEventListener('click',()=>{void openChat(c.id)});box.append(row);
    }
  }
@@ -1427,7 +1446,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
    state.active=id;e('tracxoConversationTitle').textContent=conversationName(c);
    const m=membersOf(id);
    e('tracxoConversationMembers').textContent=c.kind==='group'?m.map(x=>displayName(x.runner_id)).join(' · '):'Online privégesprek';
-   show('chatRoom');await loadMessages();
+   show('chatRoom');window.tracxoPresence?.chatOpened?.();await loadMessages();
  }
  async function loadMessages(){
    const chatId=state.active,uid=me()?.id,sb=api(),seq=++state.messagesSeq;
@@ -1455,7 +1474,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
    try{
      const {error}=await sb.rpc('tracxo_send_chat_message',{p_chat_id:state.active,p_body:body});
      if(error)throw error;
-     input.value='';await loadMessages();
+     input.value='';window.tracxoPresence?.stopTyping?.();await loadMessages();
    }catch(x){msg('tracxoConversationStatus',err(x),true)}finally{state.busy=false}
  }
  async function acceptedFriendIds(){
@@ -1506,6 +1525,7 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
      e('tracxoGroupName').value='';state.tab='groups';await loadChats();await openChat(id);
    }catch(x){msg('tracxoGroupError',err(x),true)}
  }
+ window.tracxoPresenceChatContext=()=>{const c=currentChat();return c&&state.active?{chatId:state.active,kind:c.kind,members:membersOf(state.active).map(m=>m.runner_id),names:Object.fromEntries(membersOf(state.active).map(m=>[m.runner_id,displayName(m.runner_id)]))}:null};
  function clearOnLogout(){state.active=null;state.chats=[];state.members=[];state.handles.clear();++state.refreshSeq;++state.messagesSeq}
  const previousShow=show;
  show=function(page){
@@ -1529,4 +1549,165 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
    else if(e('friends')?.classList.contains('active'))window.refreshOnlineFriends?.();
  },12000);
 })();
-</script></body></html>
+</script><script id="tracxo913Presence">
+/* TRACXO 9.1.3: Presence & typing. Authenticated RPC writes; RLS-protected reads.
+   Uses one per-tab session so two devices don't accidentally mark each other offline.
+   Typing text stays local; only chat ID and a short-lived typing flag are sent.
+   Snapshot every 2s in a chat; 8s on lists. No public realtime channels. */
+(function(){
+ 'use strict';
+ const el=id=>document.getElementById(id);
+ const client=()=>window.tracxoCloud?.client?.();
+ const user=()=>window.tracxoCloud?.user?.();
+ const chat=()=>window.tracxoPresenceChatContext?.();
+ const MAX_ONLINE_AGE=65000, PRESENCE_PULSE_MS=20000, TYPING_VALID_MS=4500;
+ let sessionId=null,registeredUser=null,latest=new Map(),loading=false,available=null;
+ let lastPingAt=0,lastTypingPing=0,lastKeystroke=0,typing=false,stopTimer=null,inFlight=false;
+ let refreshTimer=0,unavailableMessage='',lastWarning=0;
+ function session(){
+   if(sessionId)return sessionId;
+   try{
+     const key='tracxo913_presence_tab:'+user()?.id;
+     const candidate=sessionStorage.getItem(key);
+     if(candidate && /^[0-9a-f-]{36}$/i.test(candidate))sessionId=candidate;
+     else {sessionId=crypto.randomUUID();sessionStorage.setItem(key,sessionId)}
+   }catch(_){if(!sessionId&&crypto?.randomUUID)sessionId=crypto.randomUUID()}
+   return sessionId;
+ }
+ function activePage(){return document.querySelector('.screen.active')?.id||''}
+ function idsToFetch(){
+   const me=user()?.id;if(!me)return [];
+   const page=activePage(),result=[];
+   if(page==='chatRoom'){
+     const c=chat();if(c)result.push(...c.members.filter(id=>id!==me));
+   }else if(page==='chats'){
+     document.querySelectorAll('#tracxoChatList [data-tracxo-peer-id]').forEach(n=>result.push(n.dataset.tracxoPeerId));
+   }else if(page==='friends'){
+     document.querySelectorAll('#friendsList [data-tracxo-friend-id]').forEach(n=>result.push(n.dataset.tracxoFriendId));
+   }
+   return [...new Set(result.filter(Boolean))].slice(0,100);
+ }
+ function isTypingHere(){return typing&&activePage()==='chatRoom'&&!document.hidden&&!!chat()?.chatId&&(Date.now()-lastKeystroke)<2700}
+ async function pulse(online=true,typingChat=null){
+   const sb=client(),u=user(),sid=session();if(!sb||!u||!sid)return;
+   if(inFlight && online)return;
+   inFlight=true;
+   try{
+     const data=await sb.rpc('tracxo_presence_ping',{p_session_id:sid,p_chat_id:typingChat,p_online:online});
+     if(data.error)throw data.error;
+     available=true;unavailableMessage='';lastPingAt=Date.now();
+   }catch(err){
+     available=false;
+     unavailableMessage='Online-status niet beschikbaar. Controleer of de SQL-update van 9.1.3 is uitgevoerd.';
+     if(Date.now()-lastWarning>30000){console.warn('TRACXO presence:',err?.message||err);lastWarning=Date.now()}
+     draw();
+   }finally{inFlight=false}
+ }
+ function statusFor(uid){
+   if(available===false)return 'unknown';
+   if(available===null)return 'loading';
+   const rows=latest.get(uid)||[];
+   return rows.some(x=>Date.now()-new Date(x.last_seen_at).getTime() <MAX_ONLINE_AGE && Date.now()>=new Date(x.last_seen_at).getTime()-20000)?'online':'offline';
+ }
+ function nameFor(uid,c){return c?.names?.[uid]||'Een Runner'}
+ function draw(){
+   document.querySelectorAll('#friendsList [data-tracxo-friend-id]').forEach(row=>{
+     let badge=row.querySelector('.tx-presence-tag');
+     if(!badge){badge=document.createElement('div');badge.className='tx-presence-tag';row.querySelector('div')?.append(badge)}
+     const s=statusFor(row.dataset.tracxoFriendId);badge.dataset.presence=s;
+     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Status laden…';
+   });
+   document.querySelectorAll('#tracxoChatList [data-tracxo-peer-id]').forEach(row=>{
+     const badge=row.querySelector('.tx-presence-tag');if(!badge)return;
+     const s=statusFor(row.dataset.tracxoPeerId);badge.dataset.presence=s;
+     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Status laden…';
+   });
+   const c=chat(),p=el('tracxoConversationMembers'),ind=el('tracxoTypingIndicator');
+   if(!p||!ind)return;
+   if(activePage()!=='chatRoom'||!c){ind.style.display='none';p.classList.remove('tx-person-status');return}
+   if(c.kind==='direct'){
+     const peer=c.members.find(id=>id!==user()?.id);const s=peer?statusFor(peer):'unknown';
+     p.classList.add('tx-person-status');p.dataset.presence=s;
+     p.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Online-status laden…';
+   }else{
+     p.classList.remove('tx-person-status');p.removeAttribute('data-presence');p.textContent=c.members.length+' deelnemers';
+   }
+   const typingPeople=c.members.filter(id=>id!==user()?.id).filter(uid=>(latest.get(uid)||[]).some(r=>
+     r.typing_chat_id===c.chatId&&r.typing_until&&new Date(r.typing_until).getTime()>Date.now()
+     &&Date.now()-new Date(r.last_seen_at).getTime()<MAX_ONLINE_AGE));
+   if(typingPeople.length){
+     const names=typingPeople.slice(0,2).map(id=>nameFor(id,c)).join(' en ');
+     ind.textContent=names+(typingPeople.length>2?' en anderen':'')+(typingPeople.length===1?' is':' zijn')+' aan het typen…';ind.style.display='flex';
+   }else ind.style.display='none';
+   const w=el('tracxoOnlineFriendStatus');
+   if(w&&available===false&&activePage()==='friends'){w.textContent=unavailableMessage;w.style.color='#aa593b'}
+ }
+ async function fetchNow(){
+   if(document.hidden||loading||!user()||!client())return;
+   const ids=idsToFetch();
+   if(!ids.length){latest=new Map();draw();return}
+   loading=true;
+   const account=user().id;
+   try{
+     const cutoff=new Date(Date.now()-MAX_ONLINE_AGE).toISOString();
+     const {data,error}=await client().from('runner_presence_sessions')
+       .select('runner_id,last_seen_at,typing_chat_id,typing_until')
+       .in('runner_id',ids).gt('last_seen_at',cutoff).limit(600);
+     if(error)throw error;
+     if(user()?.id!==account)return;
+     available=true;unavailableMessage='';
+     const map=new Map();for(const row of data||[]){if(!map.has(row.runner_id))map.set(row.runner_id,[]);map.get(row.runner_id).push(row)}
+     latest=map;
+   }catch(err){available=false;unavailableMessage='Online-status niet beschikbaar. Voer eerst de TRACXO 9.1.3 SQL-update uit.';
+     if(Date.now()-lastWarning>30000){console.warn('TRACXO status:',err?.message||err);lastWarning=Date.now()}
+   }finally{loading=false;draw()}
+ }
+ async function activate(){
+   const u=user();if(!u){if(registeredUser){registeredUser=null;latest.clear();available=null;typing=false;draw()}return}
+   if(registeredUser!==u.id){registeredUser=u.id;sessionId=null;available=null;latest.clear();lastPingAt=0;typing=false;void pulse(true,null)}
+   if(document.hidden)return;
+   if(Date.now()-lastPingAt>PRESENCE_PULSE_MS && !inFlight)void pulse(true,isTypingHere()?chat().chatId:null);
+ }
+ function keypress(){
+   if(!user()||document.hidden||activePage()!=='chatRoom'||!chat()?.chatId)return;
+   const input=el('tracxoMessageInput');if(!input||!input.value.trim()){stopTyping();return}
+   lastKeystroke=Date.now();typing=true;
+   if(stopTimer)clearTimeout(stopTimer);
+   stopTimer=setTimeout(stopTyping,2300);
+   if(Date.now()-lastTypingPing>1200){lastTypingPing=Date.now();void pulse(true,chat().chatId)}
+ }
+ function stopTyping(){
+   const wasTyping=typing;typing=false;
+   if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
+   if(wasTyping&&user()&&!document.hidden){lastTypingPing=Date.now();void pulse(true,null)}
+ }
+ function chatOpened(){stopTyping();latest.clear();draw();void fetchNow()}
+ function pageChanged(page){
+   if(page!=='chatRoom')stopTyping();
+   if(page==='welcome'){registeredUser=null;typing=false;latest.clear();available=null;draw()}
+   if(['friends','chats','chatRoom'].includes(page)){draw();void activate().then(fetchNow)}
+ }
+ // Don't accidentally restore an offline session when the browser tab is hidden.
+ document.addEventListener('visibilitychange',()=>{
+   if(document.hidden){typing=false;clearTimeout(stopTimer);void pulse(false,null)}
+   else{lastPingAt=0;void activate();void fetchNow()}
+ });
+ el('tracxoMessageInput')?.addEventListener('input',keypress);
+ el('tracxoMessageInput')?.addEventListener('blur',stopTyping);
+ // App logout confirms before calling auth.signOut. Best-effort offline update before that call.
+ window.tracxoPresence=Object.freeze({refreshNow:()=>void fetchNow(),chatOpened,stopTyping,setOffline:()=>pulse(false,null)});
+ const oldShow=show;
+ show=function(page){oldShow(page);pageChanged(page)};
+ setInterval(()=>{void activate()},2500);
+ setInterval(()=>{
+   if(document.hidden||!user())return;
+   const page=activePage();if(page==='chatRoom'){
+     if(typing&&(Date.now()-lastKeystroke)>2700)stopTyping();
+     void fetchNow();
+   }
+ },2000);
+ setInterval(()=>{if(!document.hidden&&['chats','friends'].includes(activePage()))void fetchNow()},8000);
+ void activate();
+})();
+</script>
+</body></html>
