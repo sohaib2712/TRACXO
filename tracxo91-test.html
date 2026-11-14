@@ -1,4 +1,4 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.1.3 — Online & Typen</title><style>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.1.4 — Online & Typen</title><style>
 :root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#173026;background:#eaf0eb}*{box-sizing:border-box}body{margin:0}.app{max-width:470px;min-height:100vh;margin:auto;background:#f7faf7;padding:22px 19px 90px;box-shadow:0 0 40px #203b2610}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.brand{font-size:29px;font-weight:950;letter-spacing:-2px;font-style:italic}.brand span{color:#39b86c}.muted{color:#748579;font-size:13px}.avatar{background:#e4f5e9;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;font-weight:800;color:#2c9856}.hero{background:#173e2b;color:white;border-radius:23px;padding:24px;margin-bottom:14px;position:relative;overflow:hidden}.hero:after{content:"⌖";font-size:140px;position:absolute;right:-12px;top:-40px;color:#ffffff12}.hero h1{font-size:26px;line-height:1.13;margin:13px 0}.hero p{font-size:13px;color:#d0e5d7;max-width:260px}.pill{display:inline-block;border-radius:99px;background:#ffffff25;color:white;padding:6px 11px;font-size:11px;font-weight:700}.btn{border:0;background:#43c678;color:#10321f;border-radius:13px;padding:14px 16px;font-weight:800;cursor:pointer;width:100%;font-size:14px}.btn:active{transform:scale(.99)}.btn.secondary{background:#e3f2e8;color:#17603a}.btn.outline{background:white;border:1px solid #d9e7dd;color:#235a39}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{background:white;border:1px solid #e8eee9;border-radius:19px;padding:17px;margin-bottom:12px}.stat{font-size:25px;font-weight:850;margin:7px 0 2px}.section{display:flex;align-items:center;justify-content:space-between;margin:21px 0 11px}.section h2{font-size:18px;margin:0}.tabs{display:flex;gap:6px;background:#e8f0e9;padding:5px;border-radius:14px;margin:12px 0}.tabs button{flex:1;border:0;border-radius:10px;background:transparent;padding:11px 5px;font-size:12px;font-weight:750;color:#61796a;cursor:pointer}.tabs button.active{background:white;color:#188448;box-shadow:0 1px 5px #173b2010}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);max-width:470px;width:100%;background:white;border-top:1px solid #e7eee9;display:flex;justify-content:space-around;padding:10px 2px 13px;z-index:10}.nav button{border:0;background:none;color:#87978c;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:5px;flex-direction:column}.nav button.active{color:#219a54;font-weight:800}.nav b{font-size:21px}.screen{display:none}.screen.active{display:block}label{font-size:13px;font-weight:750;display:block;margin:16px 0 8px}input,select{width:100%;padding:13px;border:1px solid #dbe8df;border-radius:12px;background:white;font:inherit;color:#173026}.option{border:1px solid #dce9df;background:white;padding:13px;border-radius:12px;cursor:pointer;font-weight:700;font-size:13px;text-align:center}.option.active{background:#e1f6e8;border-color:#37b76b;color:#177840}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.list{display:flex;flex-direction:column;gap:10px}.item{padding:14px;background:white;border:1px solid #e6eee8;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.small{font-size:12px}.tag{font-size:11px;background:#e6f6ec;color:#25814b;padding:5px 9px;border-radius:50px;font-weight:800}.notice{background:#e8f6ec;color:#276744;border-radius:12px;padding:13px;font-size:12px;line-height:1.5;margin-top:12px}.progress{height:8px;background:#e5efe7;border-radius:9px;overflow:hidden}.progress>div{background:#48c67a;height:100%;width:26%}h3{margin:4px 0 8px}.back{border:0;background:none;color:#278c4d;font-weight:800;padding:0 0 15px;cursor:pointer}.toggle{display:flex;gap:8px;flex-wrap:wrap}.toggle button{flex:1;min-width:90px}.foot{font-size:11px;color:#829286;text-align:center;margin-top:20px}</style><style>
 .splash{position:fixed;inset:0;z-index:40;background:#f7faf7;display:grid;place-items:center;transition:opacity .5s}.splash.hide{opacity:0;pointer-events:none}.splash-inner{text-align:center}.splash-logo{font-size:50px;font-weight:950;font-style:italic;letter-spacing:-3px;animation:reveal 2.4s both}.splash-logo em{color:#39b86c;font-style:inherit}.runner{font-size:42px;display:block;animation:dash 2.4s ease-in-out both}@keyframes dash{0%{transform:translateX(-135px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(140px);opacity:0}}@keyframes reveal{0%,30%{opacity:0;transform:translateY(8px)}70%,100%{opacity:1;transform:translateY(0)}}
 .demo-banner{font-size:11px;text-align:center;color:#5c8069;background:#e5f4e9;border-radius:9px;padding:8px;margin:-8px 0 16px}.map-sim{background:linear-gradient(130deg,#e7f2e9 0 23%,#d7e9dc 23% 26%,#edf5ed 26% 52%,#d7e9dc 52% 55%,#e5f2e8 55%);height:170px;border-radius:18px;position:relative;overflow:hidden;border:1px solid #dceadd}.map-sim:before{content:'· · · · · · · · · · · ·';position:absolute;top:60px;left:14px;transform:rotate(-15deg);font-size:25px;color:#4bbf79;letter-spacing:7px}.pin{position:absolute;top:44%;left:65%;font-size:32px}.sim-big{font-size:36px;font-weight:850}.audio-card{background:#173e2b;color:white;border-radius:20px;padding:20px;margin:14px 0}.audio-card p{color:#d7eee0;line-height:1.6}.smallbtn{width:auto;padding:10px 13px}.intro{padding:20px 0 12px;text-align:center}.intro .logo{font-size:46px;font-weight:950;font-style:italic;letter-spacing:-3px}.intro .logo span{color:#39b86c}.intro h2{font-size:27px}.hidden{display:none!important}
@@ -207,12 +207,34 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
 #tracxoConversationMembers.tx-person-status[data-presence="online"]::before{background:#47b870;box-shadow:0 0 0 3px #e4f5e6}
 #tracxoConversationMembers.tx-person-status[data-presence="unknown"]{color:#a17b47}
 </style>
+
+<style id="tracxo914-styles">
+/* Berichten, sortering en ingetogen meldingtellers. */
+#mainNav button[data-page="chats"]{position:relative}
+.tx-nav-unread{position:absolute;top:-6px;left:calc(50% + 5px);display:grid;place-items:center;min-width:19px;height:19px;padding:0 5px;border-radius:99px;background:#c63e38;color:white;font-size:10px;line-height:1;font-weight:850;border:2px solid white;font-variant-numeric:tabular-nums}
+.tx-nav-unread[hidden]{display:none!important}
+.tx-nav-chat-name{display:block}
+.tx-inbox-label{font-size:10px;letter-spacing:1.5px;color:#8a9a8b;font-weight:850;margin:7px 0 16px}
+#tracxoChatList{display:flex;flex-direction:column;gap:9px}
+#tracxoChatList .tx-inbox-row{padding:14px;gap:12px;width:100%;text-align:left;cursor:pointer;border-radius:16px;min-height:74px}
+#tracxoChatList .tx-inbox-row.tx-unread{border-color:#c9dfb3;background:#fafff7}
+.tx-inbox-body{min-width:0;flex:1;display:block;overflow:hidden}
+.tx-inbox-head{display:flex;gap:8px;justify-content:space-between;align-items:center;margin-bottom:4px}
+.tx-inbox-head b{font-size:14px;color:#17352a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tx-inbox-time{font-size:10px;color:#89978b;flex:none}
+.tx-inbox-preview{color:#849088;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.tx-inbox-row.tx-unread .tx-inbox-preview{color:#39513e;font-weight:750}
+.tx-inbox-unread-count{flex:none;display:grid;place-items:center;min-width:24px;height:24px;padding:1px 6px;border-radius:13px;background:#b9ed4b;color:#153225;font-weight:900;font-size:11px;font-variant-numeric:tabular-nums}
+.tx-inbox-row .tx-presence-tag{margin-top:5px}
+#tracxoPresenceDiagnostics{font-size:11px;margin:12px 0 4px;overflow-wrap:anywhere}
+@media(max-width:380px){#tracxoChatList .tx-inbox-row{padding:11px;gap:9px}.tx-inbox-head b{font-size:13px}}
+</style>
 </head><body><div class="splash" id="splash"><div class="splash-inner"><div class="tracxo-mark" aria-hidden="true"><i></i><span></span></div><div class="splash-logo">TRAC<span>X</span>O</div><div class="splash-tag">MOVE. DISCOVER. REPEAT.</div></div></div><div id="liveAdventure" aria-label="Live avontuur kaart">
 <div class="liveHeader"><div><div class="liveBrand">TRAC<b>X</b>O <span style="font-size:12px">LIVE</span></div><div class="liveStatus" id="liveStatus">GPS wordt gezocht…</div></div><div style="display:flex;gap:6px;align-items:center"><button type="button" onclick="closeLiveMap()" style="border:0;background:#e6f1e9;border-radius:10px;padding:10px;font-weight:700">← Terug</button><button type="button" onclick="finishTrackedAdventure()" style="border:0;background:#ffe4e4;color:#8a2222;border-radius:10px;padding:10px;font-weight:700">■ Beëindigen</button></div></div>
 <div class="liveMapWrap"><div id="liveMap"></div><div class="liveCompassBadge" aria-label="Kompas"><div class="fixedRose" aria-hidden="true"><span class="roseN">N</span><span class="roseO">O</span><span class="roseZ">Z</span><span class="roseW">W</span><span class="rosePointer">▲</span><span class="roseDot"></span></div></div><div class="liveHintBubble" role="status" aria-live="polite"><div class="liveHintTitle">💬 TRACXO HINT</div><div class="liveHintText" id="liveHintText">Je eerste hint verschijnt zodra je avontuur begint.</div><button id="liveSpeakHint" type="button" onclick="speakLiveHint()" style="margin-top:9px;background:#dcf9c5;color:#174b17;border:0;border-radius:10px;padding:9px 12px;font-weight:800">🔊 Spreek hint uit</button><div id="liveVoiceStatus" style="font-size:11px;margin-top:5px;color:#45624a" aria-live="polite"></div></div><div class="liveArrowBox" style="left:12px;top:12px;transform:none;min-width:0;pointer-events:auto"><div style="font-weight:800" id="liveDirection">Telefoonrichting zoeken…</div><div class="liveArrowNote">Pijl op je foto = telefoonrichting, geen afslagadvies</div><button id="headingEnable" onclick="enableCompass()" style="margin-top:7px;border:0;border-radius:8px;background:#daf3e4;padding:7px 10px;font-weight:700">🧭 Kompas activeren</button></div></div>
 <div class="liveHud"><div class="liveMetrics"><div class="liveMetric"><strong id="liveTime">00:00:00</strong><span>TIJD</span></div><div class="liveMetric"><strong id="liveDistance">0,00</strong><span>AFSTAND (KM)</span></div><div class="liveMetric"><strong id="liveSpeed">0,0</strong><span>SNELHEID (KM/U)</span></div></div><div class="liveControls"><button id="livePause" onclick="toggleTrackedPause()">⏸ Pauzeren</button><button onclick="finishTrackedAdventure()">🏁 Afronden</button></div><div class="liveFoot" id="liveFoot">Volg alleen toegankelijke en veilige paden. GPS kan afwijken.</div></div></div><div id="tracxoStartOverlay" role="status" aria-live="polite" aria-label="Start avontuur"><div class="tracxoStartPanel"><div class="tracxoStartBrand">⌖ TRAC<span>X</span>O</div><div class="tracxoStartGlyph" id="tracxoStartGlyph">🧭</div><h2 id="tracxoStartTitle">Jouw avontuur wordt voorbereid</h2><p id="tracxoStartMessage">We zoeken je locatie en een geheime route.</p><div class="tracxoStartProgress" id="tracxoStartProgress"><div></div></div><div id="tracxoStartNumber" aria-hidden="true"></div><p class="tracxoStartSafety">Kijk onderweg op de weg, niet op je scherm.</p></div></div><div class="app">
 <header class="top"><div><div class="muted">ONTDEK MEER. ELKE DAG.</div><div class="brand">TRAC<span>X</span>O <span style="font-size:20px">⌖</span></div></div><div class="avatar" id="avatar" onclick="show('profile')" title="Profielfoto aanpassen" style="overflow:hidden;cursor:pointer">S</div></header>
-<div class="demo-banner">● TRACXO 9.1.3 TEST · Online-status & typindicatie · Routes lokaal</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.1.3 test: online vrienden, chats en typindicatie via Supabase. GPS-routes blijven lokaal.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
+<div class="demo-banner">● TRACXO 9.1.4 TEST · Online chats & meldingen · Routes lokaal</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.1.4 test: online vrienden, chats en typindicatie via Supabase. GPS-routes blijven lokaal.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
 <section id="setup" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('home')">← Terug</button><div class="setupHeading"><div class="setupSymbol">✦</div><div><h2>Jouw avontuur</h2><p>Stel je speurtocht samen</p></div></div><p class="muted small setupIntro">Kies wat bij je past. TRACXO regelt de verrassingen.</p><div class="setupGroup" data-setup="Activiteit"><div class="setupGroupHead"><span>Activiteit</span><small>Hoe ga je op pad?</small></div><div class="grid" id="activity"><button class="option active" onclick="pick('activity',this)">🚶 Wandelen</button><button class="option" onclick="pick('activity',this)">🏃 Hardlopen</button><button class="option" onclick="pick('activity',this)">🚴 Fietsen</button></div></div><div class="setupGroup" data-setup="Afstand"><div class="setupGroupHead"><span>Afstand</span><small>Hoe ver wil je gaan?</small></div><select id="distance"><option>2 km</option><option>5 km</option><option>10 km</option><option>15 km</option><option>20 km</option><option>30 km</option><option>40 km</option><option>50 km</option></select></div><div class="setupGroup" data-setup="Moeilijkheid"><div class="setupGroupHead"><span>Moeilijkheid</span><small>Hoe vaak wil je een hint?</small></div><div class="grid" id="difficulty" style="grid-template-columns:repeat(3,1fr)"><button class="option active" onclick="pick('difficulty',this)">Vaak</button><button class="option" onclick="pick('difficulty',this)">Redelijk</button><button class="option" onclick="pick('difficulty',this)">Amper</button></div></div><div class="setupGroup" data-setup="Bestemmingen"><div class="setupGroupHead"><span>Bestemmingen</span><small>Hoeveel plekken wil je ontdekken?</small></div><div class="grid" id="density" style="grid-template-columns:repeat(3,1fr)"><button class="option" onclick="pick('density',this)">Rustig aan</button><button class="option active" onclick="pick('density',this)">Iets meer</button><button class="option" onclick="pick('density',this)">Speurder</button></div><p class="muted small" id="densityInfo">TRACXO bepaalt automatisch het aantal stops op basis van afstand en activiteit.</p></div><select id="stops" style="display:none"><option selected>3</option></select><div class="setupGroup" data-setup="Routetype"><div class="setupGroupHead"><span>Routetype</span><small>Hoe wil je eindigen?</small></div><div class="grid" id="route"><button class="option active" onclick="pick('route',this)">🔁 Rondwandeling</button><button class="option" onclick="pick('route',this)">➡️ Enkele reis</button></div></div><div class="setupGroup" data-setup="Speelmodus"><div class="setupGroupHead"><span>Speelmodus</span><small>Met wie ga je op avontuur?</small></div><div class="grid" id="play"><button class="option active" onclick="pick('play',this)">👤 Solo</button><button class="option" onclick="pick('play',this)">👥 Samen met vrienden</button></div></div><div id="teamNote" class="notice" style="display:none">Samen spelen: voorstel +20% XP, maar 25% minder optionele hints. De eerste richtinghint blijft altijd beschikbaar. Je maakt straks een groepslobby.</div><div style="height:17px"></div><button class="btn" id="autoAdventureStart" onclick="autoStartAdventure()">▶ Start avontuur</button><p id="autoAdventureStatus" class="muted small" aria-live="polite" style="margin-top:10px">TRACXO zoekt na Start automatisch een geheime route en opent daarna de live kaart.</p></section>
 <section id="routeplanner" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('setup')">← Terug naar avontuur</button><h2>Jouw verrassingsroute</h2><p class="muted">TRACXO zoekt automatisch een echte, beschreven plek in de buurt en berekent een wandel- of fietsroute. Je krijgt alleen een richtinghint, niet het eindpunt. Richtafstand ±10%; geen gegarandeerd veilige route.</p><div class="card"><div class="row"><b>GPS & kaart</b><span class="tag" id="routeGpsStatus">Nog niet gestart</span></div><p class="muted small" id="routeLocation">GPS wordt automatisch aangevraagd zodra je de routeplanner opent.</p><button class="btn secondary" id="routeLocate" onclick="locateForRoute()">📍 GPS opnieuw proberen</button><div style="height:9px"></div><p class="muted small">De route wordt automatisch gezocht wanneer je op Start avontuur drukt.</p></div><div id="routeMap" style="height:330px;border-radius:17px;border:1px solid #dbe7df;background:#e6f1e9;margin-bottom:13px"></div><div class="card"><h3>Routegegevens</h3><p class="muted small">De gekozen afstand is een richtafstand. TRACXO streeft naar ±10% en toont afwijkingen eerlijk.</p><div id="routeStatus" class="muted small" aria-live="polite">Open deze pagina met internet en HTTPS voor GPS en kaartdiensten.</div><div id="routeResult" style="margin-top:12px"></div><div id="routeStops" class="list" style="margin-top:12px"></div></div><div class="card" id="routeActivityActions" style="display:none"><h3>🚴 Actieve activiteit</h3><p class="muted small">Je activiteit loopt door wanneer je de kaart verbergt, zolang iOS GPS-updates toestaat.</p><button class="btn" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><div style="height:9px"></div><button class="btn outline" style="color:#a12727" onclick="finishTrackedAdventure()">■ <span id="routeEndLabel">Activiteit beëindigen</span></button></div><div id="activityTracker" class="card" style="display:none"><div class="row"><h3>🏃 Jouw activiteit</h3><span id="trackState" class="tag">Klaar om te starten</span></div><div class="grid" style="margin:14px 0"><div><div class="muted">Tijd</div><div id="trackTime" class="stat" style="font-variant-numeric:tabular-nums">00:00:00</div></div><div><div class="muted">Afgelegd</div><div id="trackDistance" class="stat">0,00 km</div></div><div><div class="muted">Gemiddeld tempo</div><div id="trackPace" class="stat" style="font-size:20px">—</div></div><div><div class="muted">GPS-nauwkeurigheid</div><div id="trackAccuracy" class="stat" style="font-size:20px">—</div></div></div><p class="muted small" id="trackMessage">Druk op Start als je klaar bent om te vertrekken.</p><button class="btn" id="trackStart" onclick="startTrackedAdventure()">▶ Start avontuur</button><div class="grid" style="margin-top:9px"><button class="btn secondary" id="trackPause" onclick="toggleTrackedPause()" disabled>⏸ Pauzeren</button><button class="btn outline" id="trackFinish" onclick="finishTrackedAdventure()" disabled>🏁 Afronden</button></div><p class="muted small" style="margin-top:12px">GPS meet de werkelijk afgelegde afstand, niet de geplande afstand. Houd deze pagina open en je scherm actief; metingen op de achtergrond zijn niet gegarandeerd.</p></div><div class="notice">⚠️ Kaart via Esri/OpenTopoMap; wandelroutes via de TRACXO Cloudflare Worker en OpenRouteService. Bestemmingen komen uit geografisch beschreven Wikipedia-plekken; niet elke haven, brug of dorpsplek staat in die databron. Als er geen geschikte plek wordt gevonden, meldt TRACXO dat eerlijk. De route is voor de verrassing niet vooraf zichtbaar. Controleer zelf paden en verkeerssituaties. GPS kan onnauwkeurig zijn. Geen automatische XP in deze test.</div></section><section id="lobby" class="screen"><button class="back" onclick="show('setup')">← Terug naar instellingen</button><h2>👥 Groepsavontuur</h2><p class="muted">Samen wandelen of hardlopen met dezelfde bestemmingen en hints.</p><div class="card"><h3>Jouw groepscode</h3><div class="row"><strong id="lobbyCode" style="font-size:28px;letter-spacing:4px">TRX482</strong><button class="btn secondary" style="width:105px" onclick="copyCode()">Kopieer</button></div><p class="muted small">Deel de code met je vrienden. In deze demo werkt de code alleen als voorbeeld op dit apparaat.</p></div><div class="card"><div class="row"><h3>Deelnemers</h3><span class="tag" id="participantCount">1 / 6</span></div><div class="list" id="participants"><div class="item"><span>👑 Jij (groepsleider)</span><span class="tag">Klaar ✓</span></div></div><label>Vriend toevoegen (demo)</label><div class="row"><input id="participantName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addParticipant()">Voeg toe</button></div><p class="muted small">Hiermee simuleer je dat een vriend meedoet; er wordt nog geen echte verbinding gemaakt.</p></div><div class="card"><h3>Of aansluiten bij een groep</h3><div class="row"><input id="joinCode" placeholder="Bijv. TRX482" maxlength="8"><button class="btn secondary" style="width:105px" onclick="joinGroup()">Join</button></div><p class="muted small">In de demo kun je de eigen groepscode uitproberen.</p></div><div class="notice">🎁 Groepsbonus: +20% XP en 25% minder optionele hints. De eerste richtinghint blijft beschikbaar. Echte synchronisatie volgt in een latere versie.</div><div style="height:15px"></div><button class="btn" onclick="preview()">Groepsavontuur bekijken →</button></section>
 
@@ -241,11 +263,11 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
 <section id="runnerRoutes" class="screen"><button class="back" onclick="show('profile')">← Terug naar mijn profiel</button><div class="row" style="margin-bottom:7px"><h2 style="margin:0">🗺️ Runner-routes</h2><span class="tag">8.8.1</span></div><p class="muted small">Jouw daadwerkelijk gemeten GPS-tochten. Een route die je beëindigt, wordt opgeslagen. Een bestemming telt alleen als ontdekt na GPS-controle in de buurt ervan.</p><div class="card"><label for="routeViewer">Bekijk mijn profiel als</label><select id="routeViewer" onchange="renderRunnerRoutes()"><option value="owner">👤 Ikzelf</option><option value="friend">👥 Een vriend (voorbeeld)</option><option value="public">🌍 Een onbekende (voorbeeld)</option></select><p id="routePrivacyMessage" class="muted small"></p></div><div class="grid" id="runnerHistoryStats" style="grid-template-columns:repeat(3,1fr)"><div class="card"><div class="muted small">Tochten</div><b id="historyTrips">0</b></div><div class="card"><div class="muted small">Bestemmingen</div><b id="historyDestinations">0</b></div><div class="card"><div class="muted small">Kilometers</div><b id="historyKilometers">0,0</b></div></div><div id="runnerRouteList" class="list"></div><div class="card" id="runnerRouteDetail" style="display:none"><div class="row"><h3 id="runnerDetailTitle">Route</h3><button class="btn secondary smallbtn" id="runnerDeleteRoute" onclick="deleteRunnerRoute()" style="width:auto">🗑️ Verwijder</button></div><p id="runnerDetailMeta" class="muted small"></p><div id="runnerHistoryMap" style="height:300px;border-radius:15px;background:#e4f1e7;border:1px solid #d7e7dc"></div><p id="runnerMapPrivacyNote" class="muted small" style="margin-top:12px"></p></div><p class="notice">Je routes blijven alleen op dit apparaat bewaard. Voor gedeelde kaarten worden het begin, het einde en punten vlak bij die locaties verborgen. Controleer altijd of een route veilig is om te delen.</p></section>
 <section id="chats" class="screen">
   <div class="tx-pagehead"><div><span class="tx-eyebrow">TRACXO SOCIAL</span><h2>Berichten</h2><p>Gesprekken met jouw Runners, veilig opgeslagen in Supabase.</p></div><button class="tx-icon-btn" type="button" onclick="refreshTracxoOnlineChats()" aria-label="Gesprekken vernieuwen">↻</button></div>
-  <div class="tabs" id="tracxoChatTabs"><button class="active" id="tracxoDmTab" onclick="chooseChatTab('dm')">Privéchats</button><button id="tracxoGroupTab" onclick="chooseChatTab('groups')">Groepen</button></div>
+  <p class="tx-inbox-label">AL JE GESPREKKEN · PRIVÉ EN GROEPEN</p>
   <div id="tracxoChatList" class="list" aria-live="polite"></div>
   <button id="tracxoNewGroupBtn" class="btn" type="button" onclick="openGroupCreator()" style="margin-top:15px">Nieuwe groep maken</button>
   <p id="tracxoChatStatus" class="tx-info" role="status" aria-live="polite">Inloggen om berichten te zien.</p>
-  <p class="tx-info">Berichten staan online en zijn alleen zichtbaar voor leden van het gesprek. Online-status en typindicatie verversen tijdens het chatten; pushmeldingen zijn nog niet beschikbaar.</p>
+  <p class="tx-info" id="tracxoPresenceDiagnostics" aria-live="polite">Online-status wordt verbonden…</p><p class="tx-info">De teller toont ongelezen berichten in TRACXO. Pushmeldingen buiten de app komen later.</p>
 </section>
 <section id="groupCreator" class="screen"><button class="back" onclick="show('chats')">← Terug naar berichten</button>
   <div class="tx-pagehead"><div><span class="tx-eyebrow">SAMEN ONTDEKKEN</span><h2>Nieuwe groepschat</h2><p>Voeg vrienden toe en maak een online gesprek.</p></div></div>
@@ -280,7 +302,7 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
   <button class="btn secondary" style="margin-top:9px" onclick="show('setup')">🚀 Nieuw avontuur</button>
   <button class="btn outline" style="margin-top:9px" onclick="show('home')">⌂ Terug naar Home</button>
 </section>
-<nav class="nav" id="mainNav" style="display:none"><button data-page="home" class="active" onclick="show('home')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg></b>Home</button><button data-page="friends" onclick="show('friends')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></b>Vrienden</button><button data-page="battles" onclick="show('battles')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 17.5 3-3L6.3 3.3 3.3 6.3l11.2 11.2zM13 19l3-3m-6 3-3 3m10-10 4-4-5-5-4 4m-3 9-6 6"/></svg></b>Battles</button><button data-page="chats" onclick="show('chats')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3H13a8.5 8.5 0 0 1 8 8z"/></svg></b>Chats</button><button data-page="rankings" onclick="show('rankings')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8m-4-4v4M7 4h10v7a5 5 0 0 1-10 0V4zM7 6H4v3a4 4 0 0 0 4 4m9-7h3v3a4 4 0 0 1-4 4"/></svg></b>Ranglijst</button><button data-page="profile" onclick="show('profile')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></b>Profiel</button></nav></div>
+<nav class="nav" id="mainNav" style="display:none"><button data-page="home" class="active" onclick="show('home')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg></b>Home</button><button data-page="friends" onclick="show('friends')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></b>Vrienden</button><button data-page="battles" onclick="show('battles')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 17.5 3-3L6.3 3.3 3.3 6.3l11.2 11.2zM13 19l3-3m-6 3-3 3m10-10 4-4-5-5-4 4m-3 9-6 6"/></svg></b>Battles</button><button data-page="chats" onclick="show('chats')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3H13a8.5 8.5 0 0 1 8 8z"/></svg></b><span class="tx-nav-chat-name">Chats</span><span id="tracxoChatNavBadge" class="tx-nav-unread" hidden aria-live="polite"></span></button><button data-page="rankings" onclick="show('rankings')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8m-4-4v4M7 4h10v7a5 5 0 0 1-10 0V4zM7 6H4v3a4 4 0 0 0 4 4m9-7h3v3a4 4 0 0 1-4 4"/></svg></b>Ranglijst</button><button data-page="profile" onclick="show('profile')"><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></b>Profiel</button></nav></div>
 <script>
 let rankType='dest';function show(id){document.querySelectorAll('.screen').forEach(e=>e.classList.toggle('active',e.id===id));document.querySelectorAll('.nav button').forEach(e=>e.classList.toggle('active',e.dataset.page===id));window.scrollTo(0,0);if(typeof updateResumeButtons==='function')updateResumeButtons();if((id==='profile'||id==='home')&&typeof refreshRunnerStats==='function')refreshRunnerStats()}function pick(id,el){document.querySelectorAll('#'+id+' .option').forEach(x=>x.classList.remove('active'));el.classList.add('active');if(id==='play')document.getElementById('teamNote').style.display=el.textContent.includes('vrienden')?'block':'none'}function selected(id){return document.querySelector('#'+id+' .active').textContent.trim()}function prepareAdventure(){if(selected('play').includes('vrienden')){show('lobby')}else{preview()}}function preview(){document.getElementById('summary').innerHTML=['Activiteit: '+selected('activity'),'Afstand: '+document.getElementById('distance').value,'Moeilijkheid: '+selected('difficulty'),'Bestemmingen: '+document.getElementById('stops').value,'Route: '+selected('route'),'Spelen: '+selected('play')+(selected('play').includes('vrienden')?' ('+(participantNames.length+1)+' deelnemers)':'')].map(s=>'<div>✓ '+s+'</div>').join('');show('preview')}let participantNames=[];function copyCode(){const code=document.getElementById('lobbyCode').textContent;if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(code).then(()=>alert('Groepscode gekopieerd!')).catch(()=>prompt('Kopieer de groepscode:',code))}else{prompt('Kopieer de groepscode:',code)}}function addParticipant(){let name=document.getElementById('participantName').value.trim().replace(/^@/,'');if(!/^[\w.-]{3,20}$/.test(name))return alert('Vul een geldige gebruikersnaam in (3–20 tekens).');if(participantNames.length>=5)return alert('Maximaal 6 deelnemers in deze demo.');if(participantNames.some(n=>n.toLowerCase()===name.toLowerCase()))return alert('Deze vriend zit al in de groep.');participantNames.push(name);let el=document.createElement('div');el.className='item';el.innerHTML='<span>👤 @'+escapeHTML(name)+'</span><span class="tag">Klaar ✓ (demo)</span>';document.getElementById('participants').append(el);document.getElementById('participantCount').textContent=(participantNames.length+1)+' / 6';document.getElementById('participantName').value=''}function joinGroup(){const code=document.getElementById('joinCode').value.trim().toUpperCase();if(code===document.getElementById('lobbyCode').textContent){alert('Dit is jouw eigen demo-groep. Echte deelname vanaf een andere telefoon bouwen we later.')}else{alert('Deze demo heeft geen online groepsserver. Alleen de getoonde voorbeeldcode wordt herkend.')}}function addFriend(){let name=document.getElementById('friendName').value.trim().replace(/^@/,'');if(!name)return alert('Vul een gebruikersnaam in.');let el=document.createElement('div');el.className='item';el.innerHTML='<span>🟡 @'+escapeHTML(name)+'</span><span class="tag">Demo-verzoek</span>';document.getElementById('friendsList').append(el);document.getElementById('friendName').value=''}function createBattle(){let name=document.getElementById('invite').value.trim()||'vriend';let el=document.createElement('div');el.className='item';el.innerHTML='<div><b>Battle met '+escapeHTML(name)+'</b><div class="muted small">'+escapeHTML(selected('battleType'))+' · 14 dagen</div></div><span class="tag">Demo</span>';document.getElementById('battleList').prepend(el);document.getElementById('invite').value='';alert('Voorbeeldbattle aangemaakt! Er is nog geen echte uitnodiging verzonden.')}function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function rank(type,btn){rankType=type;btn.parentNode.querySelectorAll('button').forEach(e=>e.classList.remove('active'));btn.classList.add('active');renderRanks()}function period(btn){btn.parentNode.querySelectorAll('button').forEach(e=>e.classList.remove('active'));btn.classList.add('active');renderRanks()}function renderRanks(){let names=['@nova','@milo','@sky','@Swipe'];let vals=rankType==='dest'?['18 bestemmingen','14 bestemmingen','11 bestemmingen','3 bestemmingen']:['42,5 km','31,2 km','18,4 km','2,4 km'];document.getElementById('rankList').innerHTML=names.map((n,i)=>'<div class="item"><b>'+(i+1)+'. '+n+'</b><span class="tag">'+vals[i]+'</span></div>').join('')}function saveName(){let v=document.getElementById('username').value.trim();if(!/^[\w.-]{3,20}$/.test(v))return alert('Gebruik 3–20 letters, cijfers, punten, streepjes of underscores.');alert('Je gebruikersnaam wijzigen na registratie wordt in een latere versie toegevoegd. Je huidige account blijft behouden.')}renderRanks();
 </script><script>
@@ -1372,342 +1394,392 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
  window.addSampleFriendRequest=function(){alert('Gebruik Runner zoeken om echte online vriendschapsverzoeken te sturen.');};
 })();
 </script>
-<script id="tracxo911OnlineChat">
-/* TRACXO 9.1.1 ONLINE SOCIAL
-   Real Supabase Auth + friends + chats. Chat access restricted by existing SQL RLS.
-   Polling while visible avoids requiring a realtime database publication for this test.
-   Never embed Supabase secret/service_role keys here. */
+<script id="tracxo914OnlineChat">
+/* TRACXO 9.1.4 — Eén online inbox voor privé- en groepschats.
+   Elke RPC beperkt de gegevens tot ingelogde chatleden. Geen browser secrets. */
 (function(){
  'use strict';
  const e=id=>document.getElementById(id);
  const api=()=>window.tracxoCloud?.client?.();
  const me=()=>window.tracxoCloud?.user?.();
- const state={tab:'dm',chats:[],members:[],handles:new Map(),active:null,refreshSeq:0,messagesSeq:0,busy:false};
- function msg(id,t,error=false){const n=e(id);if(!n)return;n.textContent=t;n.style.color=error?'#a63838':'#6d836f'}
- function err(x){
-   const s=String(x?.message||x||'Onbekende fout');
-   const code=String(x?.code||'');
-   if(code==='PGRST202'||/could not find the function/i.test(s))return 'De chat-database-update ontbreekt. Voer eerst TRACXO_9_1_2_Chat_Database_Fix.sql uit in Supabase SQL Editor. ['+code+']';
-   if(code==='42501'||/permission denied|row-level security|not allowed/i.test(s))return 'Toegang geweigerd ['+(code||'RLS')+']: controleer of jullie echt vrienden zijn en allebei ingelogd zijn. Details: '+s;
-   if(/fetch|network/i.test(s))return 'Geen verbinding. Controleer je internet en probeer opnieuw.';
-   return (code?'['+code+'] ':'')+s;
+ const state={chats:[],members:[],handles:new Map(),inbox:new Map(),active:null,refreshSeq:0,messagesSeq:0,busy:false,loadingInbox:false,readKey:null,errorAt:0};
+ const node=(tag,cls='',text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
+ const msg=(id,t,bad=false)=>{const x=e(id);if(x){x.textContent=t;x.style.color=bad?'#ae4141':'#6d836f'}};
+ const formatError=x=>{
+   const code=String(x?.code||''),message=String(x?.message||x||'Onbekende fout');
+   if(code==='PGRST202'||/could not find the function/i.test(message))return 'Database-update 9.1.4 ontbreekt. Voer eerst de meegeleverde SQL uit. ('+code+')';
+   if(/fetch|network/i.test(message))return 'Verbinding mislukt. Controleer internet. '+message;
+   return (code?'['+code+'] ':'')+message;
+ };
+ const membersOf=id=>state.members.filter(m=>m.chat_id===id);
+ const handle=uid=>'@'+(state.handles.get(uid)||'Runner');
+ const conversation=c=>{
+   if(c.kind==='group')return c.title||'Groepschat';
+   const peer=membersOf(c.id).find(m=>m.runner_id!==me()?.id);
+   return peer?handle(peer.runner_id):'Privéchat';
+ };
+ const seen=c=>state.inbox.get(c.id)||{};
+ function badgeCount(){
+   if(!me()){state.inbox.clear();return 0}
+   return [...state.inbox.values()].reduce((n,x)=>n+Math.max(0,Number(x.unread_count)||0),0);
  }
- function node(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x}
- function info(parent,txt){parent.append(node('p','tx-info',txt))}
- function time(v){try{return new Date(v).toLocaleString('nl-NL',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}catch{return ''}}
- function currentChat(){return state.chats.find(c=>c.id===state.active)}
- function membersOf(id){return state.members.filter(m=>m.chat_id===id)}
- function displayName(uid){return '@'+(state.handles.get(uid)||'Runner')}
- function conversationName(c){if(c.kind==='group')return c.title||'Groepschat';const p=membersOf(c.id).find(m=>m.runner_id!==me()?.id);return p?displayName(p.runner_id):'Privéchat'}
- function refreshLabel(){const d=e('tracxoDmTab'),g=e('tracxoGroupTab');if(d)d.classList.toggle('active',state.tab==='dm');if(g)g.classList.toggle('active',state.tab==='groups')}
- async function loadChats(){
-   const who=me(),sb=api(),seq=++state.refreshSeq;
-   const list=e('tracxoChatList');if(!list)return;
-   list.replaceChildren();refreshLabel();
-   if(!who||!sb){info(list,'Log in om je gesprekken te bekijken.');msg('tracxoChatStatus','Online account nodig.');return}
-   msg('tracxoChatStatus','Gesprekken ophalen…');
-   const memberResponse=await sb.from('runner_chat_members').select('chat_id,runner_id').eq('runner_id',who.id).limit(120);
-   if(seq!==state.refreshSeq||me()?.id!==who.id)return;
-   if(memberResponse.error){info(list,'Kon je gesprekken niet ophalen.');msg('tracxoChatStatus',err(memberResponse.error),true);return}
-   const ids=[...new Set((memberResponse.data||[]).map(r=>r.chat_id))];
-   if(!ids.length){state.chats=[];state.members=[];state.handles.clear();renderList();msg('tracxoChatStatus','Nog geen gesprekken. Start een chat via Vrienden.');return}
-   const [chatResponse,membersResponse]=await Promise.all([
-     sb.from('runner_chats').select('id,kind,title,created_by,created_at').in('id',ids).limit(120),
-     sb.from('runner_chat_members').select('chat_id,runner_id').in('chat_id',ids).limit(500)
-   ]);
-   if(seq!==state.refreshSeq||me()?.id!==who.id)return;
-   if(chatResponse.error||membersResponse.error){info(list,'Kon de gespreksinformatie niet laden.');msg('tracxoChatStatus',err(chatResponse.error||membersResponse.error),true);return}
-   state.chats=chatResponse.data||[];state.members=membersResponse.data||[];
-   const people=[...new Set(state.members.map(m=>m.runner_id))];
-   state.handles.clear();
-   if(people.length){const res=await sb.from('runner_handles').select('runner_id,username').in('runner_id',people).limit(500);
-     if(seq!==state.refreshSeq||me()?.id!==who.id)return;
-     if(!res.error)state.handles=new Map((res.data||[]).map(r=>[r.runner_id,r.username]));
-   }
-   renderList();msg('tracxoChatStatus','Gesynchroniseerd met TRACXO.');window.tracxoPresence?.refreshNow?.();
+ function navBadge(){
+   const el=e('tracxoChatNavBadge');if(!el)return;
+   const count=badgeCount();el.hidden=!count;
+   el.textContent=count>99?'99+':String(count);
+   el.setAttribute('aria-label',count+' ongelezen berichten');
+   const nav=document.querySelector('#mainNav button[data-page="chats"]');
+   nav?.setAttribute('aria-label',count?'Chats, '+count+' ongelezen berichten':'Chats');
+ }
+ function time(v){
+   if(!v)return '';
+   const d=new Date(v);if(!Number.isFinite(d.getTime()))return '';
+   return d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+ }
+ function chatSort(a,b){
+   const aa=seen(a).last_message_at||a.created_at||'',bb=seen(b).last_message_at||b.created_at||'';
+   return bb.localeCompare(aa);
  }
  function renderList(){
-   const box=e('tracxoChatList');if(!box)return;box.replaceChildren();refreshLabel();
-   const list=state.chats.filter(c=>c.kind===(state.tab==='dm'?'direct':'group')).sort((a,b)=>b.created_at.localeCompare(a.created_at));
-   if(!list.length){info(box,state.tab==='dm'?'Nog geen privéchats. Open Vrienden en kies Bericht.':'Nog geen groepschats. Maak hieronder een groep.');return}
-   for(const c of list){
-     const row=node('button','item');row.type='button';row.style.width='100%';row.style.textAlign='left';row.style.cursor='pointer';
-     const avatar=node('span','tx-person',c.kind==='group'?'G':conversationName(c).replace('@','').charAt(0).toUpperCase());
-     const body=node('span','');body.style.flex='1';body.append(node('b','',conversationName(c)),node('div','tx-sub',c.kind==='group'?membersOf(c.id).length+' leden':'Privégesprek'));
-     if(c.kind==='direct'){const peer=membersOf(c.id).find(m=>m.runner_id!==me()?.id);if(peer){row.dataset.tracxoPeerId=peer.runner_id;body.append(node('div','tx-presence-tag','Status laden…'));}}
-     row.append(avatar,body,node('span','', '›'));row.addEventListener('click',()=>{void openChat(c.id)});box.append(row);
+   const list=e('tracxoChatList');if(!list)return;
+   list.replaceChildren();
+   const chats=state.chats.slice().sort(chatSort);
+   if(!chats.length){list.append(node('p','tx-info','Nog geen gesprekken. Open Vrienden om iemand een bericht te sturen of maak een groep.'));return}
+   for(const c of chats){
+     const snap=seen(c),count=Number(snap.unread_count)||0,peer=membersOf(c.id).find(m=>m.runner_id!==me()?.id);
+     const row=node('button','item tx-inbox-row'+(count?' tx-unread':''));
+     row.type='button';row.dataset.chatId=c.id;row.setAttribute('aria-label',conversation(c)+(count?', '+count+' ongelezen berichten':''));
+     const avatar=node('span','tx-person',c.kind==='group'?'G':conversation(c).replace('@','').charAt(0).toUpperCase());
+     const body=node('span','tx-inbox-body');
+     const head=node('div','tx-inbox-head');head.append(node('b','',conversation(c)));
+     if(snap.last_message_at)head.append(node('small','tx-inbox-time',time(snap.last_message_at)));
+     body.append(head);
+     const preview=snap.last_message_body;
+     body.append(node('div','tx-inbox-preview',preview?(snap.last_message_sender_id===me()?.id?'Jij: ':'')+preview:(c.kind==='group'?'Groepschat · '+membersOf(c.id).length+' deelnemers':'Start het gesprek')));
+     if(c.kind==='direct'&&peer){row.dataset.tracxoPeerId=peer.runner_id;body.append(node('div','tx-presence-tag','Status laden…'))}
+     row.append(avatar,body);
+     if(count){row.append(node('span','tx-inbox-unread-count',count>99?'99+':String(count)))}
+     row.addEventListener('click',()=>{void openChat(c.id)});
+     list.append(row);
    }
+   window.tracxoPresence?.refreshNow?.();
  }
- async function openChat(id){
-   const who=me();if(!who){msg('tracxoChatStatus','Log eerst in.',true);return}
-   if(!state.chats.some(c=>c.id===id))await loadChats();
-   const c=state.chats.find(c=>c.id===id);
-   if(!c){msg('tracxoChatStatus','Gesprek is mogelijk gemaakt, maar niet leesbaar. Controleer Supabase RLS en vernieuw de pagina.',true);return}
-   state.active=id;e('tracxoConversationTitle').textContent=conversationName(c);
-   const m=membersOf(id);
-   e('tracxoConversationMembers').textContent=c.kind==='group'?m.map(x=>displayName(x.runner_id)).join(' · '):'Online privégesprek';
-   show('chatRoom');window.tracxoPresence?.chatOpened?.();await loadMessages();
+ async function refreshInbox(){
+   const who=me(),sb=api();
+   if(!who||!sb){state.inbox.clear();navBadge();return}
+   if(state.loadingInbox)return;
+   state.loadingInbox=true;
+   try{
+     const {data,error}=await sb.rpc('tracxo_inbox_snapshot');
+     if(error)throw error;
+     if(me()?.id!==who.id)return;
+     state.inbox=new Map((data||[]).map(x=>[x.chat_id,x]));
+     navBadge();
+     if(e('chats')?.classList.contains('active'))renderList();
+     msg('tracxoChatStatus','Gesynchroniseerd · '+badgeCount()+' ongelezen bericht(en).');
+   }catch(ex){
+     if(Date.now()-state.errorAt>10000){state.errorAt=Date.now();console.warn('TRACXO inbox:',ex)}
+     msg('tracxoChatStatus','Meldingteller: '+formatError(ex),true);
+   }finally{state.loadingInbox=false}
+ }
+ async function loadChats(){
+   const u=me(),sb=api(),seq=++state.refreshSeq,list=e('tracxoChatList');
+   if(!list)return;
+   if(!u||!sb){state.chats=[];state.members=[];state.inbox.clear();navBadge();list.replaceChildren();list.append(node('p','tx-info','Log in om gesprekken te bekijken.'));return}
+   try{
+     const {data:own,error:ownError}=await sb.from('runner_chat_members').select('chat_id,runner_id').eq('runner_id',u.id).limit(200);
+     if(ownError)throw ownError;
+     const ids=[...new Set((own||[]).map(x=>x.chat_id))];
+     if(seq!==state.refreshSeq||me()?.id!==u.id)return;
+     if(!ids.length){state.chats=[];state.members=[];state.handles.clear();renderList();await refreshInbox();return}
+     const [a,b]=await Promise.all([
+       sb.from('runner_chats').select('id,kind,title,created_by,created_at').in('id',ids).limit(200),
+       sb.from('runner_chat_members').select('chat_id,runner_id').in('chat_id',ids).limit(900)
+     ]);
+     if(a.error||b.error)throw a.error||b.error;
+     if(seq!==state.refreshSeq||me()?.id!==u.id)return;
+     state.chats=a.data||[];state.members=b.data||[];
+     const people=[...new Set(state.members.map(x=>x.runner_id))];
+     state.handles.clear();
+     if(people.length){
+       const {data,error}=await sb.from('runner_handles').select('runner_id,username').in('runner_id',people).limit(900);
+       if(seq!==state.refreshSeq||me()?.id!==u.id)return;
+       if(!error)state.handles=new Map((data||[]).map(x=>[x.runner_id,x.username]));
+     }
+     renderList();await refreshInbox();
+   }catch(ex){msg('tracxoChatStatus','Gesprekken laden: '+formatError(ex),true)}
+ }
+ async function markRead(chatId,lastMessageId){
+   const sb=api();if(!sb)return;
+   const key=chatId+':'+(lastMessageId||'empty');
+   if(state.readKey===key)return;
+   const {error}=await sb.rpc('tracxo_mark_chat_read',{p_chat_id:chatId,p_last_message_id:lastMessageId||null});
+   if(error){msg('tracxoConversationStatus','Berichten zichtbaar, maar leesstatus mislukt: '+formatError(error),true);return}
+   state.readKey=key;
+   void refreshInbox();
  }
  async function loadMessages(){
-   const chatId=state.active,uid=me()?.id,sb=api(),seq=++state.messagesSeq;
-   const box=e('tracxoMessages');if(!chatId||!uid||!sb||!box)return;
-   const {data,error}=await sb.from('runner_chat_messages')
-     .select('id,chat_id,sender_id,body,created_at').eq('chat_id',chatId).order('created_at',{ascending:false}).limit(150);
-   if(seq!==state.messagesSeq||state.active!==chatId||me()?.id!==uid)return;
-   if(error){msg('tracxoConversationStatus',err(error),true);return}
-   const atBottom=box.scrollHeight-box.scrollTop-box.clientHeight<90;
+   const who=me(),sb=api(),chatId=state.active,seq=++state.messagesSeq,box=e('tracxoMessages');
+   if(!who||!sb||!chatId||!box)return;
+   const {data,error}=await sb.from('runner_chat_messages').select('id,chat_id,sender_id,body,created_at').eq('chat_id',chatId).order('created_at',{ascending:false}).limit(150);
+   if(seq!==state.messagesSeq||state.active!==chatId||me()?.id!==who.id)return;
+   if(error){msg('tracxoConversationStatus',formatError(error),true);return}
+   const atBottom=box.scrollHeight-box.scrollTop-box.clientHeight<110;
    box.replaceChildren();
-   if(!data?.length)info(box,'Nog geen berichten. Stuur het eerste bericht.');
+   if(!data?.length)box.append(node('p','tx-info','Nog geen berichten. Stuur het eerste bericht.'));
    for(const r of (data||[]).slice().reverse()){
-     const bubble=node('div','tx-bubble'+(r.sender_id===uid?' mine':''),r.body);
-     bubble.append(node('small','',(r.sender_id===uid?'Jij':displayName(r.sender_id))+' · '+time(r.created_at)));
+     const bubble=node('div','tx-bubble'+(r.sender_id===who.id?' mine':''),r.body);
+     bubble.append(node('small','',(r.sender_id===who.id?'Jij':handle(r.sender_id))+' · '+time(r.created_at)));
      box.append(bubble);
    }
    if(atBottom||!box.dataset.firstLoad){box.scrollTop=box.scrollHeight;box.dataset.firstLoad='yes'}
-   msg('tracxoConversationStatus','Berichten opgehaald uit Supabase. Het scherm vernieuwt zolang je de chat openhoudt.');
+   msg('tracxoConversationStatus','Online berichtgeschiedenis.');
+   if(e('chatRoom')?.classList.contains('active')&&!document.hidden){
+     void markRead(chatId,(data||[])[0]?.id||null);
+   }
+ }
+ async function openChat(id){
+   if(!me())return;
+   if(!state.chats.find(c=>c.id===id))await loadChats();
+   const c=state.chats.find(c=>c.id===id);
+   if(!c){msg('tracxoChatStatus','Kan dit gesprek niet openen. Vernieuw de pagina.',true);return}
+   state.active=id;state.readKey=null;
+   e('tracxoConversationTitle').textContent=conversation(c);
+   e('tracxoConversationMembers').textContent=c.kind==='group'?membersOf(id).length+' deelnemers':'Status laden…';
+   e('tracxoMessages').removeAttribute('data-first-load');
+   show('chatRoom');window.tracxoPresence?.chatOpened?.();
+   await loadMessages();
  }
  async function send(){
-   const sb=api(),who=me(),input=e('tracxoMessageInput');if(!sb||!who||!state.active||state.busy)return;
-   const body=input.value.trim();if(!body)return;
-   if(body.length>2000){msg('tracxoConversationStatus','Maximaal 2000 tekens per bericht.',true);return}
-   state.busy=true;msg('tracxoConversationStatus','Bericht versturen…');
+   const u=me(),sb=api(),input=e('tracxoMessageInput');
+   if(!u||!sb||!state.active||state.busy)return;
+   const text=input.value.trim();if(!text)return;
+   if(text.length>2000){msg('tracxoConversationStatus','Maximaal 2000 tekens.',true);return}
+   state.busy=true;msg('tracxoConversationStatus','Versturen…');
    try{
-     const {error}=await sb.rpc('tracxo_send_chat_message',{p_chat_id:state.active,p_body:body});
+     const {error}=await sb.rpc('tracxo_send_chat_message',{p_chat_id:state.active,p_body:text});
      if(error)throw error;
      input.value='';window.tracxoPresence?.stopTyping?.();await loadMessages();
-   }catch(x){msg('tracxoConversationStatus',err(x),true)}finally{state.busy=false}
+   }catch(ex){msg('tracxoConversationStatus','Verzenden mislukt: '+formatError(ex),true)}
+   finally{state.busy=false}
  }
  async function acceptedFriendIds(){
-   const sb=api(),u=me();if(!sb||!u)throw Error('Log eerst in');
-   const {data,error}=await sb.from('friend_requests').select('sender_id,receiver_id').eq('status','accepted')
-     .or('sender_id.eq.'+u.id+',receiver_id.eq.'+u.id).limit(300);
+   const sb=api(),u=me();if(!sb||!u)throw Error('Log eerst in.');
+   const {data,error}=await sb.from('friend_requests').select('sender_id,receiver_id').eq('status','accepted').or('sender_id.eq.'+u.id+',receiver_id.eq.'+u.id).limit(300);
    if(error)throw error;
-   return [...new Set((data||[]).map(r=>r.sender_id===u.id?r.receiver_id:r.sender_id))];
+   return [...new Set((data||[]).map(x=>x.sender_id===u.id?x.receiver_id:x.sender_id))];
  }
  async function startDM(friendId){
-   const who=me(),sb=api();if(!who||!sb){alert('Log eerst in.');return}
+   const sb=api(),u=me();if(!sb||!u){alert('Log eerst in.');return}
    try{
-     if(!(await acceptedFriendIds()).includes(friendId))throw Error('Je kunt alleen een geaccepteerde vriend een bericht sturen.');
+     if(!(await acceptedFriendIds()).includes(friendId))throw Error('Alleen geaccepteerde vrienden kunnen chatten.');
      await loadChats();
-     const existing=state.chats.find(c=>c.kind==='direct'&&membersOf(c.id).length===2&&membersOf(c.id).some(m=>m.runner_id===friendId));
-     if(existing){await openChat(existing.id);return}
+     const c=state.chats.find(c=>c.kind==='direct'&&membersOf(c.id).length===2&&membersOf(c.id).some(x=>x.runner_id===friendId));
+     if(c){await openChat(c.id);return}
      const {data:newId,error}=await sb.rpc('tracxo_start_direct_chat',{p_friend_id:friendId});
      if(error)throw error;
      await loadChats();await openChat(newId);
-   }catch(x){alert('Chat starten mislukt: '+err(x))}
+   }catch(ex){alert('Chat starten mislukt: '+formatError(ex))}
  }
- async function groupCreator(){
+ async function openGroup(){
    if(!me()){alert('Log eerst in.');return}
-   const box=e('tracxoGroupFriendOptions');box.replaceChildren();msg('tracxoGroupError','Vrienden ophalen…');
-   show('groupCreator');
+   const list=e('tracxoGroupFriendOptions');list.replaceChildren();msg('tracxoGroupError','Vrienden laden…');show('groupCreator');
    try{
-     const ids=await acceptedFriendIds();if(!ids.length){info(box,'Voeg eerst een vriend toe voordat je een groep maakt.');msg('tracxoGroupError','');return}
+     const ids=await acceptedFriendIds();if(!ids.length){list.append(node('p','tx-info','Voeg eerst vrienden toe.'));msg('tracxoGroupError','');return}
      const {data,error}=await api().from('runner_handles').select('runner_id,username').in('runner_id',ids);
      if(error)throw error;
-     for(const f of data||[]){
-       const label=node('label','tx-group-option');const cb=node('input');cb.type='checkbox';cb.value=f.runner_id;
-       label.append(cb,node('span','','@'+f.username));box.append(label);
-     }
+     for(const f of data||[]){const label=node('label','tx-group-option');const cb=node('input');cb.type='checkbox';cb.value=f.runner_id;label.append(cb,node('span','', '@'+f.username));list.append(label)}
      msg('tracxoGroupError','Kies minimaal één vriend.');
-   }catch(x){msg('tracxoGroupError',err(x),true)}
+   }catch(ex){msg('tracxoGroupError',formatError(ex),true)}
  }
  async function createGroup(){
-   const who=me(),sb=api(),name=e('tracxoGroupName').value.trim();
+   const sb=api(),u=me(),title=e('tracxoGroupName').value.trim();
    const ids=[...e('tracxoGroupFriendOptions').querySelectorAll('input:checked')].map(x=>x.value);
-   if(!who||!sb){msg('tracxoGroupError','Log eerst in.',true);return}
-   if(name.length<3||name.length>80){msg('tracxoGroupError','Geef de groep een naam van 3–80 tekens.',true);return}
-   if(!ids.length){msg('tracxoGroupError','Kies minstens één vriend.',true);return}
-   msg('tracxoGroupError','Groep aanmaken…');
+   if(!u||!sb){msg('tracxoGroupError','Log eerst in.',true);return}
+   if(title.length<3||title.length>80){msg('tracxoGroupError','Groepsnaam: 3–80 tekens.',true);return}
+   if(!ids.length){msg('tracxoGroupError','Kies minimaal één vriend.',true);return}
    try{
-     const allowed=await acceptedFriendIds();if(ids.some(id=>!allowed.includes(id)))throw Error('Niet alle geselecteerde Runners zijn vrienden.');
-     const {data:id,error}=await sb.rpc('tracxo_create_group_chat',{p_title:name,p_friend_ids:ids});
-     if(error)throw error;
-     e('tracxoGroupName').value='';state.tab='groups';await loadChats();await openChat(id);
-   }catch(x){msg('tracxoGroupError',err(x),true)}
+     const approved=await acceptedFriendIds();if(ids.some(id=>!approved.includes(id)))throw Error('Niet alle deelnemers zijn geaccepteerde vrienden.');
+     const {data:chatId,error}=await sb.rpc('tracxo_create_group_chat',{p_title:title,p_friend_ids:ids});if(error)throw error;
+     e('tracxoGroupName').value='';await loadChats();await openChat(chatId);
+   }catch(ex){msg('tracxoGroupError',formatError(ex),true)}
  }
- window.tracxoPresenceChatContext=()=>{const c=currentChat();return c&&state.active?{chatId:state.active,kind:c.kind,members:membersOf(state.active).map(m=>m.runner_id),names:Object.fromEntries(membersOf(state.active).map(m=>[m.runner_id,displayName(m.runner_id)]))}:null};
- function clearOnLogout(){state.active=null;state.chats=[];state.members=[];state.handles.clear();++state.refreshSeq;++state.messagesSeq}
- const previousShow=show;
- show=function(page){
-   if(page==='welcome')clearOnLogout();
-   previousShow(page);
-   if(page==='chatRoom'&&state.active){void loadMessages()}
+ window.tracxoPresenceChatContext=()=>{
+   const c=state.chats.find(x=>x.id===state.active);
+   return c?{chatId:c.id,kind:c.kind,members:membersOf(c.id).map(x=>x.runner_id),names:Object.fromEntries(membersOf(c.id).map(x=>[x.runner_id,handle(x.runner_id)]))}:null;
  };
- // The existing navigation already calls renderTracxoChats on entry.
- renderTracxoChats=function(){void loadChats()};
- chooseChatTab=function(tab){state.tab=tab==='groups'?'groups':'dm';renderList()};
- openGroupCreator=function(){void groupCreator()};
- createLocalGroup=function(){void createGroup()};
- sendLocalChatMessage=function(){void send()};
- window.refreshTracxoOnlineChats=function(){void loadChats()};
- window.tracxoOpenDMWith=function(friendId){void startDM(friendId)};
- // No push notifications yet: refresh active page only, never poll while hidden.
+ function clear(){state.active=null;state.chats=[];state.members=[];state.handles.clear();state.inbox.clear();state.readKey=null;++state.refreshSeq;++state.messagesSeq;navBadge()}
+ const oldShow=show;
+ show=function(page){if(page==='welcome')clear();oldShow(page);if(page==='chatRoom'&&state.active)void loadMessages()};
+ renderTracxoChats=()=>void loadChats();
+ chooseChatTab=()=>renderList();
+ openGroupCreator=()=>void openGroup();
+ createLocalGroup=()=>void createGroup();
+ sendLocalChatMessage=()=>void send();
+ window.refreshTracxoOnlineChats=()=>void loadChats();
+ window.tracxoOpenDMWith=friendId=>void startDM(friendId);
+ window.tracxo914Inbox={refresh:()=>void refreshInbox(),refreshChats:()=>void loadChats()};
  setInterval(()=>{
    if(document.hidden||!me())return;
    if(e('chatRoom')?.classList.contains('active')&&state.active)void loadMessages();
    else if(e('chats')?.classList.contains('active'))void loadChats();
-   else if(e('friends')?.classList.contains('active'))window.refreshOnlineFriends?.();
- },12000);
+ },5000);
+ setInterval(()=>{if(!document.hidden&&me())void refreshInbox()},8000);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden&&me()){void refreshInbox();if(e('chats')?.classList.contains('active'))void loadChats()}});
+ setInterval(()=>{if(me()&&!document.hidden&&state.inbox.size===0)void refreshInbox()},12000);
+ navBadge();
 })();
-</script><script id="tracxo913Presence">
-/* TRACXO 9.1.3: Presence & typing. Authenticated RPC writes; RLS-protected reads.
-   Uses one per-tab session so two devices don't accidentally mark each other offline.
-   Typing text stays local; only chat ID and a short-lived typing flag are sent.
-   Snapshot every 2s in a chat; 8s on lists. No public realtime channels. */
+</script><script id="tracxo914Presence">
+/* TRACXO 9.1.4: online + typen. Geverifieerde RPC met foutmeldingen in de app.
+   Geen concepttekst wordt verzonden; alleen gebruikers-ID, gespreks-ID en tijdelijke status. */
 (function(){
  'use strict';
- const el=id=>document.getElementById(id);
- const client=()=>window.tracxoCloud?.client?.();
- const user=()=>window.tracxoCloud?.user?.();
- const chat=()=>window.tracxoPresenceChatContext?.();
- const MAX_ONLINE_AGE=65000, PRESENCE_PULSE_MS=20000, TYPING_VALID_MS=4500;
- let sessionId=null,registeredUser=null,latest=new Map(),loading=false,available=null;
- let lastPingAt=0,lastTypingPing=0,lastKeystroke=0,typing=false,stopTimer=null,inFlight=false;
- let refreshTimer=0,unavailableMessage='',lastWarning=0;
+ const el=id=>document.getElementById(id),client=()=>window.tracxoCloud?.client?.(),user=()=>window.tracxoCloud?.user?.(),chat=()=>window.tracxoPresenceChatContext?.();
+ const onlineAge=37000;
+ let sid=null,sessionUser=null,pending=null,sending=false,lastHeartbeat=0,lastError='',lastErrorAt=0;
+ let presence=new Map(),typing=false,stopTimer=null,lastTypeSent=0,polling=false,lastFetchAt=0,available=null;
+ function page(){return document.querySelector('.screen.active')?.id||''}
+ function errorText(x){const code=String(x?.code||''),s=String(x?.message||x||'Onbekende fout');
+   return (code?'['+code+'] ':'')+(code==='PGRST202'?'SQL-update 9.1.4 ontbreekt. ': '')+s;
+ }
+ function diagnostic(s,bad=false){
+   const x=el('tracxoPresenceDiagnostics');if(x){x.textContent=s;x.style.color=bad?'#ab4242':'#708373'}
+   if(bad){if(Date.now()-lastErrorAt>10000){console.warn('TRACXO status:',s);lastErrorAt=Date.now()}}
+ }
  function session(){
-   if(sessionId)return sessionId;
+   const u=user();if(!u)return null;
+   if(sessionUser!==u.id){sessionUser=u.id;sid=null;lastHeartbeat=0;presence.clear();available=null}
+   if(sid)return sid;
+   const key='tracxo914_device_session:'+u.id;
    try{
-     const key='tracxo913_presence_tab:'+user()?.id;
-     const candidate=sessionStorage.getItem(key);
-     if(candidate && /^[0-9a-f-]{36}$/i.test(candidate))sessionId=candidate;
-     else {sessionId=crypto.randomUUID();sessionStorage.setItem(key,sessionId)}
-   }catch(_){if(!sessionId&&crypto?.randomUUID)sessionId=crypto.randomUUID()}
-   return sessionId;
- }
- function activePage(){return document.querySelector('.screen.active')?.id||''}
- function idsToFetch(){
-   const me=user()?.id;if(!me)return [];
-   const page=activePage(),result=[];
-   if(page==='chatRoom'){
-     const c=chat();if(c)result.push(...c.members.filter(id=>id!==me));
-   }else if(page==='chats'){
-     document.querySelectorAll('#tracxoChatList [data-tracxo-peer-id]').forEach(n=>result.push(n.dataset.tracxoPeerId));
-   }else if(page==='friends'){
-     document.querySelectorAll('#friendsList [data-tracxo-friend-id]').forEach(n=>result.push(n.dataset.tracxoFriendId));
+     let value=sessionStorage.getItem(key);
+     if(!value||!/^[0-9a-f-]{36}$/i.test(value)){
+       value=crypto.randomUUID();sessionStorage.setItem(key,value)
+     }
+     sid=value;
+   }catch(ex){
+     try{sid=crypto.randomUUID()}catch(_){diagnostic('Kan geen veilige browser-sessie aanmaken. Gebruik een bijgewerkte browser.',true)}
    }
-   return [...new Set(result.filter(Boolean))].slice(0,100);
+   return sid;
  }
- function isTypingHere(){return typing&&activePage()==='chatRoom'&&!document.hidden&&!!chat()?.chatId&&(Date.now()-lastKeystroke)<2700}
- async function pulse(online=true,typingChat=null){
-   const sb=client(),u=user(),sid=session();if(!sb||!u||!sid)return;
-   if(inFlight && online)return;
-   inFlight=true;
-   try{
-     const data=await sb.rpc('tracxo_presence_ping',{p_session_id:sid,p_chat_id:typingChat,p_online:online});
-     if(data.error)throw data.error;
-     available=true;unavailableMessage='';lastPingAt=Date.now();
-   }catch(err){
-     available=false;
-     unavailableMessage='Online-status niet beschikbaar. Controleer of de SQL-update van 9.1.3 is uitgevoerd.';
-     if(Date.now()-lastWarning>30000){console.warn('TRACXO presence:',err?.message||err);lastWarning=Date.now()}
-     draw();
-   }finally{inFlight=false}
+ function pulse(online=true,chatId=null){
+   const u=user(),sb=client(),id=session();if(!u||!sb||!id)return;
+   pending={p_session_id:id,p_chat_id:online?chatId:null,p_online:online,userId:u.id};
+   if(sending)return;
+   sending=true;
+   void (async()=>{
+     try{
+       while(pending){
+         const next=pending;pending=null;
+         const {error}=await sb.rpc('tracxo_presence_ping',{
+           p_session_id:next.p_session_id,p_chat_id:next.p_chat_id,p_online:next.p_online
+         });
+         if(user()?.id!==next.userId)break;
+         if(error){available=false;lastError='Status verzenden mislukt: '+errorText(error);diagnostic(lastError,true);draw()}
+         else{lastHeartbeat=Date.now();if(available===false)available=null;diagnostic('Status verbonden · TRACXO online')}
+       }
+     }finally{sending=false}
+   })();
  }
- function statusFor(uid){
+ function peers(){
+   const u=user()?.id;if(!u)return [];
+   const all=[];
+   document.querySelectorAll('#friendsList [data-tracxo-friend-id]').forEach(x=>all.push(x.dataset.tracxoFriendId));
+   document.querySelectorAll('#tracxoChatList [data-tracxo-peer-id]').forEach(x=>all.push(x.dataset.tracxoPeerId));
+   if(page()==='chatRoom'){const c=chat();if(c)all.push(...c.members.filter(id=>id!==u))}
+   return [...new Set(all.filter(id=>id&&id!==u))].slice(0,100);
+ }
+ function status(uid){
    if(available===false)return 'unknown';
    if(available===null)return 'loading';
-   const rows=latest.get(uid)||[];
-   return rows.some(x=>Date.now()-new Date(x.last_seen_at).getTime() <MAX_ONLINE_AGE && Date.now()>=new Date(x.last_seen_at).getTime()-20000)?'online':'offline';
+   const row=presence.get(uid);
+   return row&&Date.now()-new Date(row.last_seen_at).getTime()<=onlineAge?'online':'offline';
  }
- function nameFor(uid,c){return c?.names?.[uid]||'Een Runner'}
  function draw(){
    document.querySelectorAll('#friendsList [data-tracxo-friend-id]').forEach(row=>{
      let badge=row.querySelector('.tx-presence-tag');
      if(!badge){badge=document.createElement('div');badge.className='tx-presence-tag';row.querySelector('div')?.append(badge)}
-     const s=statusFor(row.dataset.tracxoFriendId);badge.dataset.presence=s;
-     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Status laden…';
+     const s=status(row.dataset.tracxoFriendId);badge.dataset.presence=s;
+     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='loading'?'Status ophalen…':'Status niet beschikbaar';
    });
    document.querySelectorAll('#tracxoChatList [data-tracxo-peer-id]').forEach(row=>{
      const badge=row.querySelector('.tx-presence-tag');if(!badge)return;
-     const s=statusFor(row.dataset.tracxoPeerId);badge.dataset.presence=s;
-     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Status laden…';
+     const s=status(row.dataset.tracxoPeerId);badge.dataset.presence=s;
+     badge.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='loading'?'Status ophalen…':'Status niet beschikbaar';
    });
-   const c=chat(),p=el('tracxoConversationMembers'),ind=el('tracxoTypingIndicator');
-   if(!p||!ind)return;
-   if(activePage()!=='chatRoom'||!c){ind.style.display='none';p.classList.remove('tx-person-status');return}
+   const info=el('tracxoConversationMembers'),indicator=el('tracxoTypingIndicator'),c=chat();
+   if(!info||!indicator)return;
+   if(page()!=='chatRoom'||!c){indicator.style.display='none';info.classList.remove('tx-person-status');return}
    if(c.kind==='direct'){
-     const peer=c.members.find(id=>id!==user()?.id);const s=peer?statusFor(peer):'unknown';
-     p.classList.add('tx-person-status');p.dataset.presence=s;
-     p.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='unknown'?'Status niet beschikbaar':'Online-status laden…';
-   }else{
-     p.classList.remove('tx-person-status');p.removeAttribute('data-presence');p.textContent=c.members.length+' deelnemers';
-   }
-   const typingPeople=c.members.filter(id=>id!==user()?.id).filter(uid=>(latest.get(uid)||[]).some(r=>
-     r.typing_chat_id===c.chatId&&r.typing_until&&new Date(r.typing_until).getTime()>Date.now()
-     &&Date.now()-new Date(r.last_seen_at).getTime()<MAX_ONLINE_AGE));
-   if(typingPeople.length){
-     const names=typingPeople.slice(0,2).map(id=>nameFor(id,c)).join(' en ');
-     ind.textContent=names+(typingPeople.length>2?' en anderen':'')+(typingPeople.length===1?' is':' zijn')+' aan het typen…';ind.style.display='flex';
-   }else ind.style.display='none';
-   const w=el('tracxoOnlineFriendStatus');
-   if(w&&available===false&&activePage()==='friends'){w.textContent=unavailableMessage;w.style.color='#aa593b'}
+     const peer=c.members.find(id=>id!==user()?.id),s=peer?status(peer):'unknown';
+     info.classList.add('tx-person-status');info.dataset.presence=s;
+     info.textContent=s==='online'?'Online':s==='offline'?'Offline':s==='loading'?'Online-status laden…':'Status niet beschikbaar';
+   }else{info.classList.remove('tx-person-status');info.removeAttribute('data-presence');info.textContent=c.members.length+' deelnemers'}
+   const typers=c.members.filter(id=>id!==user()?.id).filter(id=>{
+     const r=presence.get(id);return r&&r.typing_until&&new Date(r.typing_until).getTime()>Date.now()
+   });
+   if(typers.length){
+     const names=typers.slice(0,2).map(id=>c.names?.[id]||'Een Runner').join(' en ');
+     indicator.textContent=names+(typers.length>2?' en anderen':'')+(typers.length===1?' is':' zijn')+' aan het typen…';
+     indicator.style.display='flex';
+   }else indicator.style.display='none';
  }
- async function fetchNow(){
-   if(document.hidden||loading||!user()||!client())return;
-   const ids=idsToFetch();
-   if(!ids.length){latest=new Map();draw();return}
-   loading=true;
-   const account=user().id;
+ async function fetchNow(force=false){
+   if(!user()||!client()||document.hidden||polling)return;
+   if(!force&&Date.now()-lastFetchAt<1100)return;
+   const ids=peers(),current=user().id;
+   lastFetchAt=Date.now();
+   if(!ids.length){presence.clear();draw();return}
+   polling=true;
    try{
-     const cutoff=new Date(Date.now()-MAX_ONLINE_AGE).toISOString();
-     const {data,error}=await client().from('runner_presence_sessions')
-       .select('runner_id,last_seen_at,typing_chat_id,typing_until')
-       .in('runner_id',ids).gt('last_seen_at',cutoff).limit(600);
+     const room=page()==='chatRoom'?chat()?.chatId:null;
+     const {data,error}=await client().rpc('tracxo_presence_snapshot',{p_runner_ids:ids,p_chat_id:room||null});
      if(error)throw error;
-     if(user()?.id!==account)return;
-     available=true;unavailableMessage='';
-     const map=new Map();for(const row of data||[]){if(!map.has(row.runner_id))map.set(row.runner_id,[]);map.get(row.runner_id).push(row)}
-     latest=map;
-   }catch(err){available=false;unavailableMessage='Online-status niet beschikbaar. Voer eerst de TRACXO 9.1.3 SQL-update uit.';
-     if(Date.now()-lastWarning>30000){console.warn('TRACXO status:',err?.message||err);lastWarning=Date.now()}
-   }finally{loading=false;draw()}
- }
- async function activate(){
-   const u=user();if(!u){if(registeredUser){registeredUser=null;latest.clear();available=null;typing=false;draw()}return}
-   if(registeredUser!==u.id){registeredUser=u.id;sessionId=null;available=null;latest.clear();lastPingAt=0;typing=false;void pulse(true,null)}
-   if(document.hidden)return;
-   if(Date.now()-lastPingAt>PRESENCE_PULSE_MS && !inFlight)void pulse(true,isTypingHere()?chat().chatId:null);
- }
- function keypress(){
-   if(!user()||document.hidden||activePage()!=='chatRoom'||!chat()?.chatId)return;
-   const input=el('tracxoMessageInput');if(!input||!input.value.trim()){stopTyping();return}
-   lastKeystroke=Date.now();typing=true;
-   if(stopTimer)clearTimeout(stopTimer);
-   stopTimer=setTimeout(stopTyping,2300);
-   if(Date.now()-lastTypingPing>1200){lastTypingPing=Date.now();void pulse(true,chat().chatId)}
+     if(user()?.id!==current)return;
+     presence=new Map((data||[]).map(r=>[r.runner_id,r]));available=true;lastError='';draw();
+     diagnostic('Online-status verbonden · wordt automatisch bijgewerkt');
+   }catch(ex){
+     available=false;lastError='Status ophalen mislukt: '+errorText(ex);
+     diagnostic(lastError,true);draw();
+   }finally{polling=false}
  }
  function stopTyping(){
-   const wasTyping=typing;typing=false;
    if(stopTimer){clearTimeout(stopTimer);stopTimer=null}
-   if(wasTyping&&user()&&!document.hidden){lastTypingPing=Date.now();void pulse(true,null)}
+   if(typing){typing=false;lastTypeSent=0;if(user())pulse(!document.hidden,null)}
  }
- function chatOpened(){stopTyping();latest.clear();draw();void fetchNow()}
- function pageChanged(page){
-   if(page!=='chatRoom')stopTyping();
-   if(page==='welcome'){registeredUser=null;typing=false;latest.clear();available=null;draw()}
-   if(['friends','chats','chatRoom'].includes(page)){draw();void activate().then(fetchNow)}
+ function keypress(){
+   if(!user()||document.hidden||page()!=='chatRoom')return;
+   const c=chat(),input=el('tracxoMessageInput');if(!c||!input)return;
+   if(!input.value.trim()){stopTyping();return}
+   typing=true;
+   if(stopTimer)clearTimeout(stopTimer);
+   stopTimer=setTimeout(stopTyping,3800);
+   if(Date.now()-lastTypeSent>=1100){lastTypeSent=Date.now();pulse(true,c.chatId)}
  }
- // Don't accidentally restore an offline session when the browser tab is hidden.
+ function activate(){
+   if(!user()||!client()){if(sessionUser){sessionUser=null;sid=null;presence.clear();available=null;typing=false;draw()}return}
+   session();
+   if(document.hidden)return;
+   if(Date.now()-lastHeartbeat>11000)pulse(true,typing&&page()==='chatRoom'?chat()?.chatId:null);
+ }
+ function change(pageId){
+   if(pageId!=='chatRoom')stopTyping();
+   if(pageId==='welcome'){presence.clear();available=null;sessionUser=null;sid=null;draw();return}
+   activate();draw();if(['friends','chats','chatRoom'].includes(pageId))void fetchNow(true);
+ }
  document.addEventListener('visibilitychange',()=>{
-   if(document.hidden){typing=false;clearTimeout(stopTimer);void pulse(false,null)}
-   else{lastPingAt=0;void activate();void fetchNow()}
+   if(document.hidden){typing=false;clearTimeout(stopTimer);pulse(false,null)}
+   else{lastHeartbeat=0;activate();void fetchNow(true);window.tracxo914Inbox?.refresh?.()}
  });
+ window.addEventListener('pagehide',()=>{if(user())pulse(false,null)});
  el('tracxoMessageInput')?.addEventListener('input',keypress);
  el('tracxoMessageInput')?.addEventListener('blur',stopTyping);
- // App logout confirms before calling auth.signOut. Best-effort offline update before that call.
- window.tracxoPresence=Object.freeze({refreshNow:()=>void fetchNow(),chatOpened,stopTyping,setOffline:()=>pulse(false,null)});
- const oldShow=show;
- show=function(page){oldShow(page);pageChanged(page)};
- setInterval(()=>{void activate()},2500);
- setInterval(()=>{
-   if(document.hidden||!user())return;
-   const page=activePage();if(page==='chatRoom'){
-     if(typing&&(Date.now()-lastKeystroke)>2700)stopTyping();
-     void fetchNow();
-   }
- },2000);
- setInterval(()=>{if(!document.hidden&&['chats','friends'].includes(activePage()))void fetchNow()},8000);
- void activate();
+ window.tracxoPresence=Object.freeze({refreshNow:()=>void fetchNow(true),chatOpened:()=>{stopTyping();void fetchNow(true)},stopTyping,setOffline:()=>{stopTyping();pulse(false,null);return Promise.resolve()}});
+ const prevShow=show;show=function(pageId){prevShow(pageId);change(pageId)};
+ setInterval(activate,2300);
+ setInterval(()=>{if(!document.hidden&&user()&&page()==='chatRoom')void fetchNow()},1600);
+ setInterval(()=>{if(!document.hidden&&user()&&['friends','chats'].includes(page()))void fetchNow()},6000);
+ activate();
 })();
 </script>
 </body></html>
