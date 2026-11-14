@@ -1,4 +1,4 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.1.4 — Online & Typen</title><style>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRACXO 9.2 — GPS & XP Online</title><style>
 :root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#173026;background:#eaf0eb}*{box-sizing:border-box}body{margin:0}.app{max-width:470px;min-height:100vh;margin:auto;background:#f7faf7;padding:22px 19px 90px;box-shadow:0 0 40px #203b2610}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.brand{font-size:29px;font-weight:950;letter-spacing:-2px;font-style:italic}.brand span{color:#39b86c}.muted{color:#748579;font-size:13px}.avatar{background:#e4f5e9;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;font-weight:800;color:#2c9856}.hero{background:#173e2b;color:white;border-radius:23px;padding:24px;margin-bottom:14px;position:relative;overflow:hidden}.hero:after{content:"⌖";font-size:140px;position:absolute;right:-12px;top:-40px;color:#ffffff12}.hero h1{font-size:26px;line-height:1.13;margin:13px 0}.hero p{font-size:13px;color:#d0e5d7;max-width:260px}.pill{display:inline-block;border-radius:99px;background:#ffffff25;color:white;padding:6px 11px;font-size:11px;font-weight:700}.btn{border:0;background:#43c678;color:#10321f;border-radius:13px;padding:14px 16px;font-weight:800;cursor:pointer;width:100%;font-size:14px}.btn:active{transform:scale(.99)}.btn.secondary{background:#e3f2e8;color:#17603a}.btn.outline{background:white;border:1px solid #d9e7dd;color:#235a39}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{background:white;border:1px solid #e8eee9;border-radius:19px;padding:17px;margin-bottom:12px}.stat{font-size:25px;font-weight:850;margin:7px 0 2px}.section{display:flex;align-items:center;justify-content:space-between;margin:21px 0 11px}.section h2{font-size:18px;margin:0}.tabs{display:flex;gap:6px;background:#e8f0e9;padding:5px;border-radius:14px;margin:12px 0}.tabs button{flex:1;border:0;border-radius:10px;background:transparent;padding:11px 5px;font-size:12px;font-weight:750;color:#61796a;cursor:pointer}.tabs button.active{background:white;color:#188448;box-shadow:0 1px 5px #173b2010}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);max-width:470px;width:100%;background:white;border-top:1px solid #e7eee9;display:flex;justify-content:space-around;padding:10px 2px 13px;z-index:10}.nav button{border:0;background:none;color:#87978c;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:5px;flex-direction:column}.nav button.active{color:#219a54;font-weight:800}.nav b{font-size:21px}.screen{display:none}.screen.active{display:block}label{font-size:13px;font-weight:750;display:block;margin:16px 0 8px}input,select{width:100%;padding:13px;border:1px solid #dbe8df;border-radius:12px;background:white;font:inherit;color:#173026}.option{border:1px solid #dce9df;background:white;padding:13px;border-radius:12px;cursor:pointer;font-weight:700;font-size:13px;text-align:center}.option.active{background:#e1f6e8;border-color:#37b76b;color:#177840}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.list{display:flex;flex-direction:column;gap:10px}.item{padding:14px;background:white;border:1px solid #e6eee8;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.small{font-size:12px}.tag{font-size:11px;background:#e6f6ec;color:#25814b;padding:5px 9px;border-radius:50px;font-weight:800}.notice{background:#e8f6ec;color:#276744;border-radius:12px;padding:13px;font-size:12px;line-height:1.5;margin-top:12px}.progress{height:8px;background:#e5efe7;border-radius:9px;overflow:hidden}.progress>div{background:#48c67a;height:100%;width:26%}h3{margin:4px 0 8px}.back{border:0;background:none;color:#278c4d;font-weight:800;padding:0 0 15px;cursor:pointer}.toggle{display:flex;gap:8px;flex-wrap:wrap}.toggle button{flex:1;min-width:90px}.foot{font-size:11px;color:#829286;text-align:center;margin-top:20px}</style><style>
 .splash{position:fixed;inset:0;z-index:40;background:#f7faf7;display:grid;place-items:center;transition:opacity .5s}.splash.hide{opacity:0;pointer-events:none}.splash-inner{text-align:center}.splash-logo{font-size:50px;font-weight:950;font-style:italic;letter-spacing:-3px;animation:reveal 2.4s both}.splash-logo em{color:#39b86c;font-style:inherit}.runner{font-size:42px;display:block;animation:dash 2.4s ease-in-out both}@keyframes dash{0%{transform:translateX(-135px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(140px);opacity:0}}@keyframes reveal{0%,30%{opacity:0;transform:translateY(8px)}70%,100%{opacity:1;transform:translateY(0)}}
 .demo-banner{font-size:11px;text-align:center;color:#5c8069;background:#e5f4e9;border-radius:9px;padding:8px;margin:-8px 0 16px}.map-sim{background:linear-gradient(130deg,#e7f2e9 0 23%,#d7e9dc 23% 26%,#edf5ed 26% 52%,#d7e9dc 52% 55%,#e5f2e8 55%);height:170px;border-radius:18px;position:relative;overflow:hidden;border:1px solid #dceadd}.map-sim:before{content:'· · · · · · · · · · · ·';position:absolute;top:60px;left:14px;transform:rotate(-15deg);font-size:25px;color:#4bbf79;letter-spacing:7px}.pin{position:absolute;top:44%;left:65%;font-size:32px}.sim-big{font-size:36px;font-weight:850}.audio-card{background:#173e2b;color:white;border-radius:20px;padding:20px;margin:14px 0}.audio-card p{color:#d7eee0;line-height:1.6}.smallbtn{width:auto;padding:10px 13px}.intro{padding:20px 0 12px;text-align:center}.intro .logo{font-size:46px;font-weight:950;font-style:italic;letter-spacing:-3px}.intro .logo span{color:#39b86c}.intro h2{font-size:27px}.hidden{display:none!important}
@@ -229,12 +229,25 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
 #tracxoPresenceDiagnostics{font-size:11px;margin:12px 0 4px;overflow-wrap:anywhere}
 @media(max-width:380px){#tracxoChatList .tx-inbox-row{padding:11px;gap:9px}.tx-inbox-head b{font-size:13px}}
 </style>
-</head><body><div class="splash" id="splash"><div class="splash-inner"><div class="tracxo-mark" aria-hidden="true"><i></i><span></span></div><div class="splash-logo">TRAC<span>X</span>O</div><div class="splash-tag">MOVE. DISCOVER. REPEAT.</div></div></div><div id="liveAdventure" aria-label="Live avontuur kaart">
+<style id="tracxo92Styles">
+/* TRACXO 9.2: reliable account progress / save confirmations; preserve Studio theme. */
+.tx92-progress-note{border:1px solid #d8e9c8;background:#f2f8eb;color:#496548;border-radius:12px;padding:12px 14px;font-size:12px;line-height:1.5;margin:-2px 0 14px}
+.tx92-status{font-size:12px;line-height:1.6;color:#627b68;margin:12px 0;overflow-wrap:anywhere}
+.tx92-status[data-bad="true"]{color:#a84040;background:#fff6f5;padding:10px;border-radius:10px;border:1px solid #f0dfdd}
+.tx92-xp-reward{margin-top:14px;padding:17px;border:1px solid #deebd5;border-radius:15px;background:#f4f9ef;text-align:center}
+.tx92-xp-reward>div{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.tx92-xp-reward span{font-weight:850;font-size:11px;letter-spacing:1.2px;color:#567043}
+.tx92-xp-reward strong{font-size:26px;color:#2f6827;letter-spacing:-1px;white-space:nowrap}
+.tx92-xp-reward p{font-size:12px;color:#59745d;line-height:1.5;text-align:left;margin:11px 0 0}
+.tx92-xp-reward button{margin-top:11px}
+#tx92SyncSelected[hidden],#tx92RecapRetry[hidden]{display:none!important}
+@media(max-width:380px){.tx92-xp-reward strong{font-size:23px}}
+</style></head><body><div class="splash" id="splash"><div class="splash-inner"><div class="tracxo-mark" aria-hidden="true"><i></i><span></span></div><div class="splash-logo">TRAC<span>X</span>O</div><div class="splash-tag">MOVE. DISCOVER. REPEAT.</div></div></div><div id="liveAdventure" aria-label="Live avontuur kaart">
 <div class="liveHeader"><div><div class="liveBrand">TRAC<b>X</b>O <span style="font-size:12px">LIVE</span></div><div class="liveStatus" id="liveStatus">GPS wordt gezocht…</div></div><div style="display:flex;gap:6px;align-items:center"><button type="button" onclick="closeLiveMap()" style="border:0;background:#e6f1e9;border-radius:10px;padding:10px;font-weight:700">← Terug</button><button type="button" onclick="finishTrackedAdventure()" style="border:0;background:#ffe4e4;color:#8a2222;border-radius:10px;padding:10px;font-weight:700">■ Beëindigen</button></div></div>
 <div class="liveMapWrap"><div id="liveMap"></div><div class="liveCompassBadge" aria-label="Kompas"><div class="fixedRose" aria-hidden="true"><span class="roseN">N</span><span class="roseO">O</span><span class="roseZ">Z</span><span class="roseW">W</span><span class="rosePointer">▲</span><span class="roseDot"></span></div></div><div class="liveHintBubble" role="status" aria-live="polite"><div class="liveHintTitle">💬 TRACXO HINT</div><div class="liveHintText" id="liveHintText">Je eerste hint verschijnt zodra je avontuur begint.</div><button id="liveSpeakHint" type="button" onclick="speakLiveHint()" style="margin-top:9px;background:#dcf9c5;color:#174b17;border:0;border-radius:10px;padding:9px 12px;font-weight:800">🔊 Spreek hint uit</button><div id="liveVoiceStatus" style="font-size:11px;margin-top:5px;color:#45624a" aria-live="polite"></div></div><div class="liveArrowBox" style="left:12px;top:12px;transform:none;min-width:0;pointer-events:auto"><div style="font-weight:800" id="liveDirection">Telefoonrichting zoeken…</div><div class="liveArrowNote">Pijl op je foto = telefoonrichting, geen afslagadvies</div><button id="headingEnable" onclick="enableCompass()" style="margin-top:7px;border:0;border-radius:8px;background:#daf3e4;padding:7px 10px;font-weight:700">🧭 Kompas activeren</button></div></div>
 <div class="liveHud"><div class="liveMetrics"><div class="liveMetric"><strong id="liveTime">00:00:00</strong><span>TIJD</span></div><div class="liveMetric"><strong id="liveDistance">0,00</strong><span>AFSTAND (KM)</span></div><div class="liveMetric"><strong id="liveSpeed">0,0</strong><span>SNELHEID (KM/U)</span></div></div><div class="liveControls"><button id="livePause" onclick="toggleTrackedPause()">⏸ Pauzeren</button><button onclick="finishTrackedAdventure()">🏁 Afronden</button></div><div class="liveFoot" id="liveFoot">Volg alleen toegankelijke en veilige paden. GPS kan afwijken.</div></div></div><div id="tracxoStartOverlay" role="status" aria-live="polite" aria-label="Start avontuur"><div class="tracxoStartPanel"><div class="tracxoStartBrand">⌖ TRAC<span>X</span>O</div><div class="tracxoStartGlyph" id="tracxoStartGlyph">🧭</div><h2 id="tracxoStartTitle">Jouw avontuur wordt voorbereid</h2><p id="tracxoStartMessage">We zoeken je locatie en een geheime route.</p><div class="tracxoStartProgress" id="tracxoStartProgress"><div></div></div><div id="tracxoStartNumber" aria-hidden="true"></div><p class="tracxoStartSafety">Kijk onderweg op de weg, niet op je scherm.</p></div></div><div class="app">
 <header class="top"><div><div class="muted">ONTDEK MEER. ELKE DAG.</div><div class="brand">TRAC<span>X</span>O <span style="font-size:20px">⌖</span></div></div><div class="avatar" id="avatar" onclick="show('profile')" title="Profielfoto aanpassen" style="overflow:hidden;cursor:pointer">S</div></header>
-<div class="demo-banner">● TRACXO 9.1.4 TEST · Online chats & meldingen · Routes lokaal</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.1.4 test: online vrienden, chats en typindicatie via Supabase. GPS-routes blijven lokaal.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
+<div class="demo-banner">● TRACXO 9.2 TEST · GPS, XP en routes online · Social 9.1.4</div><section id="welcome" class="screen active"><div class="intro"><div class="tracxo-welcome-mark" aria-hidden="true">⌖</div><div class="logo">TRAC<span>X</span>O</div><div class="intro-kicker">MOVE. DISCOVER. REPEAT.</div><h2>Ga naar buiten. Ontdek iets nieuws.</h2><p class="muted">Echte plekken. Verrassende routes. Jouw avontuur begint hier.</p></div><div class="card"><h3 id="authHeading">Maak je account aan</h3><p class="muted" id="authDescription">Maak een echt Runner-account met je e-mailadres en een wachtwoord.</p><div id="tracxoNameWrap"><label>Gebruikersnaam</label><input id="welcomeName" maxlength="20" placeholder="@gebruikersnaam" autocomplete="username" autocapitalize="off"></div><label>E-mailadres</label><input id="tracxoAuthEmail" type="email" placeholder="jij@voorbeeld.nl" autocomplete="email" inputmode="email" autocapitalize="off" required><label>Wachtwoord</label><input id="authPassword" type="password" placeholder="Minimaal 8 tekens" autocomplete="new-password"><div id="confirmArea"><label>Herhaal wachtwoord</label><input id="authConfirm" type="password" placeholder="Typ hetzelfde wachtwoord opnieuw" autocomplete="new-password"></div><p id="authError" style="color:#b33a3a;font-size:13px" role="alert"></p><p id="tracxoAuthInfo" style="color:#166a3d;font-size:13px;line-height:1.5" role="status"></p><button class="btn" id="authAction" onclick="submitAuth()">Account aanmaken →</button><div style="height:10px"></div><button class="btn outline" id="authSwitch" onclick="switchAuth()">Ik heb al een account · Inloggen</button><button type="button" class="btn secondary" style="margin-top:10px" onclick="tracxoRequestPasswordReset()">🔑 Wachtwoord vergeten?</button><div id="tracxoPasswordReset" style="display:none;border:1px solid #d8e5dc;border-radius:12px;padding:12px;margin-top:10px"><label>Nieuw wachtwoord</label><input id="tracxoNewPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Nieuw wachtwoord (min. 8 tekens)"><button class="btn" onclick="tracxoUpdatePassword()" style="margin-top:10px">Nieuw wachtwoord opslaan</button></div></div><p class="foot">🔐 TRACXO 9.2 test: vrienden, chats, GPS-routegeschiedenis en XP via Supabase. Alleen je eigen account kan volledige GPS-sporen inzien.</p></section><section id="home" class="screen"><button class="btn resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Hervat je avontuur</button><div id="runnerTrialHome" class="notice" style="display:none;margin-bottom:12px"></div><div class="hero"><span class="pill">LEVEL 1 · BEGINNER</span><h1>De wereld ligt<br>voor je open.</h1><p>Ontdek nieuwe plekken, volg hints en verdien XP.</p><button class="btn" onclick="show('setup')">🚶 Start avontuur →</button></div><div id="tx92XpInfo" class="tx92-progress-note" role="status">XP wordt opgehaald uit jouw TRACXO-account.</div><div class="grid"><div class="card"><div class="muted">⚡ XP verdiend</div><div class="stat" id="xp">0</div><div class="muted">Level 1</div></div><div class="card"><div class="muted">📍 Bestemmingen</div><div class="stat" id="found">0</div><div class="muted">Ontdekt</div></div><div class="card"><div class="muted">👟 Afstand</div><div class="stat" id="km">0,0</div><div class="muted">Kilometer</div></div><div class="card"><div class="muted">🏅 Badges</div><div class="stat">1</div><div class="muted">Verzameld</div></div></div><div class="card"><div class="row"><b>Op weg naar level 2</b><span class="muted">125 / 500 XP</span></div><div class="progress" style="margin-top:13px"><div></div></div></div><div class="section"><h2>Met vrienden</h2></div><div class="grid"><button class="option" onclick="show('friends')">👥 Vrienden toevoegen</button><button class="option" onclick="show('battles')">⚔️ Battles</button></div></section>
 <section id="setup" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('home')">← Terug</button><div class="setupHeading"><div class="setupSymbol">✦</div><div><h2>Jouw avontuur</h2><p>Stel je speurtocht samen</p></div></div><p class="muted small setupIntro">Kies wat bij je past. TRACXO regelt de verrassingen.</p><div class="setupGroup" data-setup="Activiteit"><div class="setupGroupHead"><span>Activiteit</span><small>Hoe ga je op pad?</small></div><div class="grid" id="activity"><button class="option active" onclick="pick('activity',this)">🚶 Wandelen</button><button class="option" onclick="pick('activity',this)">🏃 Hardlopen</button><button class="option" onclick="pick('activity',this)">🚴 Fietsen</button></div></div><div class="setupGroup" data-setup="Afstand"><div class="setupGroupHead"><span>Afstand</span><small>Hoe ver wil je gaan?</small></div><select id="distance"><option>2 km</option><option>5 km</option><option>10 km</option><option>15 km</option><option>20 km</option><option>30 km</option><option>40 km</option><option>50 km</option></select></div><div class="setupGroup" data-setup="Moeilijkheid"><div class="setupGroupHead"><span>Moeilijkheid</span><small>Hoe vaak wil je een hint?</small></div><div class="grid" id="difficulty" style="grid-template-columns:repeat(3,1fr)"><button class="option active" onclick="pick('difficulty',this)">Vaak</button><button class="option" onclick="pick('difficulty',this)">Redelijk</button><button class="option" onclick="pick('difficulty',this)">Amper</button></div></div><div class="setupGroup" data-setup="Bestemmingen"><div class="setupGroupHead"><span>Bestemmingen</span><small>Hoeveel plekken wil je ontdekken?</small></div><div class="grid" id="density" style="grid-template-columns:repeat(3,1fr)"><button class="option" onclick="pick('density',this)">Rustig aan</button><button class="option active" onclick="pick('density',this)">Iets meer</button><button class="option" onclick="pick('density',this)">Speurder</button></div><p class="muted small" id="densityInfo">TRACXO bepaalt automatisch het aantal stops op basis van afstand en activiteit.</p></div><select id="stops" style="display:none"><option selected>3</option></select><div class="setupGroup" data-setup="Routetype"><div class="setupGroupHead"><span>Routetype</span><small>Hoe wil je eindigen?</small></div><div class="grid" id="route"><button class="option active" onclick="pick('route',this)">🔁 Rondwandeling</button><button class="option" onclick="pick('route',this)">➡️ Enkele reis</button></div></div><div class="setupGroup" data-setup="Speelmodus"><div class="setupGroupHead"><span>Speelmodus</span><small>Met wie ga je op avontuur?</small></div><div class="grid" id="play"><button class="option active" onclick="pick('play',this)">👤 Solo</button><button class="option" onclick="pick('play',this)">👥 Samen met vrienden</button></div></div><div id="teamNote" class="notice" style="display:none">Samen spelen: voorstel +20% XP, maar 25% minder optionele hints. De eerste richtinghint blijft altijd beschikbaar. Je maakt straks een groepslobby.</div><div style="height:17px"></div><button class="btn" id="autoAdventureStart" onclick="autoStartAdventure()">▶ Start avontuur</button><p id="autoAdventureStatus" class="muted small" aria-live="polite" style="margin-top:10px">TRACXO zoekt na Start automatisch een geheime route en opent daarna de live kaart.</p></section>
 <section id="routeplanner" class="screen"><button class="btn secondary resumeAdventure" style="display:none;margin-bottom:12px" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><button class="back" onclick="show('setup')">← Terug naar avontuur</button><h2>Jouw verrassingsroute</h2><p class="muted">TRACXO zoekt automatisch een echte, beschreven plek in de buurt en berekent een wandel- of fietsroute. Je krijgt alleen een richtinghint, niet het eindpunt. Richtafstand ±10%; geen gegarandeerd veilige route.</p><div class="card"><div class="row"><b>GPS & kaart</b><span class="tag" id="routeGpsStatus">Nog niet gestart</span></div><p class="muted small" id="routeLocation">GPS wordt automatisch aangevraagd zodra je de routeplanner opent.</p><button class="btn secondary" id="routeLocate" onclick="locateForRoute()">📍 GPS opnieuw proberen</button><div style="height:9px"></div><p class="muted small">De route wordt automatisch gezocht wanneer je op Start avontuur drukt.</p></div><div id="routeMap" style="height:330px;border-radius:17px;border:1px solid #dbe7df;background:#e6f1e9;margin-bottom:13px"></div><div class="card"><h3>Routegegevens</h3><p class="muted small">De gekozen afstand is een richtafstand. TRACXO streeft naar ±10% en toont afwijkingen eerlijk.</p><div id="routeStatus" class="muted small" aria-live="polite">Open deze pagina met internet en HTTPS voor GPS en kaartdiensten.</div><div id="routeResult" style="margin-top:12px"></div><div id="routeStops" class="list" style="margin-top:12px"></div></div><div class="card" id="routeActivityActions" style="display:none"><h3>🚴 Actieve activiteit</h3><p class="muted small">Je activiteit loopt door wanneer je de kaart verbergt, zolang iOS GPS-updates toestaat.</p><button class="btn" onclick="openLiveMap()">🗺️ Terug naar live kaart</button><div style="height:9px"></div><button class="btn outline" style="color:#a12727" onclick="finishTrackedAdventure()">■ <span id="routeEndLabel">Activiteit beëindigen</span></button></div><div id="activityTracker" class="card" style="display:none"><div class="row"><h3>🏃 Jouw activiteit</h3><span id="trackState" class="tag">Klaar om te starten</span></div><div class="grid" style="margin:14px 0"><div><div class="muted">Tijd</div><div id="trackTime" class="stat" style="font-variant-numeric:tabular-nums">00:00:00</div></div><div><div class="muted">Afgelegd</div><div id="trackDistance" class="stat">0,00 km</div></div><div><div class="muted">Gemiddeld tempo</div><div id="trackPace" class="stat" style="font-size:20px">—</div></div><div><div class="muted">GPS-nauwkeurigheid</div><div id="trackAccuracy" class="stat" style="font-size:20px">—</div></div></div><p class="muted small" id="trackMessage">Druk op Start als je klaar bent om te vertrekken.</p><button class="btn" id="trackStart" onclick="startTrackedAdventure()">▶ Start avontuur</button><div class="grid" style="margin-top:9px"><button class="btn secondary" id="trackPause" onclick="toggleTrackedPause()" disabled>⏸ Pauzeren</button><button class="btn outline" id="trackFinish" onclick="finishTrackedAdventure()" disabled>🏁 Afronden</button></div><p class="muted small" style="margin-top:12px">GPS meet de werkelijk afgelegde afstand, niet de geplande afstand. Houd deze pagina open en je scherm actief; metingen op de achtergrond zijn niet gegarandeerd.</p></div><div class="notice">⚠️ Kaart via Esri/OpenTopoMap; wandelroutes via de TRACXO Cloudflare Worker en OpenRouteService. Bestemmingen komen uit geografisch beschreven Wikipedia-plekken; niet elke haven, brug of dorpsplek staat in die databron. Als er geen geschikte plek wordt gevonden, meldt TRACXO dat eerlijk. De route is voor de verrassing niet vooraf zichtbaar. Controleer zelf paden en verkeerssituaties. GPS kan onnauwkeurig zijn. Geen automatische XP in deze test.</div></section><section id="lobby" class="screen"><button class="back" onclick="show('setup')">← Terug naar instellingen</button><h2>👥 Groepsavontuur</h2><p class="muted">Samen wandelen of hardlopen met dezelfde bestemmingen en hints.</p><div class="card"><h3>Jouw groepscode</h3><div class="row"><strong id="lobbyCode" style="font-size:28px;letter-spacing:4px">TRX482</strong><button class="btn secondary" style="width:105px" onclick="copyCode()">Kopieer</button></div><p class="muted small">Deel de code met je vrienden. In deze demo werkt de code alleen als voorbeeld op dit apparaat.</p></div><div class="card"><div class="row"><h3>Deelnemers</h3><span class="tag" id="participantCount">1 / 6</span></div><div class="list" id="participants"><div class="item"><span>👑 Jij (groepsleider)</span><span class="tag">Klaar ✓</span></div></div><label>Vriend toevoegen (demo)</label><div class="row"><input id="participantName" placeholder="@gebruikersnaam"><button class="btn" style="width:110px" onclick="addParticipant()">Voeg toe</button></div><p class="muted small">Hiermee simuleer je dat een vriend meedoet; er wordt nog geen echte verbinding gemaakt.</p></div><div class="card"><h3>Of aansluiten bij een groep</h3><div class="row"><input id="joinCode" placeholder="Bijv. TRX482" maxlength="8"><button class="btn secondary" style="width:105px" onclick="joinGroup()">Join</button></div><p class="muted small">In de demo kun je de eigen groepscode uitproberen.</p></div><div class="notice">🎁 Groepsbonus: +20% XP en 25% minder optionele hints. De eerste richtinghint blijft beschikbaar. Echte synchronisatie volgt in een latere versie.</div><div style="height:15px"></div><button class="btn" onclick="preview()">Groepsavontuur bekijken →</button></section>
 
@@ -259,8 +272,8 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
 </section>
 <section id="battles" class="screen"><h2>TRACXO Battles ⚔️</h2><p class="muted">Daag vrienden uit. Elke battle duurt 14 dagen.</p><div class="card"><h3>Nieuwe battle</h3><label>Wie doet er mee?</label><div class="grid" id="opponents"><button class="option active" onclick="pick('opponents',this)">1 tegen 1</button><button class="option" onclick="pick('opponents',this)">Vriendengroep</button></div><label>Waar strijd je om?</label><div class="grid" id="battleType"><button class="option active" onclick="pick('battleType',this)">📍 Bestemmingen</button><button class="option" onclick="pick('battleType',this)">👟 Kilometers</button></div><label>Uitnodigen</label><input id="invite" placeholder="@vriend of groepsnaam"><p class="muted small">⏳ Duur: 14 dagen · winnaar ontvangt badge en bonus-XP</p><button class="btn" onclick="createBattle()">Battle aanmaken</button></div><div class="section"><h2>Actieve battles</h2></div><div class="list" id="battleList"><div class="item"><div><b>Jij vs @nova</b><div class="muted small">Bestemmingen · nog 9 dagen</div></div><span class="tag">3 – 2</span></div></div><div class="notice">Battle-uitnodigingen en scores zijn voorbeeldgegevens.</div></section>
 <section id="rankings" class="screen"><h2>Ranglijsten</h2><p class="muted">Twee competities, zodat iedereen zijn eigen uitdaging kan kiezen.</p><div class="tabs"><button class="active" onclick="rank('dest',this)">📍 Ontdekkers</button><button onclick="rank('km',this)">👟 Kilometers</button></div><div class="tabs"><button class="active" onclick="period(this)">Week</button><button onclick="period(this)">Maand</button><button onclick="period(this)">Altijd</button></div><div class="list" id="rankList"></div><div class="notice">Voorbeeldranglijst; er zijn nog geen echte spelers gekoppeld.</div></section>
-<section id="profile" class="screen"><div class="card"><h3>📸 Mijn profielfoto</h3><p class="muted small">Kies een foto voor je kaartpositie. De foto blijft alleen op dit apparaat opgeslagen.</p><div class="row"><div id="photoPreview" class="avatar" style="overflow:hidden">S</div><label for="photoInput" class="btn secondary" style="width:auto;margin:0;cursor:pointer">Kies profielfoto</label></div><input type="file" id="photoInput" accept="image/*" onchange="saveProfilePhoto(event)" style="margin-top:12px"><p class="muted small" id="photoMessage">Geen foto geselecteerd.</p><button class="btn outline" onclick="removeProfilePhoto()">Foto verwijderen</button></div><div class="card" id="tracxoPrivacyCard"><h3>🔒 Wie mag mijn Runner-profiel zien?</h3><p class="muted small">Kies wie jouw prestaties en afgeronde routes later mag zien. Alles staat standaard op privé.</p><label for="runnerVisibility">Profielzichtbaarheid</label><select id="runnerVisibility" onchange="setRunnerVisibility(this.value)"><option value="private">🔒 Alleen ik</option><option value="friends">👥 Alleen vrienden</option><option value="public">🌍 Iedereen</option></select><p id="runnerPrivacyInfo" class="muted small">Je profiel is privé.</p><div class="notice">🔐 In deze demo worden je routes niet online gedeeld. Je kunt alleen zelf bekijken hoe jouw profiel er voor anderen uit zou zien. Voor echte openbare profielen is een veilige server nodig.</div></div><div class="card"><h3>🏁 Mijn afgeronde routes</h3><p class="muted small" id="runnerRouteSummary">Er zijn nog geen tochten opgeslagen.</p><button class="btn" onclick="openRunnerRoutes()">🗺️ Bekijk routes en bestemmingen</button></div><div class="card" id="runnerTrialCard"><h3>💎 TRACXO Premium</h3><p id="runnerTrialStatus" class="muted small">Proefperiode controleren…</p><button class="btn secondary" onclick="openRunnerTour(false)">👟 Rondleiding opnieuw bekijken</button></div><div class="card"><h3>👥 Vrienden & berichten</h3><p class="muted small">Beheer verzoeken of open een privéchat of groepsapp.</p><div class="grid"><button class="btn secondary" onclick="show('friends')">Vrienden</button><button class="btn secondary" onclick="show('chats')">💬 Chats</button></div></div><h2>Mijn profiel</h2><p class="muted">Andere spelers zien je gebruikersnaam, niet je echte naam.</p><div class="card"><div class="row"><div class="avatar">S</div><span class="tag">Level 1</span></div><label>Gebruikersnaam</label><input id="username" value="Swipe" maxlength="20"><p class="muted small">Je gebruikersnaam is in deze demo alleen lokaal zichtbaar.</p><button class="btn secondary" onclick="saveName()">Gebruikersnaam opslaan</button></div><div class="card"><h3>🏅 Badges</h3><div>🌱 Eerste ontdekking</div></div><div class="card"><h3>⚙️ Instellingen</h3><label>Taal</label><select><option>Nederlands</option><option>English (later)</option><option>Deutsch (later)</option></select><p class="muted small">Andere talen worden later toegevoegd.</p></div><div class="card logoutCard"><h3>Account</h3><p class="muted small">Uitloggen op dit apparaat. Je lokale demo-account en profielfoto blijven bewaard.</p><button class="btn outline logoutBtn" onclick="logoutTracxo()">↪ Uitloggen</button></div></section>
-<section id="runnerRoutes" class="screen"><button class="back" onclick="show('profile')">← Terug naar mijn profiel</button><div class="row" style="margin-bottom:7px"><h2 style="margin:0">🗺️ Runner-routes</h2><span class="tag">8.8.1</span></div><p class="muted small">Jouw daadwerkelijk gemeten GPS-tochten. Een route die je beëindigt, wordt opgeslagen. Een bestemming telt alleen als ontdekt na GPS-controle in de buurt ervan.</p><div class="card"><label for="routeViewer">Bekijk mijn profiel als</label><select id="routeViewer" onchange="renderRunnerRoutes()"><option value="owner">👤 Ikzelf</option><option value="friend">👥 Een vriend (voorbeeld)</option><option value="public">🌍 Een onbekende (voorbeeld)</option></select><p id="routePrivacyMessage" class="muted small"></p></div><div class="grid" id="runnerHistoryStats" style="grid-template-columns:repeat(3,1fr)"><div class="card"><div class="muted small">Tochten</div><b id="historyTrips">0</b></div><div class="card"><div class="muted small">Bestemmingen</div><b id="historyDestinations">0</b></div><div class="card"><div class="muted small">Kilometers</div><b id="historyKilometers">0,0</b></div></div><div id="runnerRouteList" class="list"></div><div class="card" id="runnerRouteDetail" style="display:none"><div class="row"><h3 id="runnerDetailTitle">Route</h3><button class="btn secondary smallbtn" id="runnerDeleteRoute" onclick="deleteRunnerRoute()" style="width:auto">🗑️ Verwijder</button></div><p id="runnerDetailMeta" class="muted small"></p><div id="runnerHistoryMap" style="height:300px;border-radius:15px;background:#e4f1e7;border:1px solid #d7e7dc"></div><p id="runnerMapPrivacyNote" class="muted small" style="margin-top:12px"></p></div><p class="notice">Je routes blijven alleen op dit apparaat bewaard. Voor gedeelde kaarten worden het begin, het einde en punten vlak bij die locaties verborgen. Controleer altijd of een route veilig is om te delen.</p></section>
+<section id="profile" class="screen"><div class="card"><h3>📸 Mijn profielfoto</h3><p class="muted small">Kies een foto voor je kaartpositie. De foto blijft alleen op dit apparaat opgeslagen.</p><div class="row"><div id="photoPreview" class="avatar" style="overflow:hidden">S</div><label for="photoInput" class="btn secondary" style="width:auto;margin:0;cursor:pointer">Kies profielfoto</label></div><input type="file" id="photoInput" accept="image/*" onchange="saveProfilePhoto(event)" style="margin-top:12px"><p class="muted small" id="photoMessage">Geen foto geselecteerd.</p><button class="btn outline" onclick="removeProfilePhoto()">Foto verwijderen</button></div><div class="card" id="tracxoPrivacyCard"><h3>🔒 Wie mag mijn Runner-profiel zien?</h3><p class="muted small">Kies wie jouw prestaties en afgeronde routes later mag zien. Alles staat standaard op privé.</p><label for="runnerVisibility">Profielzichtbaarheid</label><select id="runnerVisibility" onchange="setRunnerVisibility(this.value)"><option value="private">🔒 Alleen ik</option><option value="friends">👥 Alleen vrienden</option><option value="public">🌍 Iedereen</option></select><p id="runnerPrivacyInfo" class="muted small">Je profiel is privé.</p><div class="notice">🔐 De volledige GPS-routes staan in jouw privé-account. Ook als je profiel op Openbaar staat, delen we voorlopig geen GPS-kaarten of start- en eindpunten. De weergave voor vrienden is alleen een voorbeeld.</div></div><div class="card"><h3>🏁 Mijn afgeronde routes</h3><p id="tx92CloudNotice" class="tx92-status" role="status">Online routegeschiedenis ophalen…</p><p class="muted small" id="runnerRouteSummary">Er zijn nog geen tochten opgeslagen.</p><button class="btn" onclick="openRunnerRoutes()">🗺️ Bekijk routes en bestemmingen</button></div><div class="card" id="runnerTrialCard"><h3>💎 TRACXO Premium</h3><p id="runnerTrialStatus" class="muted small">Proefperiode controleren…</p><button class="btn secondary" onclick="openRunnerTour(false)">👟 Rondleiding opnieuw bekijken</button></div><div class="card"><h3>👥 Vrienden & berichten</h3><p class="muted small">Beheer verzoeken of open een privéchat of groepsapp.</p><div class="grid"><button class="btn secondary" onclick="show('friends')">Vrienden</button><button class="btn secondary" onclick="show('chats')">💬 Chats</button></div></div><h2>Mijn profiel</h2><p class="muted">Andere spelers zien je gebruikersnaam, niet je echte naam.</p><div class="card"><div class="row"><div class="avatar">S</div><span id="tx92ProfileLevel" class="tag">Level 1</span></div><label>Gebruikersnaam</label><input id="username" value="Swipe" maxlength="20"><p class="muted small">Je gebruikersnaam is in deze demo alleen lokaal zichtbaar.</p><button class="btn secondary" onclick="saveName()">Gebruikersnaam opslaan</button></div><div class="card"><h3>🏅 Badges</h3><div>🌱 Eerste ontdekking</div></div><div class="card"><h3>⚙️ Instellingen</h3><label>Taal</label><select><option>Nederlands</option><option>English (later)</option><option>Deutsch (later)</option></select><p class="muted small">Andere talen worden later toegevoegd.</p></div><div class="card logoutCard"><h3>Account</h3><p class="muted small">Uitloggen op dit apparaat. Je lokale demo-account en profielfoto blijven bewaard.</p><button class="btn outline logoutBtn" onclick="logoutTracxo()">↪ Uitloggen</button></div></section>
+<section id="runnerRoutes" class="screen"><button class="back" onclick="show('profile')">← Terug naar mijn profiel</button><div class="row" style="margin-bottom:7px"><h2 style="margin:0">🗺️ Runner-routes</h2><span class="tag">9.2 ONLINE</span></div><p class="muted small">Jouw daadwerkelijk gemeten GPS-tochten. Een route die je beëindigt, wordt opgeslagen. Een bestemming telt alleen als ontdekt na GPS-controle in de buurt ervan.</p><div class="card"><label for="routeViewer">Bekijk mijn profiel als</label><select id="routeViewer" onchange="renderRunnerRoutes()"><option value="owner">👤 Ikzelf</option><option value="friend">👥 Een vriend (voorbeeld)</option><option value="public">🌍 Een onbekende (voorbeeld)</option></select><p id="routePrivacyMessage" class="muted small"></p></div><div class="grid" id="runnerHistoryStats" style="grid-template-columns:repeat(3,1fr)"><div class="card"><div class="muted small">Tochten</div><b id="historyTrips">0</b></div><div class="card"><div class="muted small">Bestemmingen</div><b id="historyDestinations">0</b></div><div class="card"><div class="muted small">Kilometers</div><b id="historyKilometers">0,0</b></div></div><p id="tx92RoutesStatus" class="tx92-status" role="status">Verbinden met je privégeschiedenis…</p><button type="button" class="btn secondary" id="tx92SyncLocal" onclick="tracxo92SyncLocal()" style="margin-bottom:14px">☁ Synchroniseer oudere lokale routes</button><div id="runnerRouteList" class="list"></div><div class="card" id="runnerRouteDetail" style="display:none"><div class="row"><h3 id="runnerDetailTitle">Route</h3><button class="btn secondary smallbtn" id="runnerDeleteRoute" onclick="deleteRunnerRoute()" style="width:auto">🗑️ Verwijder</button></div><p id="runnerDetailMeta" class="muted small"></p><div id="runnerHistoryMap" style="height:300px;border-radius:15px;background:#e4f1e7;border:1px solid #d7e7dc"></div><p id="runnerMapPrivacyNote" class="muted small" style="margin-top:12px"></p><p class="tx92-status" id="tx92RouteDetailStatus"></p><button type="button" class="btn secondary" id="tx92SyncSelected" onclick="tracxo92SyncSelected()" hidden>☁ Sla deze route online op</button></div><p class="notice">Online routes zijn standaard privé en hun volledige GPS-sporen zijn alleen voor jouw ingelogde account beschikbaar. De vriend/openbaar-weergave is nog uitsluitend een voorbeeld; er worden geen openbare routekaarten gepubliceerd.</p></section>
 <section id="chats" class="screen">
   <div class="tx-pagehead"><div><span class="tx-eyebrow">TRACXO SOCIAL</span><h2>Berichten</h2><p>Gesprekken met jouw Runners, veilig opgeslagen in Supabase.</p></div><button class="tx-icon-btn" type="button" onclick="refreshTracxoOnlineChats()" aria-label="Gesprekken vernieuwen">↻</button></div>
   <p class="tx-inbox-label">AL JE GESPREKKEN · PRIVÉ EN GROEPEN</p>
@@ -296,7 +309,7 @@ label{font-weight:750;color:#355041;font-size:12px}input,select,textarea{border:
       <div class="tracxoRecapStat"><span>⚡ Gem. snelheid</span><strong id="tracxoRecapSpeed">0,0 km/u</strong></div>
     </div>
     <div class="notice" id="tracxoRecapDestination">📍 Bestemming niet met GPS bevestigd.</div>
-    <p class="muted small" id="tracxoRecapSave" style="text-align:center;margin-top:12px">De meting is afgerond.</p>
+    <p class="muted small" id="tracxoRecapSave" style="text-align:center;margin-top:12px">De meting is afgerond.</p><div class="tx92-xp-reward"><div><span>VERDIENDE ROUTE-XP</span><strong id="tx92RecapXp">…</strong></div><p id="tx92RecapStatus" role="status">Online opslaan wordt gestart…</p><button type="button" class="btn secondary" id="tx92RecapRetry" onclick="tracxo92RetryLatest()" hidden>Opnieuw online opslaan</button></div>
   </div>
   <button class="btn" onclick="openRunnerRoutes()">🗺️ Bekijk mijn afgeronde routes</button>
   <button class="btn secondary" style="margin-top:9px" onclick="show('setup')">🚀 Nieuw avontuur</button>
@@ -579,7 +592,7 @@ async function startTrackedAdventure(){
 }
 function startTrackedAdventureNow(){if(!window.tracxoSecretRoute){trackEl('trackMessage').textContent='Zoek eerst een route.';return}if(!window.isSecureContext||!navigator.geolocation){trackEl('trackMessage').textContent='GPS vereist HTTPS en locatietoegang.';return}const t=window.tracxoTrack;if(t.mode!=='idle')return;t.mode='running';t.startedAt=Date.now();t.reachedTarget=false;t.destinationFixes=0;t.activityKind=selected('activity').includes('Fietsen')?'Fietsen':selected('activity').includes('Hardlopen')?'Hardlopen':'Wandelen';tracxoVoiceLastThreshold=0;tracxoHintIndex=0;t.ticker=setInterval(renderTracked,1000);startTrackWatch();trackEl('trackState').textContent='Bezig';trackEl('trackStart').disabled=true;trackEl('trackPause').disabled=false;trackEl('trackFinish').disabled=false;trackEl('trackMessage').textContent='Activiteit gestart. Houd je scherm aan voor GPS-meting.';updateResumeButtons();openLiveMap();if(runningWithVoice())speakLiveHint();renderTracked()}
 function toggleTrackedPause(){const t=window.tracxoTrack;if(t.mode==='running'){t.elapsed=trackElapsed();t.mode='paused';if(t.watch!==null)navigator.geolocation.clearWatch(t.watch);t.watch=null;t.last=null;trackEl('trackState').textContent='Gepauzeerd';trackEl('trackPause').textContent='▶ Hervatten';trackEl('trackMessage').textContent='Tijd en afstand staan stil.'}else if(t.mode==='paused'){t.mode='running';t.startedAt=Date.now();startTrackWatch();trackEl('trackState').textContent='Bezig';trackEl('trackPause').textContent='⏸ Pauzeren';trackEl('trackMessage').textContent='Meting hervat.'}updateLiveControls();renderTracked()}
-function finishTrackedAdventure(){const t=window.tracxoTrack;if(!['running','paused'].includes(t.mode))return;if(!confirm('Wil je je activiteit echt beëindigen? Je kunt daarna niet verder met dezelfde meting.'))return;t.elapsed=trackElapsed();t.mode='finished';if(t.watch!==null)navigator.geolocation.clearWatch(t.watch);t.watch=null;if(t.ticker!==null)clearInterval(t.ticker);t.ticker=null;t.last=null;try{saveFinishedRunnerRoute(t)}catch(err){console.warn('Routes opslaan mislukt',err);trackEl('trackMessage').textContent='Opslaan van deze route lukte niet.'}trackEl('trackState').textContent='Afgerond';updateResumeButtons();trackEl('trackPause').disabled=true;trackEl('trackFinish').disabled=true;trackEl('trackStart').disabled=true;closeLiveMap();trackEl('trackMessage').textContent='🏁 Klaar! Afstand: '+(t.meters/1000).toFixed(2).replace('.',',')+' km. Tijd: '+trackClock(t.elapsed)+'. Gemiddelde snelheid: '+(t.elapsed>0?(t.meters/1000)/(t.elapsed/3600):0).toFixed(1).replace('.',',')+' km/u. Je route is lokaal opgeslagen.'+(t.reachedTarget?' Bestemming ontdekt!':' Bestemming niet met GPS bevestigd.');renderTracked();refreshRunnerStats()}
+function finishTrackedAdventure(){const t=window.tracxoTrack;if(!['running','paused'].includes(t.mode))return;if(!confirm('Wil je je activiteit echt beëindigen? Je kunt daarna niet verder met dezelfde meting.'))return;t.elapsed=trackElapsed();t.mode='finished';if(t.watch!==null)navigator.geolocation.clearWatch(t.watch);t.watch=null;if(t.ticker!==null)clearInterval(t.ticker);t.ticker=null;t.last=null;try{saveFinishedRunnerRoute(t)}catch(err){console.warn('Routes opslaan mislukt',err);trackEl('trackMessage').textContent='Opslaan van deze route lukte niet.'}trackEl('trackState').textContent='Afgerond';updateResumeButtons();trackEl('trackPause').disabled=true;trackEl('trackFinish').disabled=true;trackEl('trackStart').disabled=true;closeLiveMap();trackEl('trackMessage').textContent='🏁 Klaar! Afstand: '+(t.meters/1000).toFixed(2).replace('.',',')+' km. Tijd: '+trackClock(t.elapsed)+'. Gemiddelde snelheid: '+(t.elapsed>0?(t.meters/1000)/(t.elapsed/3600):0).toFixed(1).replace('.',',')+' km/u. Je route is lokaal vastgelegd; online synchronisatie volgt op het eindscherm.'+(t.reachedTarget?' Bestemming ontdekt!':' Bestemming niet met GPS bevestigd.');renderTracked();refreshRunnerStats()}
 window.addEventListener('pagehide',()=>{const t=window.tracxoTrack;if(t?.watch!==null)navigator.geolocation.clearWatch(t.watch);if(t?.ticker!==null)clearInterval(t.ticker)});
 </script><script>
 // TRACXO 8.0: local profile photo and phone-heading compass.
@@ -821,7 +834,7 @@ function renderRunnerRoutes(){
  document.getElementById('runnerDetailMeta').textContent=(selected.meters/1000).toFixed(2).replace('.',',')+' km · '+trackClock(selected.seconds)+' · gemiddeld '+average+' km/u'+(selected.reached&&selected.target?' · Bestemming: '+selected.target.name:' · Bestemming niet bevestigd');
  document.getElementById('runnerDeleteRoute').style.display=own?'inline-block':'none';
  const note=document.getElementById('runnerMapPrivacyNote');
- note.textContent=own?'Alleen jij ziet dit volledige GPS-spoor op je eigen apparaat.':'De eerste en laatste 250 meter en punten vlak bij begin/einde zijn voor anderen verborgen.';
+ note.textContent=own?'Dit volledige GPS-spoor is alleen beschikbaar voor jouw ingelogde account.':'De eerste en laatste 250 meter en punten vlak bij begin/einde zijn voor anderen verborgen.';
  if(!window.L){note.textContent+=' Kaart kan niet laden: Leaflet ontbreekt.';return}
  if(!runnerRouteMap){
   runnerRouteMap=L.map('runnerHistoryMap',{zoomControl:true}).setView([52.09,5.12],5);
@@ -1781,5 +1794,298 @@ window.addEventListener('DOMContentLoaded',()=>{renderTracxoFriends();renderTrac
  setInterval(()=>{if(!document.hidden&&user()&&['friends','chats'].includes(page()))void fetchNow()},6000);
  activate();
 })();
+</script>
+<script id="tracxo92CloudModule">
+/* TRACXO 9.2 — Private cloud GPS archive and server-computed XP.
+   Requires the matching 9.2 SQL. Existing friend/chat modules are untouched.
+   Note: browser GPS is useful but is not a cryptographic proof of movement. */
+(function(){
+ 'use strict';
+ const byId=id=>document.getElementById(id);
+ const api=()=>window.tracxoCloud?.client?.();
+ const me=()=>window.tracxoCloud?.user?.();
+ const rawLocalHistory=getRunnerHistory;
+ const rawSaveFinishedRoute=saveFinishedRunnerRoute;
+ const rawDistinct=distinctRunnerTargets;
+ const rawRefreshStats=refreshRunnerStats;
+ const rawDisplayFinish=displayTracxoFinish;
+ const rawEnter=enterApp;
+ const rawShow=show;
+ const rawBonusDisplay=updateRunnerBonusDisplay;
+ const state={uid:null,remote:[],summary:null,loaded:false,busy:false,syncing:new Set(),latest:null,lastError:'',lastRefreshAt:0,refreshRequested:false};
+ const sourceLabel={walk:'Wandelen',run:'Hardlopen',cycle:'Fietsen'};
+ const typeCode={'Wandelen':'walk','Hardlopen':'run','Fietsen':'cycle'};
+ const status=(message,bad=false)=>{
+   for(const id of ['tx92CloudNotice','tx92RoutesStatus']){
+     const e=byId(id);if(e){e.textContent=message;e.dataset.bad=bad?'true':'false'}
+   }
+ };
+ const messageOf=e=>{
+   const msg=String(e?.message||e||'Onbekende fout');
+   if(e?.code==='PGRST202'||/could not find the function|does not exist|permission denied for table runner_xp_events/i.test(msg))return 'De TRACXO 9.2 SQL-update ontbreekt of is niet volledig uitgevoerd. '+msg;
+   return msg;
+ };
+ const safeLocal=()=>{try{return rawLocalHistory()}catch(e){return []}};
+ const account=()=>me()?.id||null;
+ const savedFlag=r=>r.cloudSynced===true;
+ function putLocalRecord(localId,patch){
+   const rows=safeLocal();const row=rows.find(r=>r.id===localId);
+   if(!row)return null;
+   Object.assign(row,patch);
+   try{localStorage.setItem(runnerHistoryKey(),JSON.stringify(rows))}catch(e){
+     status('De opslag op dit toestel is vol. Je route staat mogelijk wel online.',true);
+   }
+   return row;
+ }
+ function remoteRecord(r,points){
+   return {id:r.id,cloudRunId:r.id,cloudSynced:true,remote:true,
+     date:new Date(r.finished_at).getTime(),type:sourceLabel[r.activity]||'Wandelen',
+     meters:Number(r.distance_m)||0,seconds:Number(r.duration_s)||0,
+     points:Array.isArray(points)?points:[],reached:Number(r.destinations_found)>0,
+     found:Number(r.destinations_found)||0,target:null,title:r.title||'Avontuur'};
+ }
+ function combinedHistory(){
+   if(!state.loaded)return safeLocal();
+   const fromCloud=state.remote;
+   const local=safeLocal().filter(r=>!savedFlag(r) && !fromCloud.some(c=>c.id===r.cloudRunId));
+   return [...fromCloud,...local].sort((a,b)=>(b.date||0)-(a.date||0));
+ }
+ getRunnerHistory=combinedHistory;
+ // The 8.7 local archiver must only append to the local cache, not a merged cloud list.
+ saveFinishedRunnerRoute=function(t){
+   const onlineHistory=getRunnerHistory;
+   getRunnerHistory=rawLocalHistory;
+   try{return rawSaveFinishedRoute(t)}finally{getRunnerHistory=onlineHistory}
+ };
+ distinctRunnerTargets=function(history){
+   return rawDistinct(history.filter(r=>!r.remote))+
+     history.filter(r=>r.remote).reduce((n,r)=>n+(Number(r.found)||0),0);
+ };
+ function xpUI(){
+   const total=Number(state.summary?.total_xp)||0;
+   const e=byId('xp');if(e)e.textContent=state.summary?String(total):'—';
+   const level=Math.floor(total/500)+1,levelProgress=total%500;
+   const label=document.querySelector('#home .hero .pill');if(label&&state.summary)label.textContent='LEVEL '+level+' · RUNNER';
+   const label2=document.querySelector('#home .progress')?.previousElementSibling?.querySelector('span');
+   if(label2&&state.summary)label2.textContent=levelProgress+' / 500 XP';
+   const bar=document.querySelector('#home .progress>div');if(bar&&state.summary)bar.style.width=(levelProgress/500*100)+'%';
+   const levelTag=byId('tx92ProfileLevel');if(levelTag&&state.summary)levelTag.textContent='Level '+level;
+   const info=byId('tx92XpInfo');if(info)info.textContent=state.summary?
+     total+' XP · '+Number(state.summary.runs||0)+' online tochten · '+Number(state.summary.destinations_found||0)+' GPS-bestemmingen':
+     'XP wordt opgehaald uit jouw TRACXO-account.';
+ }
+ function statsUI(){
+   if(!account())return;
+   xpUI();
+   if(!state.loaded||!state.summary)return;
+   const pending=safeLocal().filter(r=>!savedFlag(r));
+   const totalMeters=Number(state.summary.distance_m||0)+pending.reduce((sum,r)=>sum+(Number(r.meters)||0),0);
+   const found=Number(state.summary.destinations_found||0)+pending.filter(r=>r.reached).length;
+   const km=byId('km'),dest=byId('found');
+   if(km)km.textContent=(totalMeters/1000).toFixed(1).replace('.',',');
+   if(dest)dest.textContent=String(found);
+   const summary=byId('runnerRouteSummary');
+   if(summary){
+     const all=Number(state.summary.runs)||0;
+     summary.textContent=all+' tochten online · '+pending.length+' alleen op dit toestel · '+
+       (totalMeters/1000).toFixed(1).replace('.',',')+' km in totaal.';
+   }
+ }
+ updateRunnerBonusDisplay=function(){if(account())xpUI();else rawBonusDisplay()};
+ refreshRunnerStats=function(){rawRefreshStats();statsUI()};
+ async function refreshCloud(force=false){
+   const uid=account(),sb=api();
+   if(!uid||!sb)return;
+   if(state.uid!==uid){state.uid=uid;state.loaded=false;state.remote=[];state.summary=null;state.lastRefreshAt=0}
+   if(state.busy){if(force)state.refreshRequested=true;return}
+   if(!force&&Date.now()-state.lastRefreshAt<8000)return;
+   state.busy=true;
+   status('Online routegeschiedenis wordt bijgewerkt…');
+   try{
+     const [runsResult,summaryResult]=await Promise.all([
+       sb.from('runner_runs').select('id,runner_id,activity,distance_m,duration_s,destinations_found,title,finished_at')
+         .eq('runner_id',uid).order('finished_at',{ascending:false}).limit(50),
+       sb.rpc('tracxo_progress_summary')
+     ]);
+     if(runsResult.error)throw runsResult.error;
+     if(summaryResult.error)throw summaryResult.error;
+     const rows=runsResult.data||[];
+     const ids=rows.map(r=>r.id);
+     let tracks=[];
+     if(ids.length){
+       const tr=await sb.from('runner_gps_tracks').select('run_id,points').eq('runner_id',uid).in('run_id',ids);
+       if(tr.error)throw tr.error;
+       tracks=tr.data||[];
+     }
+     if(account()!==uid)return;
+     const paths=new Map(tracks.map(t=>[t.run_id,t.points]));
+     state.remote=rows.map(r=>remoteRecord(r,paths.get(r.id)));
+     state.summary=summaryResult.data||{total_xp:0,runs:0,distance_m:0,destinations_found:0};
+     state.loaded=true;state.lastRefreshAt=Date.now();state.lastError='';
+     const pending=safeLocal().filter(r=>!savedFlag(r)).length;
+     status('✓ '+state.remote.length+' recente routes uit je account geladen.'+
+       (pending?' '+pending+' route(s) nog alleen op dit toestel.':''));
+     statsUI();
+     if(byId('runnerRoutes')?.classList.contains('active'))renderRunnerRoutes();
+   }catch(e){
+     state.lastError=messageOf(e);
+     status('Online opslag nog niet beschikbaar: '+state.lastError,true);
+     xpUI();
+   }finally{
+     state.busy=false;
+     if(state.refreshRequested){state.refreshRequested=false;setTimeout(()=>{if(account()===uid)void refreshCloud(true)},0)}
+   }
+ }
+ function freshUuid(){
+   if(!window.crypto?.randomUUID)throw Error('Voor online opslag is HTTPS met veilige browserfuncties nodig.');
+   return window.crypto.randomUUID();
+ }
+ async function sendOne(localId){
+   const sb=api(),uid=account();if(!sb||!uid)throw Error('Log eerst in bij TRACXO.');
+   let local=safeLocal().find(r=>r.id===localId);
+   if(!local)throw Error('Deze lokale route is niet meer gevonden.');
+   if(savedFlag(local))return;
+   if(state.syncing.has(localId))return;
+   state.syncing.add(localId);
+   try{
+     let runId=local.cloudRunId;
+     if(!runId){runId=freshUuid();putLocalRecord(localId,{cloudRunId:runId});}
+     const destination=local.reached&&local.target&&
+       Number.isFinite(Number(local.target.lat))&&Number.isFinite(Number(local.target.lon))?
+       {lat:Number(local.target.lat),lon:Number(local.target.lon)}:null;
+     const payload={p_run_id:runId,p_activity:typeCode[local.type]||'walk',
+       p_distance_m:Math.max(0,Math.round(Number(local.meters)||0)),
+       p_duration_s:Math.max(1,Math.round(Number(local.seconds)||0)),
+       p_reached:!!local.reached,p_points:Array.isArray(local.points)?local.points:[],p_target:destination};
+     const {data,error}=await sb.rpc('tracxo_complete_adventure',payload);
+     if(error)throw error;
+     if(account()!==uid)return;
+     putLocalRecord(localId,{cloudSynced:true,cloudXp:Number(data?.earned_xp)||0});
+     state.latest={id:localId,earned:Number(data?.earned_xp)||0};
+     const xp=byId('tx92RecapXp');if(xp)xp.textContent='+'+state.latest.earned+' XP';
+     const recap=byId('tx92RecapStatus');
+     if(recap)recap.textContent='✓ Online opgeslagen. Deze route staat nu ook op je andere apparaten.'+
+       (state.latest.earned===0?' Geen XP: minimaal 100 m, 1 minuut en betrouwbare GPS-punten nodig.':'');
+     if(byId('tx92RecapRetry'))byId('tx92RecapRetry').hidden=true;
+     status('✓ GPS-route veilig in je account opgeslagen.');
+     await refreshCloud(true);
+   }catch(e){
+     const note='Online opslaan mislukt: '+messageOf(e)+'. Je route blijft lokaal bewaard.';
+     const recap=byId('tx92RecapStatus');if(recap)recap.textContent=note;
+     const retry=byId('tx92RecapRetry');if(retry)retry.hidden=false;
+     status(note,true);
+     throw e;
+   }finally{state.syncing.delete(localId)}
+ }
+ function asyncUpload(id){sendOne(id).catch(e=>console.warn('TRACXO 9.2 opslaan:',messageOf(e)))}
+ displayTracxoFinish=function(t){
+   rawDisplayFinish(t);
+   const recent=safeLocal()[0];
+   const id=recent?.id;
+   state.latest={id,earned:0};
+   const xp=byId('tx92RecapXp');if(xp)xp.textContent='…';
+   const note=byId('tx92RecapStatus');
+   const retry=byId('tx92RecapRetry');if(retry)retry.hidden=true;
+   if(!id||Math.abs(recent.meters-t.meters)>2||Date.now()-recent.date>30000){
+     if(note)note.textContent='Opslaan op dit toestel is niet bevestigd. Probeer opnieuw via Mijn routes.';
+     if(retry)retry.hidden=false;
+     return;
+   }
+   if(note)note.textContent='Je route staat lokaal. Beveiligd online opslaan…';
+   asyncUpload(id);
+ };
+ function fromLocalId(id){return safeLocal().find(r=>r.id===id)}
+ window.tracxo92RetryLatest=()=>{
+   let id=state.latest?.id;
+   if(!id){id=safeLocal().find(r=>!savedFlag(r))?.id}
+   if(!id){status('Geen wachtende lokale route gevonden.',true);return}
+   const recap=byId('tx92RecapStatus');if(recap)recap.textContent='Opnieuw verbinden met Supabase…';
+   asyncUpload(id);
+ };
+ window.tracxo92SyncLocal=async()=>{
+   const pending=safeLocal().filter(r=>!savedFlag(r));
+   if(!pending.length){status('Geen lokale routes meer om te synchroniseren.');return}
+   if(!confirm('Wil je '+pending.length+' lokaal opgeslagen GPS-route(s) naar jouw privé TRACXO-account sturen? Hierbij worden ook hun GPS-coördinaten privé bewaard in Supabase.'))return;
+   let saved=0,failed=0;
+   for(const r of pending){try{await sendOne(r.id);saved++}catch(e){failed++}}
+   status(saved+' route(s) online opgeslagen.'+(failed?' '+failed+' niet gelukt; probeer later opnieuw.':''),failed>0);
+   await refreshCloud(true);
+ };
+ const rawRoutes=renderRunnerRoutes;
+ renderRunnerRoutes=function(){
+   rawRoutes();
+   const r=combinedHistory().find(x=>x.id===runnerRouteSelectedId);
+   const btn=byId('tx92SyncSelected');
+   if(btn){btn.hidden=!r||r.remote||savedFlag(r)||byId('routeViewer')?.value!=='owner';}
+   const tag=byId('tx92RouteDetailStatus');
+   if(tag)tag.textContent=r?(r.remote?'✓ Opgeslagen in jouw account':savedFlag(r)?'✓ Online opgeslagen':'⏳ Alleen op dit apparaat') : '';
+ };
+ window.tracxo92SyncSelected=()=>{
+   const r=fromLocalId(runnerRouteSelectedId);
+   if(r)asyncUpload(r.id);
+ };
+ deleteRunnerRoute=async function(){
+   const route=combinedHistory().find(r=>r.id===runnerRouteSelectedId);
+   if(!route)return;
+   if(!confirm('Deze route en het bijbehorende GPS-spoor verwijderen? Online opgeslagen routes verdwijnen ook van andere apparaten. Verdiende XP voor deze route vervalt.'))return;
+   const uid=account();
+   if(route.remote){
+     const {error}=await api().from('runner_runs').delete().eq('id',route.id).eq('runner_id',uid);
+     if(error){status('Verwijderen mislukt: '+messageOf(error),true);return}
+     const other=safeLocal().filter(r=>r.cloudRunId!==route.id);
+     try{localStorage.setItem(runnerHistoryKey(),JSON.stringify(other))}catch(e){}
+     state.remote=state.remote.filter(r=>r.id!==route.id);
+     runnerRouteSelectedId=null;
+     await refreshCloud(true);
+   }else{
+     try{localStorage.setItem(runnerHistoryKey(),JSON.stringify(safeLocal().filter(r=>r.id!==route.id)))}
+     catch(e){status('Lokaal verwijderen mislukt.',true);return}
+     runnerRouteSelectedId=null;
+   }
+   renderRunnerRoutes();refreshRunnerStats();
+ };
+ const originalOpenRoutes=openRunnerRoutes;
+ openRunnerRoutes=function(){originalOpenRoutes();void refreshCloud(true)};
+ show=function(page){
+   rawShow(page);
+   if(page==='welcome'){
+     state.uid=null;state.loaded=false;state.remote=[];state.summary=null;state.lastRefreshAt=0;
+   }
+   if(page==='profile'||page==='runnerRoutes')void refreshCloud();
+ };
+ enterApp=function(name,isNew){
+   rawEnter(name,isNew);
+   const uid=account();
+   if(uid&&state.uid!==uid){state.uid=uid;state.loaded=false;state.remote=[];state.summary=null;state.lastRefreshAt=0}
+   xpUI();
+   if(uid){
+     void (async()=>{
+       if(localStorage.getItem(runnerTourKey())==='completed'){
+         try{await api().rpc('tracxo_claim_onboarding_xp')}catch(e){}
+       }
+       await refreshCloud(true);
+     })();
+   }
+ };
+ const rawCloseTour=closeRunnerTour;
+ closeRunnerTour=function(completed){
+   rawCloseTour(completed);
+   if(completed&&account()&&api()){
+     api().rpc('tracxo_claim_onboarding_xp').then(({error})=>{
+       if(error)status('Welkomst-XP online opslaan mislukt: '+messageOf(error),true);
+       else void refreshCloud(true);
+     });
+   }
+ };
+ document.addEventListener('visibilitychange',()=>{
+   if(!document.hidden&&account()&&Date.now()-state.lastRefreshAt>15000)void refreshCloud();
+ });
+ // Auth restoration can finish between inline scripts; handle already-entered accounts too.
+ setTimeout(()=>{if(account()&&!state.loaded)void refreshCloud(true)},0);
+ setInterval(()=>{if(account()&&!document.hidden&&!state.loaded&&!state.busy)void refreshCloud()},16000);
+ window.tracxo92Cloud=Object.freeze({refresh:()=>refreshCloud(true),sync:window.tracxo92SyncLocal,
+   debugSummary:()=>state.summary});
+})();
+
 </script>
 </body></html>
